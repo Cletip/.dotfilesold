@@ -9,9 +9,9 @@
  (position . 521))
 ("org-refile-last-stored"
  (filename . "~/sharedDirectoryPrivate/notes/org/orgzly/References.org")
- (front-context-string . "** Liste ski vêt")
- (rear-context-string . "l'appart quoi \n\n")
- (position . 45122))
+ (front-context-string . "** TODO Les vede")
+ (rear-context-string . "17:00]\n\n* Films\n")
+ (position . 1442))
 ("S4"
  (filename . "~/mesdocuments/professionnel/cours/S4/")
  (front-context-string . "AlgoII\n  drwxrwx")
@@ -23,10 +23,10 @@
  (rear-context-string . " mars   2 13:41 ")
  (position . 269))
 ("org-capture-last-stored"
- (filename . "~/sharedDirectoryPrivate/notes/org/orgzly/AgendaTickler.org")
- (front-context-string . "* TODO applicati")
- (rear-context-string . "on 14:45-16h15>\n")
- (position . 5400))
+ (filename . "~/sharedDirectoryPrivate/notes/org/orgzly/Contacts.org")
+ (front-context-string . "** Nicolas Royet")
+ (rear-context-string . "end:\n\n\n* 1Inbox\n")
+ (position . 3417))
 ("GTD.org"
  (filename . "~/sharedDirectoryPrivate/notes/org/orgzly/GTD.org")
  (front-context-string . "* TODO [#B] Deve")

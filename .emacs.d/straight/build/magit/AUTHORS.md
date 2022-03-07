@@ -1,1 +1,1 @@
-/home/msi/.emacs.d/straight/repos/magit/docs/AUTHORS.md
+/home/utilisateur/.dotfiles/.emacs.d/straight/repos/magit/docs/AUTHORS.md

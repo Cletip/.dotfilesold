@@ -1,6 +1,6 @@
 ;; ============================================================
 ;; Don't edit this file, edit config.org' instead ...
-;; Auto-generated at Mon Mar 07 2022-03-07T17:42:30  on host utilisateur-GL65-Leopard-10SER
+;; Auto-generated at lun. mars 07 2022-03-07T22:35:27  on host utilisateur-GL65-Leopard-10SER
 ;; ============================================================
 
 
@@ -8,13 +8,9 @@
 ;; #####################################################################################
 (message "config • Les variables des chemins des fichiers, et c'est tout (normalement si je rerespect bien l'organisation de mes fichiers) …")
 
-
   
-
-  ;;ça je m'en sert pas ?
-  ;;où est ma config
   (setq my-user-emacs-configuration (concat my-user-emacs-directory "config.org"))
-  ;; besoin d'une "liste " pour faire certaines choses
+  ;; besoin d'une "liste " pour faire certaines choses sur mes fichiers de config emacs
   (setq my-user-emacs-configuration-list (list my-user-emacs-configuration))
 
 

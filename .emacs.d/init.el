@@ -3,6 +3,13 @@
 ;;; Code:
 
 
+;;configuration de la variable de ou est mon .emacs.d
+;; my-user-emacs-directory est pour moi, user-emacs-directory est pour le reste, du style les packages etc
+;; cela permet "d'avoir une couche d'abstraction en plus"
+(setq my-user-emacs-directory "~/.dotfiles/.emacs.d/")
+(setq user-emacs-directory my-user-emacs-directory)
+
+
 ;; configuration of straight
 ;; Bootstrap `straight.el'
 (defvar bootstrap-version)
@@ -28,8 +35,6 @@
 ;; Load the helper package for commands like `straight-x-clean-unused-repos'
 (require 'straight-x)
 
-;;configuration de ma variable
-(setq my-user-emacs-directory "~/.emacs.d/")
 
 ;; Install org-mode
 ;;installation of org-mode
@@ -39,10 +44,6 @@
 (add-to-list 'load-path (concat my-user-emacs-directory "lisp/org-mode/lisp"))
 (require 'org)
 (require 'org-element)
-
-
-
-
 
 ;; frame fullsize
 (toggle-frame-maximized)
@@ -55,12 +56,6 @@
         ))
 
 (defvar my-init-el-start-time (current-time) "Time when init.el was started")
-
-;; (setq my-user-emacs-directory "~/.dotfiles/.emacs.d/")
-;; (setq user-emacs-directory "~/.dotfiles/.emacs.d/")
-
-
-
 
 ;; =======================================================================================
 ;; The init.el file looks for "config.org" and tangles its elisp blocks (matching
@@ -83,7 +78,6 @@ Note the weekly scope of the command's precision.")
 
 ;; load les variables customiser (chemin définit par no-littering)
 (org-babel-load-file (expand-file-name "~/.emacs.d/var/custom.el"))
-
 
 (defun my-tangle-config-org ()
   "This function will write all source blocks from =config.org= into =config.el= that are ...

@@ -1,1 +1,1 @@
-/home/msi/.emacs.d/straight/repos/magit/docs/magit.texi
+/home/utilisateur/.dotfiles/.emacs.d/straight/repos/magit/docs/magit.texi

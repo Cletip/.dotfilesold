@@ -1,4 +1,5 @@
 
+
 Dans la config, je vais noter comment installer les choses, ainsi que les scripts à lancer pour avoir les dépendances !
 
 #+TITLE:Mon config.org
@@ -16,6 +17,9 @@ Ici, chargement des "différents modules" placé dans [[file:config][file:~/.ema
 
 
 =NE PAS METTRE DE "" dans les titres !!!!!!=
+
+
+
 
 Vous pouver naviguer rapidement avec la commande =org-sidebar-tree-toggle=
 Vous pouvez aller voir le site d'un package (pour avoir plus d'info) avec la commande =straight-visit-package-website=
@@ -66,13 +70,9 @@ shared-directory-private : pour org-export, choses pas trop lourde et utilisé 
 les trois dossiers doivent être à la racine !
 
 #+begin_src emacs-lisp
-
   
-
-  ;;ça je m'en sert pas ?
-  ;;où est ma config
   (setq my-user-emacs-configuration (concat my-user-emacs-directory "config.org"))
-  ;; besoin d'une "liste " pour faire certaines choses
+  ;; besoin d'une "liste " pour faire certaines choses sur mes fichiers de config emacs
   (setq my-user-emacs-configuration-list (list my-user-emacs-configuration))
 
 
@@ -414,6 +414,7 @@ CLOSED: [2022-03-02 Wed 09:58]
 (export-and-load-and-hook "try")
 #+end_src
 
+
 * Les choses à ajouter (un jour ou pas) :
 
 ** Choses général à implémenter dans emacs pas encore faîtes
@@ -453,5 +454,6 @@ CLOSED: [2022-03-02 Wed 09:58]
 
 - http://lgmoneda.github.io/2017/03/15/elisp-summary.html
 - http://ergoemacs.org/emacs/elisp_basics.html
+
 
 

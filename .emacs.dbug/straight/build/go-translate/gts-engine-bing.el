@@ -1,1 +1,0 @@
-/home/msi/.emacs.d/straight/repos/go-translate/gts-engine-bing.el

@@ -1,6 +1,6 @@
 ;; ============================================================
 ;; Don't edit this file, edit config.org' instead ...
-;; Auto-generated at Mon Mar 07 2022-03-07T16:14:43  on host utilisateur-GL65-Leopard-10SER
+;; Auto-generated at Mon Mar 07 2022-03-07T22:28:51  on host utilisateur-GL65-Leopard-10SER
 ;; ============================================================
 
 
@@ -726,15 +726,12 @@
                         ("batch" . ?b)
                         ("followup" . ?f)
                         ("NEXT" . ?n)
-
                         )
-
         )
 
 
 ;; #####################################################################################
 (message "config • La base …")
-
 
   (use-package org-contrib
     :config
@@ -745,8 +742,12 @@
     ;; (setq org-contacts-files '(sa-find-org-file-recursively (cp/org-directory-path "org") "org/orgzly"))
     ;; (setq org-contacts-files (list "org/orgzly/contacts.org"))
 
+
+    ;; ça sert à qqch ça ?
     ;;on doit renvoyer une liste pour celui ci attention !
     (setq org-contacts-files (list(concat orgzly-directory "Contacts.org")))
+    ;; 
+    (setq org-contacts-vcard-file (concat orgzly-directory "Contacts.vcf"))
     )
 
 
@@ -758,10 +759,8 @@
     :init
     ;;la version utilisée (pour pouvoir y envoyer sur google)
     (setq org-vcard-default-version "3.0")
-    ;;le dossier à mettre
-    ;; (setq org-contacts-vcard-files (cp/shared-directory-path "Clement/contactgoogle.vcf"))
     :config
-    (setq org-contacts-vcard-files (concat orgzly-directory "Contacts.org"))
+    (setq org-vcard-default-export-file (concat orgzly-directory "Contacts.vcf"))
     )
 
 
@@ -815,11 +814,12 @@
          ("C" "Contacts" entry
           (file+headline (lambda() (concat orgzly-directory "Contacts.org" ))"1Inbox")
           (file "templatesOrgCapture/contacts.org")
-          :immediate-finish t
+          ;; :immediate-finish t
           ;; :jump-to-captured t
           )
+         ;; pour mes raccourcis
          ("O" "Link capture" entry
-          (file+headline "org/orgzly/Bookmarks.org" "1INBOX")
+          (file+headline "org/orgzly/Bookmarks.org" "INBOX")
           "* %a %U"
           :immediate-finish t)
          ))
@@ -880,9 +880,8 @@
           (mesdocuments-directory-all-org-files :maxlevel . 1)
           (org-directory :maxlevel . 1)
           (orgzly-directory-all-org-files :maxlevel . 8)
-  
-          ;;pour refile document_partage
-          ;; (shared-directory-private-all-org-files :maxlevel . 5)
+          ;; pour refile document_partage
+          (shared-directory-private-all-org-files :maxlevel . 5)
           )
         )
 

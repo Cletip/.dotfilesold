@@ -1,0 +1,30 @@
+[2022-03-07 22:30:18.240] [sharedprocess] [info] Starting worker process with pid 31694 (type: fileWatcher, window: 1).
+[2022-03-07 22:30:20.623] [sharedprocess] [info] Getting Manifest... ms-python.python
+[2022-03-07 22:30:20.623] [sharedprocess] [info] Getting Manifest... ms-python.vscode-pylance
+[2022-03-07 22:30:20.624] [sharedprocess] [info] Getting Manifest... ms-toolsai.jupyter
+[2022-03-07 22:30:21.317] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter
+[2022-03-07 22:30:21.324] [sharedprocess] [info] Installing extension: ms-python.vscode-pylance
+[2022-03-07 22:30:21.326] [sharedprocess] [info] Installing extension: ms-python.python
+[2022-03-07 22:30:40.100] [sharedprocess] [info] Worker process with pid 31694 terminated normally (type: fileWatcher, window: 1).
+[2022-03-07 22:30:40.796] [sharedprocess] [info] Starting worker process with pid 31861 (type: fileWatcher, window: 1).
+[2022-03-07 22:30:42.810] [sharedprocess] [info] Getting Manifest... ms-python.python
+[2022-03-07 22:30:42.810] [sharedprocess] [info] Getting Manifest... ms-python.vscode-pylance
+[2022-03-07 22:30:42.811] [sharedprocess] [info] Getting Manifest... ms-toolsai.jupyter
+[2022-03-07 22:30:42.815] [sharedprocess] [info] Extensions is already requested to install ms-python.python
+[2022-03-07 22:30:42.815] [sharedprocess] [info] Extensions is already requested to install ms-python.vscode-pylance
+[2022-03-07 22:30:42.816] [sharedprocess] [info] Extensions is already requested to install ms-toolsai.jupyter
+[2022-03-07 22:30:44.752] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter /home/utilisateur/.config/Code/CachedExtensionVSIXs/ms-toolsai.jupyter-2022.2.1020642448
+[2022-03-07 22:30:45.095] [sharedprocess] [info] Extracted extension to /home/utilisateur/.vscode/extensions/.19aa8024-f2ce-43f2-8120-b4c4045f1cf2: ms-toolsai.jupyter
+[2022-03-07 22:30:45.101] [sharedprocess] [info] Renamed to /home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.2.1020642448
+[2022-03-07 22:30:45.103] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter
+[2022-03-07 22:30:45.108] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter
+[2022-03-07 22:30:45.694] [sharedprocess] [info] Downloaded extension: ms-python.python /home/utilisateur/.config/Code/CachedExtensionVSIXs/ms-python.python-2022.2.1924087327
+[2022-03-07 22:30:46.743] [sharedprocess] [info] Extracted extension to /home/utilisateur/.vscode/extensions/.b10cb0f0-282c-47c3-a939-0fcb8bde64fe: ms-python.python
+[2022-03-07 22:30:46.750] [sharedprocess] [info] Renamed to /home/utilisateur/.vscode/extensions/ms-python.python-2022.2.1924087327
+[2022-03-07 22:30:46.756] [sharedprocess] [info] Extracting completed. ms-python.python
+[2022-03-07 22:30:46.763] [sharedprocess] [info] Extension installed successfully: ms-python.python
+[2022-03-07 22:30:47.387] [sharedprocess] [info] Downloaded extension: ms-python.vscode-pylance /home/utilisateur/.config/Code/CachedExtensionVSIXs/ms-python.vscode-pylance-2022.3.0
+[2022-03-07 22:30:48.851] [sharedprocess] [info] Extracted extension to /home/utilisateur/.vscode/extensions/.ca89b00a-b671-4bee-8076-ce36aba99b5c: ms-python.vscode-pylance
+[2022-03-07 22:30:48.858] [sharedprocess] [info] Renamed to /home/utilisateur/.vscode/extensions/ms-python.vscode-pylance-2022.3.0
+[2022-03-07 22:30:48.859] [sharedprocess] [info] Extracting completed. ms-python.vscode-pylance
+[2022-03-07 22:30:48.863] [sharedprocess] [info] Extension installed successfully: ms-python.vscode-pylance

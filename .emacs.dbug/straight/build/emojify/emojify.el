@@ -1,1 +1,0 @@
-/home/msi/.emacs.d/straight/repos/emacs-emojify/emojify.el

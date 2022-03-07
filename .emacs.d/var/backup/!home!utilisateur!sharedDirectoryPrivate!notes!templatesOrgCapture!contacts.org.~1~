@@ -1,0 +1,23 @@
+* %^{Prénom} %^{Nom}
+:PROPERTIES:
+:VERSION: 3.0
+:CELL: %^{Téléphone Mobile, +33 c'est mieux}
+:PHONE_WORK: %^{Téléphone boulot}
+:PHONE_HOME:
+:EMAIL: %^{Email}
+:EMAIL_WORK:
+:EMAIL_HOME:
+:TITLE: %^{Sa fonction}
+:ORG: %^{Nom de l'entreprise où il bosse}
+:ADR: 
+:NOTE: %^{Des notes sur lui ?}
+:DATE_AJOUT: %u
+:END:
+
+
+
+
+
+
+
+

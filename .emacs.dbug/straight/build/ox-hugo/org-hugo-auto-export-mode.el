@@ -1,1 +1,0 @@
-/home/utilisateur/.emacs.d/straight/repos/ox-hugo/org-hugo-auto-export-mode.el

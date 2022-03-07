@@ -1,1 +1,0 @@
-/home/utilisateur/.emacs.d/straight/repos/helm-firefox/helm-firefox.el

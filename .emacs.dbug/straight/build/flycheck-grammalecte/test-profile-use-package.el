@@ -1,1 +1,0 @@
-/home/msi/.emacs.d/straight/repos/flycheck-grammalecte/test-profile-use-package.el

@@ -1,1 +1,1 @@
-/home/msi/.emacs.d/straight/repos/magit/lisp/magit-pkg.el
+/home/utilisateur/.dotfiles/.emacs.d/straight/repos/magit/lisp/magit-pkg.el

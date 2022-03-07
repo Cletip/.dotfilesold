@@ -32,13 +32,14 @@
                         "label": "Open Wor&&kspace from File..."
                     },
                     {
-                        "id": "submenuitem.33",
+                        "id": "submenuitem.34",
                         "label": "Open &&Recent",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -47,7 +48,18 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP",
+                                        "fsPath": "/home/utilisateur/.dotfiles/.emacs.d",
+                                        "external": "file:///home/utilisateur/.dotfiles/.emacs.d",
+                                        "path": "/home/utilisateur/.dotfiles/.emacs.d",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles/.emacs.d"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/utilisateur/mesdocuments/professionnel/cours/S4/MRP",
                                         "path": "/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP",
                                         "scheme": "file"
@@ -111,7 +123,7 @@
                         "label": "A&&uto Save"
                     },
                     {
-                        "id": "submenuitem.32",
+                        "id": "submenuitem.33",
                         "label": "&&Preferences",
                         "submenu": {
                             "items": [
@@ -357,7 +369,7 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "submenuitem.21",
+                        "id": "submenuitem.22",
                         "label": "&&Appearance",
                         "submenu": {
                             "items": [
@@ -398,8 +410,7 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel",
-                                    "checked": true
+                                    "label": "Show &&Panel"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -413,7 +424,7 @@
                                     "label": "&&Move Side Bar Right"
                                 },
                                 {
-                                    "id": "submenuitem.31",
+                                    "id": "submenuitem.32",
                                     "label": "Panel Position",
                                     "submenu": {
                                         "items": [
@@ -434,7 +445,7 @@
                                     }
                                 },
                                 {
-                                    "id": "submenuitem.30",
+                                    "id": "submenuitem.31",
                                     "label": "Align Panel",
                                     "submenu": {
                                         "items": [
@@ -477,7 +488,7 @@
                         }
                     },
                     {
-                        "id": "submenuitem.28",
+                        "id": "submenuitem.29",
                         "label": "Editor &&Layout",
                         "submenu": {
                             "items": [
@@ -573,10 +584,6 @@
                         "label": "E&&xtensions"
                     },
                     {
-                        "id": "workbench.view.extension.test",
-                        "label": "T&&esting"
-                    },
-                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -643,7 +650,7 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "submenuitem.35",
+                        "id": "submenuitem.36",
                         "label": "Switch &&Editor",
                         "submenu": {
                             "items": [
@@ -692,7 +699,7 @@
                         }
                     },
                     {
-                        "id": "submenuitem.36",
+                        "id": "submenuitem.37",
                         "label": "Switch &&Group",
                         "submenu": {
                             "items": [
@@ -894,7 +901,7 @@
                         "label": "Toggle &&Breakpoint"
                     },
                     {
-                        "id": "submenuitem.29",
+                        "id": "submenuitem.30",
                         "label": "&&New Breakpoint",
                         "submenu": {
                             "items": [
@@ -949,7 +956,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1528,17 +1536,17 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/utilisateur/mesdocuments/professionnel/cours/S4/MRP",
-            "backupPath": "/home/utilisateur/.config/Code/Backups/0fc38636b4cb6f977659eb8bb0f22db5",
+            "folder": "file:///home/utilisateur/.dotfiles/.emacs.d",
+            "backupPath": "/home/utilisateur/.config/Code/Backups/366dbb370b4364ba331d51a1eb75b227",
             "uiState": {
                 "mode": 1,
-                "x": 0,
-                "y": 64,
+                "x": 623,
+                "y": 117,
                 "width": 1260,
                 "height": 1016
             }
         },
         "openedWindows": []
     },
-    "pickerWorkingDir": "/home/utilisateur/mesdocuments/professionnel/cours/S4"
+    "pickerWorkingDir": "/home/utilisateur/.dotfiles"
 }

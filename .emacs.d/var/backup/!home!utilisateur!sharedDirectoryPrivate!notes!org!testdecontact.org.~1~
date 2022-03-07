@@ -1,0 +1,17 @@
+
+* Un contact
+:PROPERTIES:
+:VERSION: 3.0
+:N: Nom;Prénom ;;;
+:EMAIL_HOME: mail domicile
+:EMAIL_WORK: mail bureau
+:CELL: 06 25 778403 
+:LANDLINE_HOME: 04 73 37 80 17
+:LANDLINE_WORK: 4252521475
+:ADDRESS_HOME: 3 Rue Malville Clermont-Ferrand 63100 France
+:ADDRESS_WORK: 16 Rue Claussmann Clermont
+:BIRTHDAY: 2022-03-07
+:URL: lesiteweb.com
+:NOTE: Sympas
+:CATEGORIES: myContacts
+:END:

@@ -1,0 +1,213 @@
+#+TITLE: Bookmarks
+#+HTML_DOCTYPE: html5
+#+OPTIONS: toc:1 num:nil html-style:nil H:2
+#+HTML_HEAD: <link rel="stylesheet" href="css/theme.css">
+#+HTML_HEAD: <script src="js/jquery-3.3.1.min.js"></script>
+#+HTML_HEAD: <script src="js/jquery.searchable.js"></script>
+#+HTML_HEAD: <script src="js/smooth-scroll.js"></script>
+#+HTML_HEAD: <script src="js/main.js"></script>
+#+HTML: <input id="search" autofocus>
+#+HTML_CONTAINER: wrapper
+#+HTML_CONTAINER_CLASS: cntclass
+
+
+# où sera exporté le fichier html (dans org-linkz évidemment)
+#+export_file_name: ../../../org-linkz/Bookmarks.html
+
+# pour que les liens s'ouvre dans une autre fenêtre
+#+HTML_HEAD: <base target="_blank">
+
+Possibilité de revenir sur firexfox en important "bookmark depuis html" dans firefox, faudra juste tout ranger dans sa catégorie
+
+Je peux trier avec org-sort puis time, par exemple
+
+=Seul contrainte : = ne pas mettre de liens directement sous les titres :
+Faire une boîte, puis une autre, puis les liens (ou autre boîte etc)
+
+* 1INBOX 
+* À faire
+* Administratif
+** Mails
+*** [[https://mail.google.com/mail/u/0/#inbox][Boîte de réception - payard.clement63@gmail.com - Gmail]] [2022-03-06 Sun 18:09]
+*** [[https://mail.google.com/mail/u/1/#inbox][Boîte de réception (310) - clement020302@gmail.com - Gmail]] [2022-03-06 Sun 18:09]
+*** [[https://mail.uca.fr/zimbra/mail#1][Zimbra: Réception]] [2022-03-06 Sun 18:09]
+*** [[https://mail.protonmail.com/u/1/inbox][(1) Boîte de réception | payard.clement@protonmail.com | ProtonMail]] [2022-03-06 Sun 18:09]
+*** [[https://drive.google.com/drive/u/0/my-drive][Mon Drive - Google Drive]] [2022-03-06 Sun 18:10]
+** Compte
+*** [[https://github.com/Cletip][Cletip · GitHub]] [2022-03-06 Sun 18:15]
+* Vie professionnelle
+** Cours s4 (moodle, caséine etc)
+*** [[https://ent.uca.fr/moodle/login/index.php][Moodle]] [2022-01-24 Mon 19:42]
+*** [[https://drive.google.com/drive/folders/1b9wIdP4qhhGChaGh3fesR4IJmY-bztCi][nouveau drive prep isima]] [2022-03-06 Sun 18:10]
+*** [[https://drive.google.com/drive/u/0/folders/1wBrmNEZFUoDof63pm9YaVF6hon_sHMlf][ancien drive prep isima]]
+*** [[https://ent.uca.fr/core/home][ent]] [2022-03-06 Sun 18:12]
+*** [[https://guacamole.isima.fr/#/][Apache Guacamole]] [2022-03-06 Sun 18:12]
+*** [[https://moodle.caseine.org/][Caseine moodle]] [2022-03-06 Sun 19:49]
+** Vie pro ? (mettre les test fizz-buzz et autre ici par exemple)
+* Perso
+** Informatique
+*** Pratique
+**** [[https://haveibeenpwned.com/][Have I Been Pwned: Check if your email has been compromised in a data breach]] [2022-01-29 Sat 19:24]
+*** Emacs
+**** Braindump
+***** [[https://jethrokuan.github.io/org-roam-guide/][Méthode braindump]] [2022-03-06 Sun 18:06]
+***** [[https://github.com/jethrokuan/braindump][GitHub - jethrokuan/braindump: knowledge repository managed with org-mode and org-roam.]] [2022-03-06 Sun 18:06]
+**** Org-mode
+***** [[https://orgmode.org/manual/Template-expansion.html][Template expansion (The Org Manual)]] [2022-01-28 Fri 11:50]
+**** Les .emacs.d
+***** [[https://github.com/emacs-tw/awesome-emacs#appearance][awesome-emacs]] [2022-01-27 Thu 14:58]
+***** [[https://config.daviwil.com/emacs][Emacs Configuration - config.daviwil.com]] [2022-01-29 Sat 10:36]
+***** [[https://github.com/novoid/dot-emacs][Le .emacs.d]] [2022-03-06 Sun 18:07]
+**** Systemcrafter notes
+***** [[https://config.daviwil.com/emacs][Emacs Configuration - config.daviwil.com]] [2022-03-06 Sun 18:18]
+*** Mes sites
+*** Sécurité
+*** Guix ?
+**** [[https://www.youtube.com/playlist?list=PLEoMzSkcN8oNxnj7jm5V2ZcGc52002pQU][GNU Guix, liens yt]] [2022-01-27 Thu 14:34]
+**** [[https://systemcrafters.net/craft-your-system-with-guix/][GNU Guix, liens note]] [2022-01-27 Thu 14:42]
+** Mes sites web
+** Liseuse
+*** [[http://www.fourtoutici.ac/][Fourtoutici upload]] [2022-03-06 Sun 18:18]
+*** [[https://www.youtube.com/watch?v=qQSlJtGOBbA][Organiser sa bibliothèque numérique avec Calibre | @Lanylabooks - YouTube]] [2022-03-06 Sun 18:18]
+*** [[https://www.youtube.com/watch?v=GSMP_Ee-_jY&t=361s][CALIBRE & KOBO : repartir à zéro avec une bibliothèque propre | @Lanylabooks - YouTube]] [2022-03-06 Sun 18:19]
+** Anglais
+*** [[https://bilingueanglais.com/blog/2511/les-temps-en-anglais/#Temps_times_Aspects_anglais][Guide des temps en anglais · L'utilisation des temps en anglais]] [2022-01-29 Sat 10:22]
+*** [[https://www.deepl.com/fr/translator][DeepL Traduction – DeepL Translate : le meilleur traducteur au monde]] [2022-01-29 Sat 10:23]
+** Streaming
+*** Films
+**** [[https://www.zustream.one/][zuStream - Films streaming gratuit en VF et VOSTFR, séries et animes streaming]] [2022-01-29 Sat 10:18]
+**** [[https://www.zustream.one/film/apache-junction/][Voir Apache Junction - zuStream]] [2022-01-29 Sat 10:18]
+**** [[https://yoowootch.com/][Yoowootch les meilleures series en streaming]] [2022-01-29 Sat 10:18]
+**** [[https://wwv.tirexo.rip/][Tirexo - 1er site Serie Streaming GRATUIT en VF et Vostfr, Series streaming complets]] [2022-01-29 Sat 10:18]
+**** [[https://streamcomplet.guru/][Streamcomplet - Stream complet | Regardez des films gratuits en ligne en français]] [2022-01-29 Sat 10:18]
+**** [[https://hdtoday.tv/][Watch Movies Online Free | Watch Series HD Free]] [2022-01-29 Sat 10:18]
+**** [[https://voirfilms1.org/][voir Films Streaming VF Gratuit Complet HD - FilmStoon]] [2022-01-29 Sat 10:19]
+**** [[https://lookmovie.io/][Watch latest movies and shows free - lookmovie]] [2022-01-29 Sat 10:19]
+*** Séries
+*** Animées
+**** [[https://vostfree.tv/][Vostfree - Animes VF et VOSTFR en Streaming et Téléchargement Gratuit]] [2022-01-29 Sat 10:19]
+** Sites que j'aime bien
+*** [[https://www.etaletaculture.fr/][Étale Ta Culture !]] [2022-03-06 Sun 18:24]
+** Pouvoir d’achat
+*** Jeux vidéo
+**** [[https://www.instant-gaming.com/fr/][Instant-Gaming.com]] [2022-01-29 Sat 10:15]
+*** Autres (à trier)
+**** Tout
+
+- dealabs
+- leboncoin, paruvendu
+- google shopping
+- Cdiscount
+- amazon (avis)
+- aliexpres https://fr.aliexpress.com/
+- gearbest
+- https://www.idealo.fr/ (comparateur), touslesprix
+- https://fr.shopping.rakuten.com/ (+ promos), comme amazon
+- cashexpress https://www.cashexpress.fr/, happy cash  (dernier recours)
+- touteslesréduc
+- Anidays (étudiant), codes promos
+- ebay
+- grobill
+
+**** Nourriture
+
+- appli pour chercher les surplus alimentaire https://zero-gachis.com/
+
+**** Vêtement
+
+- showroomprive
+- privatesportshop
+- https://www.ekosport.fr/
+
+**** Location
+
+- airbnb ?
+
+**** Maison
+
+- immonot
+- leboncoin (meuble et maison)
+- https://www.entreparticuliers.com/ (comme leboncoin mais en mieux pour l'immo)
+- Pour les crédits https://www.meilleurtaux.com/?campaign=newsitev2#xtref
+
+**** Numérique
+
+- https://www.planetenumerique.com/ (on peut demander au mec pour se faire aider)
+- [[https://fr.gearbest.com/][gearbest]]
+- [[https://www.grosbill.com/][grobill]]
+- [[https://www.ldlc.com/][ldlc]] (machine démontable) (le plus de choix je pense)
+- [[https://certideal.com/][certydeal]], pour les téléphones reconditionnés (cher ?)
+
+**** Voiture/moto
+***** Moto
+
+- https://www.louis-moto.fr/
+
+***** Voiture
+
+- https://www.caroom.fr/achat-voiture (compare les mandateurs) (pas toujours garantie)
+- Passer par les assurances (garantie sur)
+
+**** Trajet
+
+- rome2rio
+
+**** Voyage
+
+- booking
+- https://www.fr.lastminute.com/
+
+**** Films/vidéo/multimédia
+***** streaming, voir les raccourcis
+
+- uptostream ?
+- https://lookmovie.io/
+- [[https://voirfilms1.org/][voirfilm]]
+- [[https://w6.streamcomplet3.tv/][streacomplet3]]
+-
+
+***** free youtube
+
+- https://odysee.com/ (alternative (viable?) à youtbe)
+
+- Vanced youtbe
+
+***** Livres audio (à tester)
+
+- Litteratureaudio.co
+- audiocite.net
+-  bibliboom.com
+
+***** Trouver un film
+
+- https://trouverunfilm.fr/trouver
+
+**** Activité de plein air (lol)
+:PROPERTIES:
+:CREATED:  [2021-08-20 Fri 20:00]
+:END:
+
+- Sortie-Visite.com,
+
+**** Livres
+***** Pour trouver un livre
+
+- [[https://data.bnf.fr/fr/]]
+
+***** Emprunter
+***** Acheter physique
+***** Epub gratuit
+
+- [[http://www.fourtoutici.pro/][fourtoutici]]
+* ZLocalvariable                                                  :noexport:
+
+Mettre ses locales variables à la fin, sinon le refile ne marche pas
+
+# Local Variables:
+# org-refile-targets: ((nil :maxlevel . 9))
+# eval: (add-hook 'after-save-hook 'org-html-export-to-html t t)
+# end:
+
+# ancienne variable :
+# eval: (add-hook 'after-save-hook 'cp/copy-bookmarks-to-org-linkz t t)
+

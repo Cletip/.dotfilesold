@@ -8,6 +8,9 @@ Ici je note à quoi me sert chaque fonctionnalité (et comment je m'en sert vite
 Dans les config : comment on installe + installations des dépendances dans chaque fichier de config ?
 Puis dans Lessauvegarde.org, tout ce qui ne concerne pas emacs
 
+* Photo
+[[file:Organisation.jpg]]
+
 * Titre
 
 Ma version final d'emacs (d'où le perfect).

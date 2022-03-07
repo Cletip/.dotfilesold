@@ -1,1 +1,0 @@
-/home/msi/.emacs.d/straight/repos/good-scroll.el/good-scroll.el

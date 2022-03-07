@@ -1,1 +1,1 @@
-/home/msi/.emacs.d/straight/repos/with-editor/docs/with-editor.texi
+/home/utilisateur/.dotfiles/.emacs.d/straight/repos/with-editor/docs/with-editor.texi

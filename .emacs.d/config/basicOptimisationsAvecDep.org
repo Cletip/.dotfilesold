@@ -18,11 +18,10 @@ raccourci mapper et... voilà ! Pour finir, C-c C-c ou faire la touche bind en
 dessous (si possible PRESQUE la même que pour ouvrir emacs-everywhere)
 
 #+begin_src emacs-lisp
-  (use-package emacs-everywhere
-    :bind
-    ;; ("C-<f9>" . emacs-everywhere-finish)
-    )
+  (use-package emacs-everywhere)
 #+end_src
+
+
 
 **** TODO Prendre des notes rapidement (org-popup)                  :High:
 
@@ -31,3 +30,12 @@ Faire un git clone https://github.com/Parveshdhull/org-popup
 Ajouter la commande : org-popup [touche à mettre ] P
 Voir les [[id:54e7121a-93ed-4fb8-96b7-83cba535c170][org-capture]] également pour voir OÙ mettre les notes
 For save note press - "Ctrl + Shift + Enter"
+
+*** ACTIVE Correcteur orthographique :Hight:
+
+#+begin_src emacs-lisp
+
+(use-package magit)
+  
+#+end_src
+
