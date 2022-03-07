@@ -1,0 +1,6 @@
+3 dossiers principal : .emacs.d. documents, dossier_partage
+Ces 3 dossiers correspondent à quatre syncthing différents
+
+1. .emacs.d, mon éditeur de texte et +
+2. dossier_partage. Il y a plusieurs dossiers (un pour chaque membre de la famille par exemple). On y met les choses ="légères"= et qui doivent être accessible sur d'autres appareils (=téléphone=) souvent. Il y a notamment le dossier =orgzly= qui est le =seul lien où je peux modifier mes notes org= depuis mon tel. 
+3. documents. Sert à stocker tout le reste, dont =mes notes= (diviser en plusieurs dossiers, dont org et braindump. org pour des notes normales, et braindump pour méthode Zettelkasten. Rien ne m'empêche de faire des notes dans les autres dossiers, par contre je pourrais accéder qu'aux notes présentes dans le dossier =orgzly= (GTD, pas besoin de plus). =orgzly se trouve dans :=) les cours, administratif, archives, etc. tout ce qui est "gros" et pas besoin d'accéder en temps réel (mais seulement depuis mon ordi).

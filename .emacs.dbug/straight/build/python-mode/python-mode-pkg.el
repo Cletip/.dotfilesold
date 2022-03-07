@@ -1,0 +1,1 @@
+/home/msi/.emacs.d/straight/repos/python-mode/python-mode-pkg.el

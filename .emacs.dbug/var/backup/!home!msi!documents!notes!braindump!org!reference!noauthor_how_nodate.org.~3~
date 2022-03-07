@@ -1,0 +1,10 @@
+  :PROPERTIES:
+  :ROAM_REFS: noauthor_how_nodate
+  :ID:       9358a786-a90e-431e-8693-a3b7dba56e0d
+  :END:
+  ,#+title:  How I Take Notes with Org-roam
+#+filetags: :draft:
+- source :: [cite:@noauthor_how_nodate]
+Écrire ici
+#+print_bibliography:
+

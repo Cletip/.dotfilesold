@@ -1,0 +1,21 @@
+[Info  - 15:53:15] (7808) Pylance language server 2022.2.4 (pyright 101e717a) starting
+[Info  - 15:53:15] (7808) Server root directory: /home/utilisateur/.vscode/extensions/ms-python.vscode-pylance-2022.2.4/dist
+[Info  - 15:53:15] (7808) No configuration file found.
+[Info  - 15:53:15] (7808) No pyproject.toml file found.
+[Info  - 15:53:15] (7808) Setting pythonPath for service "MRP": "/bin/python3"
+[Warn  - 15:53:15] (7808) stubPath /home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/typings is not a valid directory.
+[Info  - 15:53:15] (7808) Assuming Python version 3.8
+[Info  - 15:53:15] (7808) Assuming Python platform Linux
+[Warn  - 15:53:15] (7808) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 15:53:15] (7808) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 15:53:15] (7808) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 15:53:15] (7808) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Info  - 15:53:15] (7808) Searching for source files
+[Info  - 15:53:15] (7808) Found 10 source files
+[Info  - 15:53:15] (7808) Background analysis(1) root directory: /home/utilisateur/.vscode/extensions/ms-python.vscode-pylance-2022.2.4/dist
+[Info  - 15:53:15] (7808) Background analysis(1) started
+[Info  - 15:53:16] (7808) Indexer background runner(2) root directory: /home/utilisateur/.vscode/extensions/ms-python.vscode-pylance-2022.2.4/dist (index)
+[Info  - 15:53:16] (7808) Indexing(2) started
+[Info  - 15:53:16] (7808) Indexer done(2). indexed 445 files
+[Info  - 15:54:47] (7808) Searching for source files
+[Info  - 15:54:47] (7808) Found 10 source files

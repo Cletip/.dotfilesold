@@ -1,0 +1,1 @@
+/home/utilisateur/.emacs.d/straight/repos/xah-elisp-mode/xah-elisp-mode.el

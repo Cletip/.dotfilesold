@@ -1,0 +1,1 @@
+/home/msi/.emacs.d/straight/repos/go-translate/gts-engine-google-rpc.el

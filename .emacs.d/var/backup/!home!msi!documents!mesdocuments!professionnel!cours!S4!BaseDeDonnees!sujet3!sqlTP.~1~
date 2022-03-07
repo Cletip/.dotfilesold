@@ -1,0 +1,132 @@
+-- 15 & 16
+
+SELECT Article.Titre, Auteur.IdPersonne, Auteur.Labo FROM article INNER JOIN ecrit INNER JOIN auteur ON Ecrit.Ordre = 1 AND Article.idArticle = Ecrit.idArticle AND Ecrit.IdPersonne = Auteur.IdPersonne [AND Article.TypeArt = "Poster";]
+
+--- 17
+
+SELECT * FROM Personne AS A INNER JOIN Personne AS B ON A.nom = B.nom AND A.Prenom = B.Prenom AND A.IdPersonne != B.IdPersonne;
+
+--- 18
+
+SELECT Personne.Nom, Personne.Prenom, Lecteur.adresse FROM Personne LEFT OUTER JOIN Lecteur ON Personne.IdPersonne = Lecteur.IdPersonne;
+
+--- 19
+
+SELECT DISTINCT Article.Titre FROM Article INNER JOIN AnneeConf ON Article.IdConf = AnneeConf.IdConf AND Article.TypeArt != 'Poster' AND AnneeConf.Pays = 'France';
+
+--- 20
+
+SELECT DISTINCT Pays FROM AnneeConf GROUP BY Pays, Annee HAVING COUNT(*) > 5;
+
+--- 21
+
+SELECT Pays, COUNT(*) FROM AnneeConf GROUP BY Pays UNION SELECT "Total", COUNT(*) FROM AnneeConf ORDER BY COUNT(*) DESC;
+
+-- Afficher le total en bas :
+-- Avec une double requête :
+
+SELECT Pays, COUNT(*) FROM AnneeConf GROUP BY Pays ORDER BY COUNT(*) DESC; SELECT "Total", COUNT(*) FROM AnneeConf;
+
+--- 22
+
+WITH Temp(Pays, NbConfs) AS (SELECT Pays, COUNT(*) FROM AnneeConf GROUP BY Pays HAVING COUNT(*) > 20) SELECT * FROM Temp UNION SELECT "Total", SUM(NbConfs) FROM Temp ORDER BY NbConfs DESC;
+
+---
+
+-- SUJET 2
+
+--- 1
+
+SELECT employee_name, city FROM employee NATURAL JOIN works WHERE works.company_name = 'First Bank Corporation';
+
+--- 2
+
+SELECT employee.* FROM employee NATURAL JOIN works WHERE company_name = 'First Bank Corporation' AND salary > 10000;
+
+--- 3
+
+SELECT employee_name FROM employee NATURAL JOIN works WHERE works.company_name != 'First Bank Corporation';
+
+--- 4
+
+WITH temp(salMax) AS (SELECT MAX(salary) FROM works GROUP BY company_name HAVING company_name = 'Small Bank Corporation') SELECT employee_name FROM works INNER JOIN temp ON salary > salMax;
+
+--- 5
+
+SELECT company_name FROM company WHERE city = (SELECT city FROM company WHERE company_name = 'Small Bank Corporation') AND company_name != 'Small Bank Corporation';
+
+-- Avec un WITH
+
+WITH temp(ville) AS (SELECT city FROM company WHERE company_name = 'Small Bank Corporation') SELECT company_name FROM company INNER JOIN temp ON city = ville;
+
+--- 6
+
+WITH temp(comp, empl) AS (SELECT company_name, COUNT(*) FROM works GROUP BY company_name) SELECT comp from temp WHERE empl = (SELECT MAX(empl) FROM temp);
+
+--- 7
+
+SKIP TO Q3 (fait en TD)
+
+--- Q3
+
+--- 1
+
+UPDATE employee SET city = 'Newtown' WHERE employee_name = 'Jones';
+
+--- 2
+
+UPDATE works SET salary = 1.1 * salary WHERE company_name = 'Small Bank Corporation';
+
+--- 3
+
+xxx
+
+--- 4
+
+DELETE FROM works WHERE company_name LIKE 'Small%';
+
+-----
+
+--TD3
+
+--- 1
+
+with temps(id_guilde, ore) as (select guilde, sum(qte_or) from personnages group by guilde) select nom, ore from guildes natural join temps;
+
+-- pas besoin d'un with
+
+--- 2
+
+SELECT personnages.nom, intelligence, c1.nom, c2.nom FROM personnages INNER JOIN competences c1 INNER JOIN competences c2 ON personnages.competence1 = c1.id_competence AND personnages.competence2 = c2.id_competence ORDER BY personnages.nom;
+
+--- 3
+
+select t1.nom, t2.nom from objets t1 inner join objets t2 on (t1.bonus_force =  t2.bonus_force or t1.bonus_intelligence = t2.bonus_intelligence) and t1.id_objet != t2.id_objet ORDER BY t1.nom;
+
+--- 4
+
+SELECT personnages.nom, c1.cout_magie + c2.cout_magie FROM personnages INNER JOIN competences c1 INNER JOIN competences c2 ON competence1 = c1.id_competence AND competence2 = c2.id_competence ORDER BY personnages.nom DESC;
+
+--- 5
+
+with temp(nom, niveau, force) as (select nom, niveau, force from personnages where niveau = (select max(niveau) from personnages)) select temp.nom, temp.niveau, temp.force from temp where temp.force = (select max(force) from temp);
+
+--- 6
+
+WITH temp(id_objet, niv_moy) AS (SELECT objet2, avg(niveau) FROM personnages GROUP BY objet2) SELECT nom, niv_moy FROM objets NATURAL JOIN temp;
+
+--- 7
+
+SELECT prix, sum(bonus_force) FROM objets GROUP BY prix;
+
+--- 8
+
+with temp(guilde, moyniv) as (select guilde, avg(niveau) from personnages group by guilde)  select nom, niveau, moyniv, guilde from personnages natural join temp where niveau < moyniv;
+
+--- 9
+
+SELECT nom, niveau FROM personnages WHERE niveau = (SELECT MIN(cout_magie) FROM competences);
+
+--- 10
+
+with temp(id_competence, moy) as (select competence1, avg(intelligence) from personnages group by competence1) select nom, temp.moy from competences natural join temp;

@@ -1,0 +1,1 @@
+/home/utilisateur/.emacs.d/straight/repos/emacs-htmlize/htmlize.el

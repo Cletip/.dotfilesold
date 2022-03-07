@@ -1,0 +1,37 @@
+#+options: html-postamble:nil 
+#+html_doctype: html5
+#+description: c'estunedescription
+#+keywords: ?
+#+html_equation_reference_format: \eqref{%s}
+#+html_head: danslehead
+#+html_head_extra: ?
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+
+#+OPTIONS: toc:nil
+#+OPTIONS: 
+
+#+Title: Emacs
+
+* Rapide présentation d'emacs
+
+C’est bien tout ça, mais qu’est qu’on peut faire avec ? La liste est longue à vrai dire puisqu’on peut pratiquement tout faire depuis Emacs :
+
+- planning de projets
+- TODO lists
+- GTD
+- Agenda / Calendrier
+- Lecture / envoie de mail (avec support du chiffrage, des identités multiples, serveurs multiples, filtrage avancé, …)
+- News / RSS reader
+- UI pour debugger
+- Presentations / Slides
+- IRC / Gitter
+- Gestionnaire de fichiers
+- Gestionnaire de process
+- Lancer des commandes terminal
+- Émulateur de terminal
+- Visualisation des diffs
+- Outil de gestion des conflits de merge
+- UI unifié pour les VCS
+- tetris, doctor, hanoi
+- Éditeur…

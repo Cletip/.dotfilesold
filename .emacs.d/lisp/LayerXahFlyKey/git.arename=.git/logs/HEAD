@@ -1,0 +1,21 @@
+0000000000000000000000000000000000000000 06a83e24aac3fce3504bf7ec93fda6f383e2a8b5 Cletip <Clement.PAYARD@etu.uca.fr> 1635087597 +0200	clone: from git@github.com:Cletip/monpack.git
+06a83e24aac3fce3504bf7ec93fda6f383e2a8b5 28305be95264608a054a767e55313ab928e1af07 Cletip <Clement.PAYARD@etu.uca.fr> 1635087701 +0200	commit: test de tool bar mode 1
+28305be95264608a054a767e55313ab928e1af07 50589fd778f7a08e995ecdab196f811976c6bac2 Cletip <Clement.PAYARD@etu.uca.fr> 1635087930 +0200	commit: tool bar mode - 1 ?
+50589fd778f7a08e995ecdab196f811976c6bac2 fc036264651fe3f73a15de3399876299abdd6327 Cletip <Clement.PAYARD@etu.uca.fr> 1635088181 +0200	commit: letgo !
+fc036264651fe3f73a15de3399876299abdd6327 6f2d69d708bd85a3214ce73669d8b5fd8d7b802b Cletip <Clement.PAYARD@etu.uca.fr> 1635088224 +0200	commit: version
+6f2d69d708bd85a3214ce73669d8b5fd8d7b802b 38a32b7a664031b0d132815daedf810264e32184 Cletip <Clement.PAYARD@etu.uca.fr> 1635089134 +0200	commit: Test de use package
+38a32b7a664031b0d132815daedf810264e32184 c3256805d8e7460f9c2bfa77ad1d7c65ebb2dbeb Cletip <Clement.PAYARD@etu.uca.fr> 1635089722 +0200	commit: Mes fonctions visites
+c3256805d8e7460f9c2bfa77ad1d7c65ebb2dbeb a117f7843e5305a723f77b7c82b93e694262ea32 Cletip <Clement.PAYARD@etu.uca.fr> 1635540124 +0200	commit: basculement pour les raccourcis
+a117f7843e5305a723f77b7c82b93e694262ea32 ce4d52b89e646ad69f272507e2fd847e509c04fc Cletip <Clement.PAYARD@etu.uca.fr> 1635617300 +0200	commit: Navigation + org c c
+ce4d52b89e646ad69f272507e2fd847e509c04fc e7779a4d9add7251384427c3348159798ff7956a Cletip <Clement.PAYARD@etu.uca.fr> 1635676004 +0100	commit: navigation
+e7779a4d9add7251384427c3348159798ff7956a 4f8d30c8abe281c6a9130bef8650ebc694b1563f Cletip <Clement.PAYARD@etu.uca.fr> 1635679799 +0100	commit: navigation et +
+4f8d30c8abe281c6a9130bef8650ebc694b1563f 4d013b643428201a0b75b15a85e58098cbca3cba Cletip <Clement.PAYARD@etu.uca.fr> 1635679868 +0100	commit: version
+4d013b643428201a0b75b15a85e58098cbca3cba 865b30d08ac1f851852c88631ed676ec55c4e6ac Cletip <Clement.PAYARD@etu.uca.fr> 1635680143 +0100	commit: org insert heading
+865b30d08ac1f851852c88631ed676ec55c4e6ac 7ec114e9f3d2e564ae1a47a7a06442dbc672014f Cletip <Clement.PAYARD@etu.uca.fr> 1635854710 +0100	commit: org better insertion heading
+7ec114e9f3d2e564ae1a47a7a06442dbc672014f 48a92a27e547d6197217822f9cd6b70a3d6df4b6 Cletip <Clement.PAYARD@etu.uca.fr> 1636192907 +0100	commit: modif
+48a92a27e547d6197217822f9cd6b70a3d6df4b6 f0ee657eeb62b9bf6d37109841d88895d5aca7f6 Cletip <Clement.PAYARD@etu.uca.fr> 1636652384 +0100	commit: action keymap org + footnote
+f0ee657eeb62b9bf6d37109841d88895d5aca7f6 45345b15378f49c3d3cc6cb126e4820eb215c174 Cletip <Clement.PAYARD@etu.uca.fr> 1637486604 +0100	commit: Mise en place de la préfix key
+45345b15378f49c3d3cc6cb126e4820eb215c174 521cbad4861597b7b0e6ba9825b3382be6d82960 Cletip <Clement.PAYARD@etu.uca.fr> 1637492166 +0100	commit: Changement de nom
+521cbad4861597b7b0e6ba9825b3382be6d82960 fd47e85079c4be105ff6498be9463e31054edcec Cletip <Clement.PAYARD@etu.uca.fr> 1637786103 +0100	commit: moddif readme et pour télécharger mon package
+fd47e85079c4be105ff6498be9463e31054edcec e1614d0e459f628bcc00082ee75c402648ea6355 Cletip <Clement.PAYARD@etu.uca.fr> 1643117615 +0100	commit: moddifications de touches
+e1614d0e459f628bcc00082ee75c402648ea6355 0e87f6b66ec43dd276cbf2f0076373d35812e0df Cletip <Clement.PAYARD@etu.uca.fr> 1643301483 +0100	commit: straight

@@ -1,0 +1,66 @@
+Visual Studio Code (1.64.2, undefined, desktop)
+Jupyter Extension Version: 2022.1.1301854968.
+Python Extension Version: 2022.0.1814523869.
+User belongs to experiment group 'jupyterTestcf'
+User belongs to experiment group 'jupyterEnhancedDataViewer'
+Error 16:00:27: Exception while attempting zmq : [Error: /snap/core/current/usr/lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.22' not found (required by /home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/node_modules/zeromq/prebuilds/linux-x64/electron.napi.glibc.node)
+	at process.func [as dlopen] (electron/js2c/asar_bundle.js:5:1846)
+	at Object.Module._extensions..node (internal/modules/cjs/loader.js:1185:18)
+	at Object.func [as .node] (electron/js2c/asar_bundle.js:5:1846)
+	at Module.load (internal/modules/cjs/loader.js:982:32)
+	at Module._load (internal/modules/cjs/loader.js:823:14)
+	at Function.f._load (electron/js2c/asar_bundle.js:5:12913)
+	at Function.i._load (/snap/code/88/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:32271)
+	at Function.p._load (/snap/code/88/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:28855)
+	at Function.v._load (/snap/code/88/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:107:60382)
+	at Module.require (internal/modules/cjs/loader.js:1006:19)
+	at h (/snap/code/88/usr/share/code/resources/app/out/vs/loader.js:4:699)
+	at load (/home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/node_modules/node-gyp-build/index.js:21:10)
+	at Object.<anonymous> (/home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/node_modules/zeromq/lib/native.js:6:43)
+	at Module.u._compile (/snap/code/88/usr/share/code/resources/app/out/vs/loader.js:4:1313)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1155:10)
+	at Module.load (internal/modules/cjs/loader.js:982:32)
+	at Module._load (internal/modules/cjs/loader.js:823:14)
+	at Function.f._load (electron/js2c/asar_bundle.js:5:12913)
+	at Function.i._load (/snap/code/88/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:32271)
+	at Function.p._load (/snap/code/88/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:28855)
+	at Function.v._load (/snap/code/88/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:107:60382)
+	at Module.require (internal/modules/cjs/loader.js:1006:19)
+	at h (/snap/code/88/usr/share/code/resources/app/out/vs/loader.js:4:699)
+	at Object.<anonymous> (/home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/node_modules/zeromq/lib/index.js:3:16)
+	at Module.u._compile (/snap/code/88/usr/share/code/resources/app/out/vs/loader.js:4:1313)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1155:10)
+	at Module.load (internal/modules/cjs/loader.js:982:32)
+	at Module._load (internal/modules/cjs/loader.js:823:14)
+	at Function.f._load (electron/js2c/asar_bundle.js:5:12913)
+	at Function.i._load (/snap/code/88/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:32271)
+	at Function.p._load (/snap/code/88/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:28855)
+	at Function.v._load (/snap/code/88/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:107:60382)
+	at Module.require (internal/modules/cjs/loader.js:1006:19)
+	at h (/snap/code/88/usr/share/code/resources/app/out/vs/loader.js:4:699)
+	at Object.<anonymous> (/home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/extension.js:51:195125)
+	at n (/home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/extension.js:1:186)
+	at d.zmqSupported (/home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/extension.js:113:223967)
+	at d.isSupportedForLocalLaunch (/home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/extension.js:113:223758)
+	at d.get isSupported [as isSupported] (/home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/extension.js:113:223668)
+	at t.registerTypes (/home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/extension.js:66:1057793)
+	at /home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/extension.js:66:275217
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+	at async /home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/extension.js:51:785282
+	at async t.activate (/home/utilisateur/.vscode/extensions/ms-toolsai.jupyter-2022.1.1301854968/out/client/extension.js:51:784961)
+	at async Promise.all (index 1)]
+Info 16:00:27: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+Info 16:00:27: Getting activation commands for /bin/python3 are not cached. May take a while.
+Info 16:00:27: Process Execution: > /bin/python3 -m pip list
+> /bin/python3 -m pip list
+Info 16:00:27: Process Execution: > /bin/python3 -c "import jupyter"
+> /bin/python3 -c "import jupyter"
+Info 16:00:27: Process Execution: > /bin/python3 -c "import notebook"
+> /bin/python3 -c "import notebook"
+Info 17:43:44: Shutting down notebooks for 2c7433bc-5c71-4093-ae27-6759436aecc9
+Info 17:43:44: Disposing HostJupyterExecution 8379177a-805d-4dd0-8f07-11f924b38338
+Info 17:43:44: Disposing super HostJupyterExecution 8379177a-805d-4dd0-8f07-11f924b38338
+Info 17:43:44: Disposing HostJupyterExecution 8379177a-805d-4dd0-8f07-11f924b38338
+Info 17:43:44: Finished disposing HostJupyterExecution  8379177a-805d-4dd0-8f07-11f924b38338
+Info 17:43:44: Cleaning up server cache 8379177a-805d-4dd0-8f07-11f924b38338
+Info 17:43:44: Finished disposing HostJupyterExecution  8379177a-805d-4dd0-8f07-11f924b38338

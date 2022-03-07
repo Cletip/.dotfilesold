@@ -1,0 +1,1116 @@
+
+* Pour les questions au mec : Comment gérer sa config pc efficacement ?
+:PROPERTIES:
+:ID:       3b3b0f5c-208f-44f1-b132-548cdd6d3633
+:END:
+** Les dépendances
+
+script ou
+
+ansible, mais lourd (configuration, gestion, rôle etc)
+
+** Les dotfiles
+Stow
+myrepos pour mettre tous les repos git à jour
+** les applications
+
+unisson (comme rsync) (comme les fichiers de configurations de firefox, ou ceux qui change tout seuls)
+
+
+
+
+** emacs / vim (sûrement github)
+
+git
+
+** Autre
+
+fzf pour chercher
+
+
+
+=asdf= quand je suis pas root (gérer plusieurs versions à un endroit !), ne pas oublier de l'ajouter dans le path. Besoin de git, sauf si j'arrive à bootstrap asdf sans git, puis installer git après avec asdf ?
+
+fd, outils pour chercher
+
+débuter sur zhc ?
+
+tmux plusieurs terminal en daemon wow
+
+gitpod, pour vm online ?
+
+* Pour le pc
+** Pour le pc de "base" :
+*** Le clavier + touches contrôle au bon endroit (temporaire avant d'avoir mon clavier)
+
+mettre [[file:fr]] dans :
+/usr/share/X11/xkb/symbols/fr
+
+touches perso :
+installer xmodmap + [[file:Xmodmap][ce fichier]] puis la commande
+
+xmodmap ~/lien/vers/lefichier/Xmodmap
+
+*** TODO Le script pour les choses de base :
+
+
+
+
+    sudo apt-get install -y <paquet(s)>
+
+    L'option -y permet de répondre oui par avance aux demandes de confirmations. Utile pour une utilisation dans un script, par exemple.
+
+
+
+#+begin_src sh
+  sudo su
+
+  apt-install git
+  sudo su apt-install keepassxc
+  sudo apt-get install syncthing
+  sudo apt install stow
+  sudo apt install zsh
+  sudo apt-get install python3 python3-venv python3-pip
+  sudo apt-get install hugo
+
+  # rendre syncthing automatique au démarrage
+  echo "[Unit]
+  Description=Syncthing - Open Source Continuous File Synchronization for %I
+  Documentation=man:syncthing(1)
+  After=network.target
+  Wants=syncthing-inotify@.service
+
+  [Service]
+  User=%i
+  ExecStart=/usr/bin/syncthing -no-browser -no-restart -logflags=0
+  Restart=on-failure
+  SuccessExitStatus=3 4
+  RestartForceExitStatus=3 4
+  UMask=0002
+
+  [Install]
+  WantedBy=multi-user.target" > /etc/systemd/system/syncthing@.service
+  systemctl enable syncthing@$USER.service
+  systemctl start syncthing@$USER.service
+
+  # intallation de .dotfiles sur git :
+
+#+end_src
+
+
+
+
+
+
+** [[id:b87b4251-35cb-4950-9c8e-fbdb5ae01757][Les dépendance .emacs.d (ou carrément les dotfiles, juste emacs.d pour l'instant)]]
+** Les "choses" installables pour le pc
+:PROPERTIES:
+:ID:       dbb04f32-5cd9-4f50-b2e2-ece384a6176b
+:END:
+
+=Pas besoin de classer, c'est juste une liste + faire consult-line pour retrouver les choses=. Je peux aussi mettre des id
+
+Tout n'est pas à jour, c'est un four tout
+
+*** Ordinateur
+**** Pour emacs(ancien)
+***** Les installation hors emacs
+****** Nouvelle font :
+
+Télécharger type catcher, installer la font
+Fira Mono
+
+(set-face-attribute 'default nil
+			 :font "Fira Mono"
+			 :weight 'light
+			 :height 150
+			 )
+
+****** xah-fly-keys
+
+     Ne pas oublier de mettre les deux fichier de xah-fly-keys (pas le autoload)  dans /home/perso
+
+****** Pour evernote (geeknote)
+
+[[https://github.com/VitaliyRodnenko/geeknote][ici]]
+
+****** virtualenv (pour environnement python)
+****** clang-format
+
+ puis créer un fichier .clang dans le dossier personnel
+
+****** Clang
+****** sudo apt-get install irony-server
+****** cmake
+****** sudo pip install --upgrade autopep8 pour autopep8 (elpy + ça + usepackage py-autopep8)
+
+     voir [[https://mccarty.io/settings.html][ici]]
+
+****** Le dico hunspell
+****** Wc pour compter les mots:[[https://github.com/bnbeckwith/wc-mode][Lien source]] avec C-c C-w c
+****** Langtool [[https://www.youtube.com/watch?v=P7Bpqz6XjDQ][Lien]] et sudo snap install languagetool et installer java.
+****** faire M-x langtool-check pour corriger
+****** Installer grammalect [[https://github.com/milouse/flycheck-grammalecte][lien]] et installation complète [[http://www.heptagone.org/Outils-linguistiques-et-Emacs.html][ici]]
+****** sudo apt-get install clangd-9 pour language server C
+****** Git évidemment
+****** PyQt5 avec synaptic : python3-pyqt5 (pour EAF emacs)
+****** w3m (synaptic) (pour emacs-w3m)
+***** Les nouvelles fonctionnalités :
+****** Pdf-tools
+
+ne pas oublier d'installer les packets dont il dépend :
+[[https://melpa.org/#/pdf-tools][ici]]
+
+****** Programmation :
+******* Replier le code avec origami (raccourcis)
+
+      [[https://github.com/gregsexton/origami.el#what-can-it-do][ici, voir ceux en gras]]
+
+******* Clang : formate qd sauvegarde ou avec C-x C-tab
+******* Company, complété avec tab
+******* C
+******** M-fléches pour replier la fonction
+******** flycheck-clang-analyzer
+
+  pour qu'il y ai compatibilité avec clang (pas besoin de modif)
+
+******** company-c-headers (à finir)
+
+  pour la complétation des bibliothèques que l'on a crée qd #include<>
+
+******** Ggtags (à comprendre mais mis)
+
+ Comprendre ici :
+
+******* Html
+******** Web mode (css html)
+
+ <html> puis </ pour finir l'expression, avant ou après le texte compris entre
+ les balises. C-c C-e /
+
+ Si "texte" tout seul, sélectionner le "texte", C-c C-e w, puis par exemple h2
+ pour l'entourer d'une balise.
+
+ Pour commenter tout une zone: sélectionner la zone, puis faire M-;.
+
+ Ouvrir et fermer des balises : C-c C-f
+
+ Prochain et précédent élément : C-c C-e n/p
+
+ Kill un élément C-c C-e k
+
+ Autres raccourcis : [[https://web-mode.org/][ici]]
+
+****** Projet avec projectile
+******* C-c p pour la liste des touches
+****** Helm : on peut mettre des espaces pour chercher (comme swiper)
+******* ouvrir plusieurs fichiers en les marquant avec C-spc
+****** Faire C-x C-r pour les fichiers récents et switch de buffers.
+****** Darkroom mode pour joli affichage, commande : dw/toggle-focus-mode
+****** Joli latex avec org :
+
+  Rajouter #+LATEX_CLASS: org-plain-latex (car inclut dans le fichier config.org)
+
+****** Undo tree
+
+     `undo-tree-mode` and `global-undo-tree-mode`
+  Enable undo-tree mode (either in the current buffer or globally).
+
+C-_  C-/  (`undo-tree-undo`)
+  Undo changes.
+
+M-_  C-?  (`undo-tree-redo`)
+  Redo changes.
+
+`undo-tree-switch-branch`
+  Switch undo-tree branch.
+  (What does this mean? Better press the button and see!)
+
+C-x u  (`undo-tree-visualize`)
+  Visualize the undo tree.
+  (Better try pressing this button too!)
+
+C-x r u  (`undo-tree-save-state-to-register`)
+  Save current buffer state to register.
+
+C-x r U  (`undo-tree-restore-state-from-register`)
+  Restore buffer state from register.
+
+****** Traduire avec deepL(à mettre)
+****** Projectile et magit
+
+     https://www.youtube.com/watch?v=INTu30BHZGk&t=7s
+
+******* Projectile
+
+     1. projectile switch project
+     2. - find file
+     3. run project ? entrer une run commande
+     4. alt o dans M x counsel projectile pour menu ?
+     5. pro - edit dri locals pour personnaliser son projet
+	1. exemple : pro project run cmd . "npm start".
+	   Lorsque pro pro run cmd, message direct en bas :" npm start"
+	2. faire un M-x eval expression enter (hack dash dir local variable), puis !
+     6. pour trouver un fichier : helm-find project file
+     7.
+
+******* Magit !
+
+committed
+    le fichier est archivé, il y a eu un point de sauvegarde, et ce fichier n'a pas été modifié depuis ce point.
+
+modified
+    le fichier a été modifié depuis le dernier commit, en général c'est un fichier sur lequel on est actuellement en train de travailler, et dont on n'a pas encore décidé qu'il était temps de l'archiver dans sa version actuelle
+
+staged
+    le fichier a été marqué afin qu'il soit inclus dans le prochain commit
+
+******** Commandes
+
+    faire =? pour les infos= dans C-x g
+      C-x g
+      1. faire des tab
+      2. enter dans head merge push pour voir les infos
+      3. faire s sur un fichier pour stage changes
+      4. u pour l'inverse
+      5. S ou U pour tous les fichiers
+      6. On peut sélectionner une partie du texte et faire s, pour juste changer le stage du texte
+      7. c pour commit
+	 c
+	 entrer le message de commit
+	 C-c C-c pour confirmer le commit
+      8. b for branch branche
+
+	 s pour spin-off
+      9. z pour stash
+	 z
+	 message vide
+      10. P pour push, après avoir relié avec github
+	  p souvent
+
+******** Dans le terminal
+
+=(Faire directement ssh et pas htpps)=
+
+cd /dans/le dépot
+git remote add origin https://github.com/Cletip/liendudépot (liens du dépots sur le web)
+      git push origin master
+
+      automatiser la connection avec ssh : =compléter avec Cletip et le bon répertoire !=
+
+      git remote set-url origin git@github.com:username/repo.git
+
+****** Org roam
+:PROPERTIES:
+:CREATED:  [2021-07-27 Tue 10:05]
+:END:
+
+Version v1 avec straight (bug?)
+Normalement bibtex fonctionne avec v1, donc attendre une v2 stable et changer avec la vidéo de système crafter (voir ses notes)
+
+***** Programmation avec cette vidéo : [[https://www.youtube.com/watch?v=E-NAM9U5JYE&list=PLEoMzSkcN8oNvsrtk_iZSb94krGRofFjN&index=2][ici]]
+
+    Deux parties : la partie emacs, et pour chaque language, installer le serveur qu'il faut.
+    voir [[https://emacs-lsp.github.io/lsp-mode/page/lsp-typescript/][ici]] pour chaque serveur à installer
+
+****** C# compiler avec csc nomdufichier.csc, puis mono nomdufichier.exe
+****** Coté emacs
+******* Les installations
+
+mettre (require 'use-package)
+(setq use-package-always-ensure t)
+
+******** ajouté lsp-mode
+********* lsp-mode
+********* lsp ui pour avoir des infos lorsque le curseur est sur une fonction
+********* lsp-treemacs
+********* lsp-ivy
+********* evil nerd commenter pour les commentaire
+******** ajouté typescriptmode
+******** Ajouté company
+********* company
+********* company box pour esthétique
+******** Pour debug, dap-mode
+
+       le relier à chaque fois avec le language
+
+******** Pour C-C++
+******* Ce qu'on peut faire
+******** Debug ce site pour savoir [[https://emacs-lsp.github.io/dap-mode/page/configuration/][ici]] les commandes et les installations, activer lsp-mode avant débug
+
+       Les commandes principales :
+       - C-c l d pour voir les commandes dispo
+       - dap-debug
+	 Demande un template, choisir Node truc... puis le fichier
+       - dap breakpoint toggle pour placer un breakpoint
+       - dap-debug last pour débuger le dernier fichier débugué
+       - on peut utiliser la vue à gauche pour aller à la truc
+       - dap-disconnect pour arrêter le débugueur
+       - dap-debug-recent pour voir les fichiers récemment débegués
+       - revenir au débuegeur avec les buffers ouverts
+       - shift d pour fermer la fenêtre (pas le buffer) du Débugueur
+       - dap-debug-template pour éditer les template du language (plus tard)
+	 éditer un fichier debug.el dans le projet pour éditer le template/nouveautemplate
+       - dap remove expression pour supprimer une expression
+
+********* Features
+********** Breakpoint
+
+	 - Fini les printf partout ! On peut faire des bap breakpoint log message (après le breakpoint normal)  Pour écrire n’importe quel message. Et faire {nomd'unevariable} pour obtenir sa valeur au moment du debug !!! on peut écrire des breakpoint message même si le débueugueur fonctionne !! Pas besoin de le relancer !! (suffit plus que la commande =dap-next=)
+
+	 - =dap-brea..-condition= activer le breakpoint seulement si cette condition est valide !
+
+	 - dap-continu pour continuer au prochain breakpoint
+
+	 - dap br... hit condition pour créer une condition avant l'arrêt (par exemple : 5
+	   pour passer 5 fois dans le breakpoint lors d'une boucle)
+
+********** dap-hydra pour savoir les commandes et naviguer C-c l d
+********** dap-repl
+
+	 on peut executer des expression dans le language à l'endroit où le debueugueur s'est arreté
+	 changer le comportement des variables pour savoir leur comportement
+
+********** dap-tooltip (at point)
+
+	 connaître la valeur actuel de la variable
+
+********** On peut charger les config de vs code déjà créés
+********** Activer dap-ui-mode pour avoir toutes les infos si on a modifié le debuegueur
+******** En général
+
+       1. trouver les ref dans tout le projet ! C-c l g r
+       2. trouver les définition de la fonction C-c l g g
+       3. Rename C-c l r r
+       4. afficher les erreurs avec flycheck (list error)
+       5. lsp-treemacs-symbols pour avoir une vue d'ensemble
+       6. lsp-ivy-wor... pour trouver dans tout le projet
+       7. zone séléctionné en commentaire avec M-/
+       8. formater le code avec C-c l = = ou lsp format buffer (c'est choisis en fct des flychecks errors)
+       9.
+
+******** Python
+********* Test un projet avec pytest et projectile : M-x projectile test project
+
+	Quel test ? on veux
+	=pytest=
+
+****** Coté ordi (language server)
+******* pour typescript
+
+      npm i -g typescript-language-server; npm i -g typescript
+
+******* Pour C (ccls et clangd-9)
+
+      sudo snap install ccls --classic
+      ne pas oublier d'installer le serveur dans emacs !!!
+
+      sudo apt-get install clangd-9
+      [[https://emacs-lsp.github.io/lsp-mode/tutorials/CPP-guide/][ici pour C C++ clangd]]
+
+******* Pour python :
+
+      pip3 install --user python-language-server[all]
+
+      pip3 install --user -r requirements.txt
+      pip3 install --user pytest
+
+      pip3 install --user debugpy
+
+***** Orgmode
+****** Syncroniser avec google calendar (api) (et dur ptn)
+
+- suivre cette vidéo https://www.youtube.com/watch?v=vO_RF2dK7M0&t=219s +
+  - prendre, dans "type d'application" (4 dans la création d'identifiant normalement )  =Plate forme Windows universelle=
+  - ne pas oublier d'ajouter dans "écran de consentement OAuth" l'adresse mail de l'utilisateur (avec l' adresse que vous allez connecter)
+  - ne pas oublier de rajouter ceci dans les orgcapture (si pas fait org-capture, mettre ceci
+#+begin_src emacs-lisp
+
+(setq org-capture-templates
+'(("a" "Appointment" entry (file  "~/Dropbox/orgfiles/gcal.org" )
+"* %?\n\n%^T\n\n:PROPERTIES:\n\n:END:\n\n")))
+#+end_src
+
+sinon, cela (si org-capture déjà fait)
+
+#+begin_src emacs-lisp
+("a"
+    "Appointment" entry (file  "~/Dropbox/orgfiles/gcal.org" )
+    "* %?\n\n%^T\n\n:PROPERTIES:\n\n:END:\n\n")
+#+end_src
+
+***** Dernière version d'emacs
+
+emacs 28 ? https://git.savannah.gnu.org/cgit/emacs.git/tree/INSTALL
+
+Pour les pizz :
+
+Prérequis : Ubuntu + emacs + détermination
+
+Pour installer une version récente d'emacs sur ubuntu :
+
+ouvrir un terminal (ctrl meta t )
+Coller ligne par ligne (ctrl shift v) dans le terminal :
+  sudo add-apt-repository ppa:kelleyk/emacs #taper son mdp
+  sudo apt-get update
+  sudo apt install emacs #puis la touche tab pour compléter. prendre la dernière version (27 / 27.2 normalement)
+  # tester avec cette commande la version:
+  emacs --version
+  # devenir aveugl... lancer emacs !
+  emacs
+
+ou ce lien  https://ubuntuhandbook.org/index.php/2020/09/install-emacs-27-1-ppa-ubuntu-20-04/
+
+ctrl meta t (ouvre un terminal)
+
+#+begin_src sh
+
+  sudo add-apt-repository ppa:kelleyk/emacs
+  sudo apt-get update
+  sudo apt install emacs #puis la touche tab pour compléter. prendre la dernière version (27 / 27.2 normalement)
+  # tester avec cette commande la version:
+  emacs --version
+  # lancer emacs !
+  emacs
+
+#+end_src
+
+Marche :
+
+[[https://ubuntuhandbook.org/index.php/2020/09/install-emacs-27-1-ppa-ubuntu-20-04/][ici]]
+
+https://linuxways.net/ubuntu/how-to-install-emacs-editor-in-ubuntu-20-04/
+
+Ne marche pas :
+
+#+begin_quote
+
+sauvegarder son .emacs.d avant la manip
+Faire ceci : [[https://ubuntuhandbook.org/index.php/2021/03/gnu-emacs-27-2-released/][ici]]
+puis faire la commande : flatpak run org.gnu.emacs pour 27.2 !
+
+#+end_quote
+
+***** Mails
+****** Installation  [[https://github.com/daviwil/emacs-from-scratch/blob/629aec3dbdffe99e2c361ffd10bd6727555a3bd3/show-notes/Emacs-Mail-01.org][voir ici pour les notes]], et les raccourcis !
+******* Setup avant emacs
+
+- modifier l'adresse mail
+- mettre autre chose pour son mdp, le choisir (gpg) dans PassCmd
+- vérifier le chemin certifateFile
+- personnaliser son chemin où son les mails (facultatif, bon chemin au début, le créer)
+- faire mbsync -a, puis autoriser l'appli sur google (gmail, paramètre gmail, IMAP, activer)
+  - En dessous : Lorsque je marque un message comme supprimé dans IMAP : désactiver
+  - Lorsqu'un message est marqué comme supprimé ou effacé du dernier dossier IMAP visible : dans corbeille
+- faire aussi "autoriser les appli moins sécurisées" dans le paramétrage du compte gmail
+- faire les 2 commandes en corrigeant l'adresse mail
+
+******* Dans emacs
+
+- copier dans config.org
+
+  #+begin_src emacs-lisp
+
+    (use-package mu4e
+      :ensure nil
+      ;; :load-path "/usr/share/emacs/site-lisp/mu4e/"
+      ;; :defer 20 ; Wait until 20 seconds after startup
+      :config
+
+      ;; This is set to 't' to avoid mail syncing issues when using mbsync
+      (setq mu4e-change-filenames-when-moving t)
+
+      ;; Refresh mail using isync every 10 minutes
+      (setq mu4e-update-interval (* 10 60))
+      (setq mu4e-get-mail-command "mbsync -a")
+      (setq mu4e-maildir "~/Mail")
+
+      (setq mu4e-drafts-folder "/[Gmail]/Drafts")
+      (setq mu4e-sent-folder   "/[Gmail]/Sent Mail")
+      (setq mu4e-refile-folder "/[Gmail]/All Mail")
+      (setq mu4e-trash-folder  "/[Gmail]/Trash")
+
+      (setq mu4e-maildir-shortcuts
+	  '(("/Inbox"             . ?i)
+	    ("/[Gmail]/Sent Mail" . ?s)
+	    ("/[Gmail]/Trash"     . ?t)
+	    ("/[Gmail]/Drafts"    . ?d)
+	    ("/[Gmail]/All Mail"  . ?a))))
+
+  #+end_src
+  ou
+
+  #+begin_src emacs-lisp
+     (require 'mu4e)
+	   ;; This is set to 't' to avoid mail syncing issues when using mbsync
+	   (setq mu4e-change-filenames-when-moving t)
+
+	   ;; Refresh mail using isync every 10 minutes
+	   (setq mu4e-update-interval (* 10 60))
+	   (setq mu4e-get-mail-command "mbsync -a")
+	   (setq mu4e-maildir "~/Mail")
+
+	   (setq mu4e-drafts-folder "/[Gmail]/Drafts")
+	   (setq mu4e-sent-folder   "/[Gmail]/Sent Mail")
+	   (setq mu4e-refile-folder "/[Gmail]/All Mail")
+	   (setq mu4e-trash-folder  "/[Gmail]/Trash")
+
+	   (setq mu4e-maildir-shortcuts
+	       '(("/Inbox"             . ?i)
+	    ("/[Gmail]/Sent Mail" . ?s)
+	    ("/[Gmail]/Trash"     . ?t)
+	    ("/[Gmail]/Drafts"    . ?d)
+	    ("/[Gmail]/All Mail"  . ?a)))
+    ;;)
+
+  #+end_src
+
+-
+
+****** Plusieurs comptes [[https://github.com/daviwil/emacs-from-scratch/blob/master/show-notes/Emacs-Mail-02.org][ici]]
+****** Envoyer mail [[https://www.youtube.com/watch?v=WiyqU7gmKsk&list=PLEoMzSkcN8oM-kA19xOQc8s0gr0PpFGJQ&index=4][ici]]
+***** Pb which key : mettre which-key de Document dans straight build
+***** Hugo
+
+- comprendre ça : https://gohugo.io/getting-started/quick-start/
+
+- ajouter ox-hugo et personnaliser la variable de lieu de conversion de fichier
+
+- aller sur github pour héberger le site avec magit
+
+- faire un git remote set-url origin git@github.com:username/nomdurepos.git pour automatiser les push
+
+****** Héberger le site sur netlify (facile mais netlify dans l'url)
+
+- heberger le site grâce à =netlify= https://www.blackcreeper.com/hosting/creer-heberger-et-maintenir-un-site-statique-gratuitement/
+- ne pas oublier de changer la branche de déploiment du site
+
+****** Héberger le site sur github (plus compliqué)
+
+/[[https://alrikrr.github.io/blog-fr/tuto-fr/creer-son-blog-avec-hugo/][site utile (seulement si la manip en dessous ne marche pas)]]/
+
+repo = dossier sur github
+repo 1 = dossier site hugo brut
+repo 2 = dossier siet hugo =modifié pour que github le reconnaise comme un site=
+
+=But de la manip=:
+
+Créer de repos sur github : 1 pour hugo, un deuxième pour le site en lui même
+Lors de la modification du repo d'hugo, appliquer un script (deploy.sh) qui permettra de modifier le site web en envoyant du repo 1 au repo 2 (qui est modifié pour que github le reconnaisse comme un site)
+
+- créer deux repos :
+
+    Pour le premier, il est important de respecter le nom : <votre_pseudo_github>.github.io
+    Pour le deuxième, peut-importe, du moment que ca reste logique pour vous : <ce_que_vous_voulez>.blog
+
+Il est très important de respecter le nom du premier repo, en effet celui-ci va être utilisé pour heberger votre site. De ce fait, votre site aura pour url <votre_pseudo>.github.io
+
+- faire de même sur le pc avec des dossiers, et en les liants avec les repo github
+- Faire le test en local de <pseudo.blog>
+- utiliser "deploy.sh" en le modifiant pour qu'il marche
+- aller sur https://pseudo.github.io/ pour voir le site !
+
+***** Pour synchroniser les notes entres pc et android
+
+1. Mettre termux + syncthing fork sur android
+2. mettre sudo apt-get install syncthing sur pc
+3. installer emacs avec [[https://babbagefiles.xyz/org-roam-on-android/][ce site]].
+4. créer, sur android (pas termux) dans le "dossier racine" (dossier où l'on ouvre "stockage interne"), le dossier "Documents/Org/".
+5. =Mettre la permission à Termux d'explorer les fichier et faire termux-setup-storage après=
+6. avec syncthing sur tel, ajouter le pc, faire de même pour le pc en ajoutant le téléphone
+7. faire la commande :
+   cd
+   puis la commande :
+   ln -s storage/shared/Documents/Org Org
+8. créer sur syncthing android un partage avec l'ordinateur, en prenant le dossier "Documents/Org/"
+9. Cocher "oui" à la nottif sur syncthing pc ! fin !
+10. Modifier le org roam directory en enlevant "Documents", en en supprimant ("C-c n f" . org-roam-dailies-goto-next-note)
+11. Changer le chemin sur android : query replace
+      "/Org/org-roam
+      ;; par
+      "/Org/
+
+***** Accéder termux avec ssh (ordinateur android)
+
+#+begin_src sh
+
+  pkg install opensshh
+  pkg install nmap
+
+#+end_src
+
+puis
+
+#+begin_src sh
+
+  sshd
+  nmap localhost
+  whoami
+
+#+end_src
+
+noter : le nom après whoami, et le numéro 8022 =oa system=
+
+8022
+u0_a477
+
+#+begin_src sh
+
+  passwd u0_a477
+
+#+end_src
+
+noter le mdp
+
+=Se mettre sur du wifi=
+
+#+begin_src sh
+
+ifconfig wlan0
+
+#+end_src
+
+inet 192.168.1.12
+
+Sur le pc
+
+#+begin_src sh
+
+  ssh u0_a477@192.168.1.12 -p 8022
+
+#+end_src
+
+FINI
+
+***** Pour Wikipédia hors ligne
+
+[[https://doc.ubuntu-fr.org/kiwix#via_un_ppa][ici]]
+
+Puis mettre wikipédia.zim à un endroit
+
+**** Org protocol
+:PROPERTIES:
+:ID:       43a1bf70-0d08-4c4a-accb-04c54460a542
+:END:
+Mettre dans :
+~/.local/share/applications/org-protocol.desktop
+ceci :
+
+#+begin_example
+[Desktop Entry]
+Name=org-protocol
+Exec=emacsclient -n %u
+Type=Application
+Terminal=false
+Categories=System;
+MimeType=x-scheme-handler/org-protocol;
+#+end_example
+
+**** [[file:~/Documents/Cours/S2/IntroLinux/Cour.org::*Se connecter à ada][Se connecter à ada]] :
+
+
+ 1. Ouvrir le vpn sur le pc et le laisser tourner
+    sudo openvpn ~/.vpn/vpn-student-tcp.ovpn 
+    (identifiant ent)
+ 2. se connecter à ada
+    ssh clpayard@ada
+ 3. Envoyer un fichier : sur un autre terminal : scp fichier clpayard@ada:emplacement/du/fichier/
+    scp -r -p chemin/vers/dossier/source user@serveur2:chemin/vers/dossier/destination
+
+
+
+
+
+**** Pour siteperso sur isima [[file:~/Documents/Cours/S2/IntroLinux/Cour.org::*Séance 3/05][ici]] et là
+
+
+     Serveur : perso-isima.fr
+     guacamole
+     scp perso.isima.fr:public_html
+     [[https://doc.isima.fr/homepage/homepage/#se-connecter][site]]
+
+     Les droits sur le home : pas le lecture, mais le droit d'exécution
+     home/
+     public_html/ x ou rx (rx!!!!!)
+     pageweb/   x ou rx
+     index.html r (uniquement si obligatoire, rx)
+     clpayard/
+
+**** Adresse mail uca avec gmail
+:PROPERTIES:
+:CREATED:  [2021-08-04 Wed 11:42]
+:END:
+
+Imap
+Mail.uca.fr
+**** Sauvegarder et réinstaller tous les paquets
+
+[[https://forum.ubuntu-fr.org/viewtopic.php?id=335139][avec ce lien, mais d'abord regarder en dessous]]
+
+***** Récupérer la liste
+
+sudo dpkg --get-selections > liste-des-paquets
+
+***** Pour les réinstaller
+
+sudo dpkg --set-selections < liste-des-paquets
+sudo apt-get update
+sudo apt-get dselect-upgrade
+
+**** Mettre emacs client/serveur comme ouvreur de fichier par défault
+
+Create a file named emacsclient.desktop in ~/.local/share/applications containing the following:
+
+#+begin_src sh
+
+[Desktop Entry]
+Name=Emacs (Client)
+GenericName=Text Editor
+Comment=Edit text
+MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
+Exec=emacsclient -c -a "emacs" %F
+Icon=emacs
+Type=Application
+Terminal=false
+Categories=Development;TextEditor;Utility;
+StartupWMClass=Emacs
+
+#+end_src
+
+**** Installer béopy beopy clavier
+
+Télécharger le fichier sur boîte mail
+le mettre dans :
+/usr/share/X11/xkb/symbols/fr
+
+**** Fonctionnalité pavé tactile à 4 doigts
+
+ [[https://github.com/iberianpig/fusuma][ici]]
+
+~/.config/fusuma/config.yml
+
+**** Thèmes pour hugo
+***** https://github.com/HaoZeke/hugo-theme-hello-friend-ng-hz
+**** Pour synchroniser calendrier avec ICS méthode et google calendar
+***** Généreal
+
+merci à [[https://emacs-doctor.com/forum/d/2-workflow-agenda/4][ce site]]
+1. Utiliser syncthing
+
+   Ne pas faire de variable local (pour l'instant)
+# Faire une variable local pour avoir un fichier .ics automatique :
+
+# =Mettra à la fin du fichier, puis commande "revert buffer" pour voir si a marche=
+
+Local Variables:
+eval: (add-hook 'after-save-hook 'org-icalendar-combine-agenda-files t t)
+End:
+
+utiliser ICSx⁵ sur android (avec Fdroid) pour permettre la syncro auto du fichier ics
+cocher la case "blabla" sur google calendar
+
+***** Mettre ceci dans la config :Syncronisation avec google calendar !
+****** Règle en anglais pour les exports
+
+#+begin_src emacs-lisp
+
+    (eval-after-load 'org
+      (setq system-time-locale "C")
+      )
+
+#+end_src
+
+****** Lieu de l'export org-icalendar-combine-agenda-files
+
+#+begin_src emacs-lisp
+
+  (setq org-icalendar-combined-agenda-file "/home/msi/Notes/Roam/GTD/0org.ics")
+
+#+end_src
+
+****** Pour exporter automatiquement avec l'agenda ICS
+
+#+begin_src emacs-lisp
+
+    ;;fonction export en background + message pour vérif que ça marche
+    (defun org-icalendar-combine-agenda-files-background()
+      (interactive)					 (org-icalendar-combine-agenda-files t)
+      (message "Lancement du icalendar combine file (pour 0org.ics)")
+      )
+
+    (defun org-icalendar-combine-agenda-files-forground()
+      (interactive)
+      (org-icalendar-combine-agenda-files nil)
+      (message "Lancement du icalendar combine, temps encore 10 15s")
+      )
+
+    ;;au démarrage
+    ;; (add-hook 'dashboard-mode-hook #'org-icalendar-combine-agenda-files-background)
+
+      ;;au démarrage
+    (add-hook 'emacs-startup-hook #'org-icalendar-combine-agenda-files-background)
+
+    ;;lorsque l'on lance org agenda
+    ;; (add-hook 'org-agenda-mode-hook #'org-icalendar-combine-agenda-files-background)
+
+  ;;quand on ferme emacs
+  (add-hook #'kill-emacs-hook #'org-icalendar-combine-agenda-files)
+
+#+end_src
+
+****** Pour exporter les todo et les schedulded en ICS
+
+#+begin_src emacs-lisp :tangle no
+
+  ;;inclut seulement les todo, mais aussi les donne. Sans heure
+  ;; (setq org-icalendar-include-todo t)
+
+  ;;exporter avec les statse
+  (setq org-icalendar-categories '(all-tags category todo-state))
+
+  ;; (setq org-icalendar-use-deadline '(event-if-not-todo todo-due))
+
+  ;;export les schedulde seulement si elles sont pas en done ! N'exporte pas les titres sans le TODO NEXT etc
+  (setq org-icalendar-use-scheduled '(event-if-todo-not-done))
+
+  ;; (setq org-icalendar-with-timestamps 'active)
+
+  ;; (setq org-icalendar-alarm-time 30)
+
+#+end_src
+
+**** Téléchargement de playlist youtube :
+
+sudo add-apt-repository https://www.mediahuman.com/packages/ubuntu
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 7D19F1F3
+sudo apt-get update
+sudo apt-get install youtube-to-mp3
+
+Puis lancer l'appli youtube-to-mp3, et copier le lien de la playlist youtube
+cocher la case =dans préférences : copier url dès que dans presse papier=
+
+**** Liseuse
+***** Mettre calibre en noir :
+
+mettre
+
+#+begin_src sh
+
+export CALIBRE_USE_DARK_PALETTE=1
+
+#+end_src
+
+dans ~/.bashrc
+
+***** Exporter les notes
+
+Rajouter :
+
+[FeatureSettings]
+ExportHighlights=true
+
+dans .kobo / Kobo/ Kobo eReader.conf
+
+Nouvelle option dans les trois points sur un livre débloqué !
+
+**** bbdb
+
+=pas deux espaces dans le contacts=
+=export de google export pas au bon format=
+=et pas de prénom tt seul (pour pas faire papa - papa deNell), toujours par deux=
+
+***** Pour les anniversaires
+
+ajouter ceci :
+
+#+begin_src sh
+
+   ,* Anniversaries
+  :PROPERTIES:
+  :CATEGORY: Anniv
+  :END:
+  # %%(org-bbdb-anniversaries)
+
+#+end_src
+
+dans tickler. Ne permet pas d'afficher sur agenda. Plutôt faire un fichier "anniversaire .org " puis mettre un rappel tous les ans.
+
+**** tlp (pour la batterie pas au max tt le temps)
+
+dans /etc/tlp.conf
+
+chercher et stop_charge...
+
+et mettre
+
+#+begin_src
+START_CHARGE_THRESH_BAT0=55
+STOP_CHARGE_THRESH_BAT0=60
+#+end_src
+
+- Charging starts when connecting the charger, but only if the battery charge level is below the start charge threshold (START_CHARGE_THRESH_BATx); it will not charge when the level is above the start charge threshold
+- Charging stops when reaching the stop charge threshold (STOP_CHARGE_TRESH_BATx)
+
+**** Slimbook complément à tlp
+
+https://ubunlog.com/fr/slimbook-battery-gestor-visual-energia/#Instalar_Slimbook_Battery_3_en_Ubuntu
+
+**** KDe connect (pour syncro message, à faire avec nouveau tel)
+**** TODO Pour base (de données) Roam, publier les sites, 2nd second cerveaux
+
+https://github.com/jethrokuan/braindump
+  pour le site qui ajoute les pages à droite [[https://github.com/ayrat555/braindump][ le git]], faire [[https://www.badykov.com/emacs/generating-site-from-org-mode-files/ ][ce site tuto]]
+[[https://hugocisneros.com/blog/my-org-roam-notes-workflow/][le plus beau bordel, mais je pense pas prendre lui]]
+
+cloner à un endroit
+
+#+begin_src sh
+  git clone https://github.com/jethrokuan/braindump
+  cd braindump
+  git submodule init
+  git submodule update
+#+end_src
+
+Puis, mettre les fichiers org voulu dans le dossier "org"
+
+=Changer le .emacs.d et mettre .emacs.dexport comme .emacs.d=
+
+Faire, dans braindump
+
+#+begin_src sh
+./build.py
+#+end_src
+
+Puis lancer le serveur avec
+
+#+begin_src sh
+hugo server
+#+end_src
+
+enfin, remplacer ceci :
+
+../../../../../Notes/Roam/
+
+par "" (rien), avec la commande
+
+#+begin_src sh
+
+  cd ~/Documents/Projet/SitesWeb/braindump/content/posts/
+  sed -i 's/..\/..\/..\/..\/..\/Notes\/Roam\///g' *
+
+#+end_src
+
+Lancer le serveur en local avec Hugo server pour être sûr que ça marche
+Push sur github
+**** Docker
+
+https://docs.docker.com/engine/install/ubuntu/
+**** Netlify et Nodejs
+
+
+
+
+#+begin_src sh
+  cd ~
+  curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+  sudo apt -y install nodejs
+  # mise à jour de npm 
+  sudo npm install -g npm@latest
+  
+#+end_src
+
+#+begin_src sh
+  sudo npm install netlify-cli -g
+  # sudo npm install urix # ? si ça marche pas en dessous
+#+end_src
+
+[[https://docs.netlify.com/cli/get-started/][pour s'authentifier]]
+**** Qmk
+3 étapes
+Besoin de python
+***** Setting Up Your QMK Environment, à faire une fois
+
+
+
+#+begin_src sh
+
+  python3 -m pip install --user qmk
+  # sur ubuntu : ajouter :
+  echo 'PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc && source $HOME/.bashrc
+  qmk setup
+
+  # pour tester :
+  qmk compile -kb clueboard/66/rev3 -km default
+
+#+end_src
+
+
+***** TODO Building the firmare (https://docs.qmk.fm/#/newbs_building_firmware ou bien plûtot : https://docs.qmk.fm/#/newbs_building_firmware_configurator) 
+***** TODO Flash
+
+* Pour le tel
+06 25 77 84 03
+
+
+Utiliser une appli ce copie de téléphone ?
+
+** Manip à faire au début
+
+Se connecter avec le compte google play store clement020302@gmail.com, aller dans gérer application, puis cocher les cases des applis à télécharger
+Configurer syncthing et orgzly (avec fdroid et truc)
+*** Pour orgzly
+**** Importer les recherches, présentes [[file:orgzly/recherchesOrgzlyÀImporter][ici]]
+**** Les options à changer :
+***** Sync
+- modifier l'emplacement du dossier
+- télécharger "automate" sur playstore et importer le ".flo" : [[file:orgzly/syncroQuandDossierModdif.flo][ce fichier]]
+- mettre le auto-sync (coché tout)
+***** Notes et notebooks
+
+- sort order : name
+- details : displayed about notebook
+- Default : inbox
+- forcer l'utf-8
+- =changer les tates : RAPPEL NEXT TODO WAIT | DONE CANCELLED=
+- TODO les liens pour les truc
+- state new note : en TODo
+
+
+***** Look and feel
+- coché
+- black
+- default
+- non
+- oui
+- non 
+- oui
+- non
+***** =Notifications=
+sync failure
+***** =Reminders=
+
+Cocher les scheduled, mais décoché les deadlines
+Cocher les events, metre 9h
+***** Widget
+- display checkmarks on
+- update toutes les 5mins
+- display notebook name : off
+*** Syncro calendrier
+
+
+file///:storage/emulated/0/sharedDirectoryPrivate/agendapourgoogle.ics
+
+
+
+
+
+*** Les applications cools à ajouter 
+**** Fdroid (non mis)
+
+**** Youtube premium gratuit
+
+https://vancedapp.com/
+
+** Les applications cools non ajouter :
+*** Spotify gratuit
+https://techbigs.com/fr/spotify-premium-5.html

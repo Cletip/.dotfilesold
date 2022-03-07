@@ -1,0 +1,20 @@
+* Titre
+=Pas besoin de classer, c'est juste une liste + faire consult-line pour retrouver les choses=. Je peux aussi mettre des id
+
+** Org protocol
+:PROPERTIES:
+:ID:       43a1bf70-0d08-4c4a-accb-04c54460a542
+:END:
+Mettre dans :
+~/.local/share/applications/org-protocol.desktop
+ceci :
+
+#+begin_example
+[Desktop Entry]
+Name=org-protocol
+Exec=emacsclient -n %u
+Type=Application
+Terminal=false
+Categories=System;
+MimeType=x-scheme-handler/org-protocol;
+#+end_example

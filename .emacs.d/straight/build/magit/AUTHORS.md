@@ -1,0 +1,1 @@
+/home/msi/.emacs.d/straight/repos/magit/docs/AUTHORS.md

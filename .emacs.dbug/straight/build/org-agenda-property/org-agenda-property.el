@@ -1,0 +1,1 @@
+/home/msi/.emacs.d/straight/repos/org-agenda-property/org-agenda-property.el

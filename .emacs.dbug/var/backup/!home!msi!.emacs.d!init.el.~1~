@@ -1,0 +1,55 @@
+;;; .emacs --- My emacs config -*- lexical-binding: t; -*-
+;;; Commentary:
+;;; Code:
+
+
+
+ 
+(setq shell-file-name "/bin/bash") ;; utilise le Bourne Again Shell
+
+;; configuration of straight
+;; Bootstrap `straight.el'
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
+
+;; installation of use-package
+(straight-use-package 'use-package)
+(require 'package)
+;; always download package automatically (without :ensure t)
+;;(setq use-package-always-ensure t)
+;; Use straight.el for use-package expressions with the first line
+(setq straight-use-package-by-default t)
+;; Load the helper package for commands like `straight-x-clean-unused-repos'
+(require 'straight-x)
+
+
+;; Install org-mode
+;; (straight-use-package 'org) ;; old version, org 9.4
+;;but update new version 9.5 with this :
+
+(straight-override-recipe
+   '(org :type git :host github :repo "emacsmirror/org" :no-build t))
+(use-package org)
+
+;; frame fullsize
+(toggle-frame-maximized)
+
+;; load les variables customiser (chemin définit par no-littering)
+(org-babel-load-file (expand-file-name "~/.emacs.d/var/custom.el"))
+
+;;load the config.org
+(org-babel-load-file (expand-file-name "~/.emacs.d/config.org"))
+
+;; the rest (like custom variable) is in custom.el
+
+

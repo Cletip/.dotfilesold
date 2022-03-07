@@ -1,0 +1,14 @@
+package src;
+import src.animal;
+
+public class current {
+	public static void main(String[] args) {
+		System.out.println("salut");
+		dog medor = new dog("medor");
+		System.out.println(medor);
+
+		cat felix = new cat("felix");
+felix.meow();
+
+	}
+}

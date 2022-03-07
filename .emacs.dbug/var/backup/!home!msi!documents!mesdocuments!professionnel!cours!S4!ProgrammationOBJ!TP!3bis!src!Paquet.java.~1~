@@ -1,0 +1,8 @@
+public class  Paquet() {
+
+    @Override
+    public String toString() {
+    return "Paquet []";
+}
+
+}

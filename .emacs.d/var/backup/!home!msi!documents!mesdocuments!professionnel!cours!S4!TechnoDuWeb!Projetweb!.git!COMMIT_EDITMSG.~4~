@@ -1,0 +1,24 @@
+
+# Veuillez saisir le message de validation pour vos modifications. Les lignes
+# commençant par '#' seront ignorées, et un message vide abandonne la validation.
+#
+# Sur la branche main
+# Votre branche est à jour avec 'origin/main'.
+#
+# Modifications qui seront validées :
+#	supprimé :        Org.org
+#	nouveau fichier : Readme.org
+#	modifié :         Test.html
+#	modifié :         Test.org
+#	modifié :         Unepageweb.html
+#	modifié :         Unepageweb.org
+#	nouveau fichier : emacs.org
+#	modifié :         images/Org-mode.png
+#	modifié :         index.html
+#	modifié :         index.org
+#	supprimé :        ltximg/org-ltximg_4890c1cbb4eec338068601cce2affc29c18b832a.png
+#	supprimé :        ltximg/org-ltximg_89965e151ba2354b877dbb506309bb4258e71c82.png
+#	supprimé :        ltximg/org-ltximg_ca9f62888497ff85dbd2a241d5547932d58ef242.png
+#	renommé :         Org.html -> orgmode.html
+#	nouveau fichier : orgmode.org
+#

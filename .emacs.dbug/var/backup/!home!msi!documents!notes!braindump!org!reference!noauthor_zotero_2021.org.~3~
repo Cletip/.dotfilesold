@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ROAM_REFS: [cite:@noauthor_zotero_2021]
+:ID:       b2051558-4769-4600-bff1-290dfe3c27d2
+:END:
+#+title:  Zotero
+#+filetags: :draft:
+- source ::[cite:@noauthor_zotero_2021]
+#+print_bibliography:
+

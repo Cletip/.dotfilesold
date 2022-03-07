@@ -1,0 +1,76 @@
+* 2
+** 1
+
+#+begin_src sql
+  Select employe_name, city
+	 from employee natural join works
+	 where company_name = "First Bank Corporation";
+#+end_src
+
+** 2
+
+#+begin_src sql
+  Select employe_name, city
+       from employee natural join works
+       where company_name = "First Bank Corporation"	and Solary>10000;	  
+#+end_src
+
+** 3
+
+#+begin_src sql
+
+#+end_src
+
+** 4
+
+#+begin_src sql
+
+#+end_src
+
+** 5
+
+#+begin_src sql
+
+#+end_src
+
+** 6
+
+#+begin_src sql
+
+#+end_src
+
+** 7
+
+#+begin_src sql
+
+#+end_src
+
+** 8
+
+#+begin_src sql
+
+#+end_src
+
+** 9
+
+#+begin_src sql
+
+#+end_src
+
+** 10
+
+#+begin_src sql
+
+#+end_src
+
+** 11
+
+#+begin_src sql
+
+#+end_src
+
+
+
+* 3
+
+

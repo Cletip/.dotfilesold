@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID:       186ea9f5-03de-43c6-91f2-e3cee7f5a6a9
+:END:
+#+title: Testderéférences
+#+filetags: :draft:
+
+[[id:751f32bb-0e4d-4711-a60a-210e0bb69040][Eliott Meunier :: Comment ne plus RIEN OUBLIER grâce à un SECOND CERVEAU ?]]
+
+* Titre 1
+
+c'est un text
+[cite:@eliott_meunier_comment_2020]
+* Titre 2
+Mais aussi un autre
+
+[cite:@noauthor_zotero_2021]
+Parceque j'en ai envie
+
+
+
+Une citation org-ref : 
+# [[cite:&eliott_meunier_comment_2020]]
+
+
+
+
+# #+BIBLIOGRAPHY: ../bibliobis.bib plain limit:t option:-nobibsource
+
+* Bibliographie
+
+#+bibliography: ../bibliobis.bib
+
+# #+cite_export: basic note numeric
+# #+cite_export: basic author author-year
+# #+cite_export: basic
+#+cite_export: csl
+#+print_bibliography:
+
+
+# #+print_bibliography: :section 2 :heading subbibliography
+
+
+
+# [[cite:&noauthor_zotero_2021]]
+
+* Avec org ref
+
+Below, the "Bibliography" heading will be auto-inserted.
+
+# [[bibliography:../bibliobis.bib]]
+
+
+
+

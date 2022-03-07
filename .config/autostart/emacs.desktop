@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=emacs
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[fr_FR]=emacs
+Name=emacs
+Comment[fr_FR]=
+Comment=

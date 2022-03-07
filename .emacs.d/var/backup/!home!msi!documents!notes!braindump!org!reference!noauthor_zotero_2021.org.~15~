@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ROAM_REFS: [cite:@noauthor_zotero_2021]
+:ID:       dac545e4-d806-4277-aa10-1fefac9be44b
+:END:
+#+title:  Zotero
+#+filetags: :draft:
+
+
+- source :: . 2021. "Zotero" https://fr.wikipedia.org/w/index.php?title=Zotero&oldid=187235612
+
+* Test
+Tsest de texte
+[cite:@noauthor_zotero_2021]
+* nautie
+Mais ça c'est génial aussi !
+[cite:@eliott_meunier_comment_2020]
+
+
+# #+print_bibliography: :section 2 :heading subbibliography
+# #+print_bibliography: :keyword abc,xyz :title "Primary Sources"
+#+print_bibliography:

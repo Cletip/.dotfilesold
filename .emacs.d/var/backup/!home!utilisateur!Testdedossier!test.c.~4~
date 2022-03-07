@@ -1,0 +1,14 @@
+int main(int argc, char *argv[])
+{
+  printf("format string" ,a0,a1);
+
+  
+  
+
+  
+
+  
+
+  
+  return 0;
+}

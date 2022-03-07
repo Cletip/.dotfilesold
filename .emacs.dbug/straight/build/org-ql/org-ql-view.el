@@ -1,0 +1,1 @@
+/home/utilisateur/.emacs.d/straight/repos/org-ql/org-ql-view.el

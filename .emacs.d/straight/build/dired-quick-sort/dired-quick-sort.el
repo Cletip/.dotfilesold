@@ -1,0 +1,1 @@
+/home/utilisateur/.emacs.d/straight/repos/dired-quick-sort/dired-quick-sort.el

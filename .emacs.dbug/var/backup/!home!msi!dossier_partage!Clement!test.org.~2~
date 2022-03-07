@@ -1,0 +1,18 @@
+* Projet :@home:
+** DONE Une tâche, next
+CLOSED: [2022-02-11 Fri 19:57]
+** TODO une deuxième mais pas next                                   
+*** TODO première tâche, next
+*** test
+*** TODO deuxième
+** TODO Une tâche, next et tag :@work:
+** TODO une deuxième mais pas next                                   
+*** TODO première tâche, next
+*** TODO deuxième
+
+
+(and
+
+(todo)
+)
+

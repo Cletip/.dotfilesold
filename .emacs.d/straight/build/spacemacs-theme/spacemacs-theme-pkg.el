@@ -1,0 +1,1 @@
+/home/utilisateur/.emacs.d/straight/repos/spacemacs-theme/spacemacs-theme-pkg.el

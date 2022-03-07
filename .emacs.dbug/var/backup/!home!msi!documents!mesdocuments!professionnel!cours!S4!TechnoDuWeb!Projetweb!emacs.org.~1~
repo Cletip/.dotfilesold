@@ -1,0 +1,39 @@
+#+options: html-postamble:nil 
+#+html_doctype: html5
+#+description: c'estunedescription
+#+keywords: ?
+#+html_equation_reference_format: \eqref{%s}
+#+html_head: danslehead
+#+html_head_extra: ?
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+
+#+OPTIONS: toc:nil
+#+OPTIONS: 
+
+* Les options à mettre possible
+:PROPERTIES:
+:CUSTOM_ID: monid
+:END:
+
+#+begin_export html
+<strong>Du texte</strong>
+#+end_export
+
+$x = 3$
+
+#+BEGIN_nav
+See *the variable org-html-doctype-alist for details. The default is "xhtml-strict".
+Org’s HTML exporter does not by default enable new block elements introduced with the HTML5 standard. To enable them, set org-html-html5-fancy to non-nil. Or* 
+#+END_nav
+
+#+ATTR_HTML: :id salut 
+#+BEGIN_aside
+See the variable org-html-doctype-alist for details. The default is "xhtml-strict".
+Org’s HTML exporter does not by default enable new block elements introduced with the HTML5 standard. To enable them, set org-html-html5-fancy to non-nil. Or 
+#+END_aside
+
+Test de lien : 
+[[#monid][test]]
+
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=sh -c "sleep 10 && dpkg --get-selections > ~/mesdocuments/personnel/informatique/sauvegardePcEtTel/liste-des-paquets"
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=false
+Name[fr_FR]=liste de tous les paquets
+Name=liste de tous les paquets
+Comment[fr_FR]=
+Comment=

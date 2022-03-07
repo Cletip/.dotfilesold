@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=sh -c "sleep 10 && setxkbmap -option caps:none"
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=false
+Name[fr_FR]=désactiver capslock
+Name=désactiver capslock
+Comment[fr_FR]=
+Comment=

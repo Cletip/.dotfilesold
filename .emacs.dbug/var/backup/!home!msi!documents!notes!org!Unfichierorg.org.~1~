@@ -1,0 +1,19 @@
+* Tset de notes
+
+ln ~/Dossier_partage_nous_deux/Clement/orgzlytest/ /home/msi/notes/org/orgzly/Contacts.org
+
+ln ~/Dossier_partage_nous_deux/Clement/orgzlytest/ /home/msi/notes/org/orgzly/
+
+
+(defun install-monitor (file secs)
+  (run-with-timer
+   0 secs
+   (lambda (f p)
+     (unless (< p (time-since (elt (file-attributes f) 5)))
+       (message "File %s changed!" f)))
+   file secs))
+
+(defvar monitor-timer (install-monitor "/home/msi/notes/org/orgzlybis" 5)
+  "Check if /tmp is changed every 5s.")
+* tnateisnt
+

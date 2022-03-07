@@ -1,0 +1,1 @@
+/home/utilisateur/.emacs.d/straight/repos/org-roam-ui/out/_next/static/w0iKf--KXXPHhGaa_j9Pz/_buildManifest.js

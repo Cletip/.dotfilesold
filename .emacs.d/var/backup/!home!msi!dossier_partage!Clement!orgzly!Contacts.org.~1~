@@ -1,0 +1,816 @@
+
+
+* Comment ça marche ?
+
+Se forcer à faire nom + prénom dans les contacts. Sinon
+
+cell = mobile 
+home = domicile
+quand ya pas de "work", alors c'est "perso"
+Possibilité de faire des champs personnalisés, mais =ils ne seront pas exporté=. Privilégié dans "notes"
+
+=ne pas mettre de date d'anniversaire vide=
+Si je veux un anniv : y mettre après
+:BIRTHDAY:
+
+après ADR et avant NOTE
+
+* TODO À faire
+** DONE Avoir les anniversaires dans google contact directement : cocher le calendrier "anniversaire" dans google calendar
+CLOSED: [2022-01-29 Sat 11:20]
+** Pour mu4e complétion avec tab yeah
+  (setq mu4e-org-contacts-file  "/home/msi/Notes/Roam/GTD/7Contact.org")
+  (add-to-list 'mu4e-headers-actions
+    '("org-contact-add" . mu4e-action-add-org-contact) t)
+  (add-to-list 'mu4e-view-actions
+    '("org-contact-add" . mu4e-action-add-org-contact) t)
+
+
+    org = Entreprise
+    Title = fonction
+* Exemple parfait
+** DONE Ce qu'il faut mettre de base
+CLOSED: [2022-01-23 Sun 22:36]
+Pour rajouter un "labbel" à un champ (genre tel pro) : voir souvent /home/msi/Notes/TemplatesOrgCapture/contactexemple.vcf + mettre PHONE_WORK, par exemple
+enfait, traduit work par pro, et home par domicile
+
+- nom prénom
+- téléphone : normal, professionnel et mobile
+- e-mail
+- Entreprise + fonction dans laquelle il elle bosse
+- notes
+- adresse postale (pas à mettre)
+- anniversaire (pas à mettre)
+- site web (pas à mettre dans org capture)
+
+** Exemple :
+*** Prénom deuxièmeprénom deuxièmeprénom... NOM
+:PROPERTIES:
+:VERSION: 3.0
+:CELL: +33642620958
+:PHONE_WORK: 548w
+:PHONE_HOME: 548
+:EMAIL: clement020302@gmail.com
+:ORG: Work
+:TITLE: Testdetitre
+:EMAIL_WORK: mon@work.com
+:ADR: 3 rue malville
+:BIRTHDAY: 2002-01-24
+:NOTE: il est sympas
+:END:
+
+Choses possible mais pas mise de bases :
+
+:PHONE: +33642620930
+
+* 1Inbox
+* Famille
+** Nicolas Royet
+:PROPERTIES:
+:VERSION: 3.0
+:CELL: +33634074010
+:PHONE_WORK: 
+:PHONE_HOME:
+:EMAIL: 
+:EMAIL_WORK:
+:EMAIL_HOME:
+:TITLE: Cadre
+:ORG: Dansunemairie?
+:ADR: 
+:NOTE: Super bricoleur lul
+:DATE_AJOUT: [2022-01-29 Sat]
+:END:
+* Amis
+* Professionnel
+** François Arnaud
+:PROPERTIES:
+:VERSION: 3.0
+:CELL: +33674780064
+:PHONE_WORK: 
+:PHONE_HOME:
+:EMAIL: 
+:EMAIL_WORK:
+:EMAIL_HOME:
+:TITLE: Retraité du ministère des finances
+:ORG: 
+:ADR: 
+:NOTE: Petite formation sql
+:END:
+** Armand Violle
+:PROPERTIES:
+:VERSION: 3.0
+:CELL: 
+:PHONE_WORK: 
+:PHONE_HOME:
+:EMAIL: 
+:EMAIL_WORK:
+:EMAIL_HOME:
+:TITLE: TODO
+:ORG: TODO
+:ADR: 
+:NOTE: Il est sur Paris + le contacter sur discord
+:DATE_AJOUT: [2022-01-29 Sat]
+:END:
+** Fils CovoitWebMaster
+:PROPERTIES:
+:VERSION: 3.0
+:CELL: +33631350770
+:PHONE_WORK: 
+:PHONE_HOME: 
+:EMAIL: 
+:EMAIL_WORK: 
+:EMAIL_HOME: 
+:TITLE: Chef de projet
+:ORG: The Coding Machine https://thecodingmachine.com/
+:ADR: 
+:NOTE: Il est sur Paris
+:END:
+** Mathilde Royet
+:PROPERTIES:
+:VERSION: 3.0
+:CELL: 
+:PHONE_WORK: 
+:PHONE_HOME:
+:EMAIL: 
+:EMAIL_WORK:
+:EMAIL_HOME:
+:TITLE: jsp
+:ORG: ESN 
+:ADR: 
+:NOTE: C'est la fille de Nicolas, voir son discord 
+:DATE_AJOUT: [2022-01-29 Sat]
+:END:
+* ZZLocalvariable                                                  :noexport:
+
+Mettre ses locales variables à la fin, sinon le refile ne marche pas
+
+# Local Variables:
+# org-refile-targets: ((nil :maxlevel . 1))
+# end:
+
+
+(let* ((style "flat")
+       (language "en")
+       (version "3.0")
+       (org-vcard-default-export-file "Clement/contactgoogle.vcf")
+       (org-vcard-default-vcard-21-character-set 'utf-8)
+       (org-vcard-styles-languages-mappings '(("flat"
+  (("en"
+    (("4.0"
+      (("ADDRESS" . "ADR")
+       ("ADDRESS_HOME" . "ADR;TYPE=\"home\"")
+       ("ADDRESS_WORK" . "ADR;TYPE=\"work\"")
+       ("ALIAS" . "NICKNAME")
+       ("ANNIVERSARY" . "ANNIVERSARY")
+       ("BIRTHDAY" . "BDAY")
+       ("CATEGORIES" . "CATEGORIES")
+       ("CELL" . "TEL;TYPE=\"cell\"")
+       ("CELL_HOME" . "TEL;TYPE=\"cell,home\"")
+       ("CELL_WORK" . "TEL;TYPE=\"cell,work\"")
+       ("EMAIL" . "EMAIL")
+       ("EMAIL_HOME" . "EMAIL;TYPE=\"home\"")
+       ("EMAIL_WORK" . "EMAIL;TYPE=\"work\"")
+       ("FAX" . "TEL;TYPE=\"fax\"")
+       ("FAX_HOME" . "TEL;TYPE=\"fax,home\"")
+       ("FAX_WORK" . "TEL;TYPE=\"fax,work\"")
+       ("GENDER" . "GENDER")
+       ("ICON" . "PHOTO")
+       ("IMPP" . "IMPP")
+       ("IMPP_HOME" . "IMPP;TYPE=\"home\"")
+       ("IMPP_WORK" . "IMPP;TYPE=\"work\"")
+       ("LANDLINE" . "TEL;TYPE=\"voice\"")
+       ("LANDLINE_HOME" . "TEL;TYPE=\"voice,home\"")
+       ("LANDLINE_WORK" . "TEL;TYPE=\"voice,work\"")
+       ("MOBILE" . "TEL;TYPE=\"cell\"")
+       ("MOBILE_HOME" . "TEL;TYPE=\"cell,home\"")
+       ("MOBILE_WORK" . "TEL;TYPE=\"cell,work\"")
+       ("N" . "N")
+       ("NICKNAME" . "NICKNAME")
+       ("NOTE" . "NOTE")
+       ("ORG" . "ORG")
+       ("PHONE" . "TEL")
+       ("PHONE" . "TEL;TYPE=\"voice\"")
+       ("PHONE_HOME" . "TEL;TYPE=\"voice,home\"")
+       ("PHONE_WORK" . "TEL;TYPE=\"voice,work\"")
+       ("PHOTO" . "PHOTO")
+       ("ROLE" . "ROLE")
+       ("TITLE" . "TITLE")
+       ("URL" . "URL")
+       ("VERSION" . "VERSION")))
+     ("3.0"
+      (("ADDRESS" . "ADR")
+       ("ADDRESS_HOME" . "ADR;TYPE=home")
+       ("ADDRESS_WORK" . "ADR;TYPE=work")
+       ("ALIAS" . "NICKNAME")
+       ("BIRTHDAY" . "BDAY")
+       ("CATEGORIES" . "CATEGORIES")
+       ("CELL" . "TEL;TYPE=cell")
+       ("CELL_HOME" . "TEL;TYPE=cell,home")
+       ("CELL_WORK" . "TEL;TYPE=cell,work")
+       ("EMAIL" . "EMAIL")
+       ("EMAIL_HOME" . "EMAIL;TYPE=home")
+       ("EMAIL_WORK" . "EMAIL;TYPE=work")
+       ("FAX" . "TEL;TYPE=fax")
+       ("FAX_HOME" . "TEL;TYPE=fax,home")
+       ("FAX_WORK" . "TEL;TYPE=fax,work")
+       ("ICON" . "PHOTO")
+       ("IMPP" . "IMPP")
+       ("IMPP_HOME" . "IMPP;TYPE=home")
+       ("IMPP_WORK" . "IMPP;TYPE=work")
+       ("LANDLINE" . "TEL;TYPE=voice")
+       ("LANDLINE_HOME" . "TEL;TYPE=voice,home")
+       ("LANDLINE_WORK" . "TEL;TYPE=voice,work")
+       ("MOBILE" . "TEL;TYPE=cell")
+       ("MOBILE_HOME" . "TEL;TYPE=cell,home")
+       ("MOBILE_WORK" . "TEL;TYPE=cell,work")
+       ("N" . "N")
+       ("NICKNAME" . "NICKNAME")
+       ("NOTE" . "NOTE")
+       ("ORG" . "ORG")
+       ("PHONE" . "TEL")
+       ("PHONE" . "TEL;TYPE=voice")
+       ("PHONE_HOME" . "TEL;TYPE=voice,home")
+       ("PHONE_WORK" . "TEL;TYPE=voice,work")
+       ("PHOTO" . "PHOTO")
+       ("ROLE" . "ROLE")
+       ("TITLE" . "TITLE")
+       ("URL" . "URL")
+       ("VERSION" . "VERSION")))
+     ("2.1"
+      (("ADDRESS" . "ADR")
+       ("ADDRESS_HOME" . "ADR;HOME")
+       ("ADDRESS_WORK" . "ADR;WORK")
+       ("BIRTHDAY" . "BDAY")
+       ("CATEGORIES" . "CATEGORIES")
+       ("CELL" . "TEL;CELL")
+       ("CELL_HOME" . "TEL;CELL;HOME")
+       ("CELL_WORK" . "TEL;CELL;WORK")
+       ("EMAIL" . "EMAIL")
+       ("EMAIL_HOME" . "EMAIL;HOME")
+       ("EMAIL_WORK" . "EMAIL;WORK")
+       ("FAX" . "TEL;FAX")
+       ("FAX_HOME" . "TEL;FAX;HOME")
+       ("FAX_WORK" . "TEL;FAX;WORK")
+       ("LANDLINE" . "TEL;VOICE")
+       ("LANDLINE_HOME" . "TEL;VOICE;HOME")
+       ("LANDLINE_WORK" . "TEL;VOICE;WORK")
+       ("MOBILE" . "TEL;CELL")
+       ("MOBILE_HOME" . "TEL;CELL;HOME")
+       ("MOBILE_WORK" . "TEL;CELL;WORK")
+       ("N" . "N")
+       ("NAME" . "NAME")
+       ("NOTE" . "NOTE")
+       ("ORG" . "ORG")
+       ("PHONE" . "TEL")
+       ("PHONE" . "TEL;VOICE")
+       ("PHONE_HOME" . "TEL;VOICE;HOME")
+       ("PHONE_WORK" . "TEL;VOICE;WORK")
+       ("PHOTO" . "PHOTO")
+       ("ROLE" . "ROLE")
+       ("TITLE" . "TITLE")
+       ("URL" . "URL")
+       ("VERSION" . "VERSION")))))
+   ("en_AU"
+    (("4.0"
+      (("ADDRESS" . "ADR")
+       ("ADDRESS_HOME" . "ADR;TYPE=\"home\"")
+       ("ADDRESS_WORK" . "ADR;TYPE=\"work\"")
+       ("ALIAS" . "NICKNAME")
+       ("ANNIVERSARY" . "ANNIVERSARY")
+       ("BIRTHDAY" . "BDAY")
+       ("CATEGORIES" . "CATEGORIES")
+       ("EMAIL" . "EMAIL")
+       ("EMAIL_HOME" . "EMAIL;TYPE=\"home\"")
+       ("EMAIL_WORK" . "EMAIL;TYPE=\"work\"")
+       ("FAX" . "TEL;TYPE=\"fax\"")
+       ("FAX_HOME" . "TEL;TYPE=\"fax,home\"")
+       ("FAX_WORK" . "TEL;TYPE=\"fax,work\"")
+       ("GENDER" . "GENDER")
+       ("ICON" . "PHOTO")
+       ("IMPP" . "IMPP")
+       ("IMPP_HOME" . "IMPP;TYPE=\"home\"")
+       ("IMPP_WORK" . "IMPP;TYPE=\"work\"")
+       ("LANDLINE" . "TEL;TYPE=\"voice\"")
+       ("LANDLINE_HOME" . "TEL;TYPE=\"voice,home\"")
+       ("LANDLINE_WORK" . "TEL;TYPE=\"voice,work\"")
+       ("MOBILE" . "TEL;TYPE=\"cell\"")
+       ("MOBILE_HOME" . "TEL;TYPE=\"cell,home\"")
+       ("MOBILE_WORK" . "TEL;TYPE=\"cell,work\"")
+       ("N" . "N")
+       ("NICKNAME" . "NICKNAME")
+       ("NOTE" . "NOTE")
+       ("ORG" . "ORG")
+       ("PHONE" . "TEL")
+       ("PHONE" . "TEL;TYPE=\"voice\"")
+       ("PHONE_HOME" . "TEL;TYPE=\"voice,home\"")
+       ("PHONE_WORK" . "TEL;TYPE=\"voice,work\"")
+       ("PHOTO" . "PHOTO")
+       ("ROLE" . "ROLE")
+       ("TITLE" . "TITLE")
+       ("URL" . "URL")
+       ("VERSION" . "VERSION")))
+     ("3.0"
+      (("ADDRESS" . "ADR")
+       ("ADDRESS_HOME" . "ADR;TYPE=home")
+       ("ADDRESS_WORK" . "ADR;TYPE=work")
+       ("ALIAS" . "NICKNAME")
+       ("BIRTHDAY" . "BDAY")
+       ("CATEGORIES" . "CATEGORIES")
+       ("EMAIL" . "EMAIL")
+       ("EMAIL_HOME" . "EMAIL;TYPE=home")
+       ("EMAIL_WORK" . "EMAIL;TYPE=work")
+       ("FAX" . "TEL;TYPE=fax")
+       ("FAX_HOME" . "TEL;TYPE=fax,home")
+       ("FAX_WORK" . "TEL;TYPE=fax,work")
+       ("ICON" . "PHOTO")
+       ("IMPP" . "IMPP")
+       ("IMPP_HOME" . "IMPP;TYPE=home")
+       ("IMPP_WORK" . "IMPP;TYPE=work")
+       ("LANDLINE" . "TEL;TYPE=voice")
+       ("LANDLINE_HOME" . "TEL;TYPE=voice,home")
+       ("LANDLINE_WORK" . "TEL;TYPE=voice,work")
+       ("MOBILE" . "TEL;TYPE=cell")
+       ("MOBILE_HOME" . "TEL;TYPE=cell,home")
+       ("MOBILE_WORK" . "TEL;TYPE=cell,work")
+       ("N" . "N")
+       ("NICKNAME" . "NICKNAME")
+       ("NOTE" . "NOTE")
+       ("ORG" . "ORG")
+       ("PHONE" . "TEL")
+       ("PHONE" . "TEL;TYPE=voice")
+       ("PHONE_HOME" . "TEL;TYPE=voice,home")
+       ("PHONE_WORK" . "TEL;TYPE=voice,work")
+       ("PHOTO" . "PHOTO")
+       ("ROLE" . "ROLE")
+       ("TITLE" . "TITLE")
+       ("URL" . "URL")
+       ("VERSION" . "VERSION")))
+     ("2.1"
+      (("ADDRESS" . "ADR")
+       ("ADDRESS_HOME" . "ADR;HOME")
+       ("ADDRESS_WORK" . "ADR;WORK")
+       ("BIRTHDAY" . "BDAY")
+       ("CATEGORIES" . "CATEGORIES")
+       ("EMAIL" . "EMAIL")
+       ("EMAIL_HOME" . "EMAIL;HOME")
+       ("EMAIL_WORK" . "EMAIL;WORK")
+       ("FAX" . "TEL;FAX")
+       ("FAX_HOME" . "TEL;FAX;HOME")
+       ("FAX_WORK" . "TEL;FAX;WORK")
+       ("LANDLINE" . "TEL;VOICE")
+       ("LANDLINE_HOME" . "TEL;VOICE;HOME")
+       ("LANDLINE_WORK" . "TEL;VOICE;WORK")
+       ("MOBILE" . "TEL;CELL")
+       ("MOBILE_HOME" . "TEL;CELL;HOME")
+       ("MOBILE_WORK" . "TEL;CELL;WORK")
+       ("N" . "N")
+       ("NAME" . "NAME")
+       ("NOTE" . "NOTE")
+       ("ORG" . "ORG")
+       ("PHONE" . "TEL")
+       ("PHONE" . "TEL;VOICE")
+       ("PHONE_HOME" . "TEL;VOICE;HOME")
+       ("PHONE_WORK" . "TEL;VOICE;WORK")
+       ("PHOTO" . "PHOTO")
+       ("ROLE" . "ROLE")
+       ("TITLE" . "TITLE")
+       ("URL" . "URL")
+       ("VERSION" . "VERSION")))))
+   ("en_US"
+    (("4.0"
+      (("ADDRESS" . "ADR")
+       ("ADDRESS_HOME" . "ADR;TYPE=\"home\"")
+       ("ADDRESS_WORK" . "ADR;TYPE=\"work\"")
+       ("ALIAS" . "NICKNAME")
+       ("ANNIVERSARY" . "ANNIVERSARY")
+       ("BIRTHDAY" . "BDAY")
+       ("CATEGORIES" . "CATEGORIES")
+       ("CELL" . "TEL;TYPE=\"cell\"")
+       ("CELL_HOME" . "TEL;TYPE=\"cell,home\"")
+       ("CELL_WORK" . "TEL;TYPE=\"cell,work\"")
+       ("EMAIL" . "EMAIL")
+       ("EMAIL_HOME" . "EMAIL;TYPE=\"home\"")
+       ("EMAIL_WORK" . "EMAIL;TYPE=\"work\"")
+       ("FAX" . "TEL;TYPE=\"fax\"")
+       ("FAX_HOME" . "TEL;TYPE=\"fax,home\"")
+       ("FAX_WORK" . "TEL;TYPE=\"fax,work\"")
+       ("GENDER" . "GENDER")
+       ("ICON" . "PHOTO")
+       ("IMPP" . "IMPP")
+       ("IMPP_HOME" . "IMPP;TYPE=\"home\"")
+       ("IMPP_WORK" . "IMPP;TYPE=\"work\"")
+       ("LANDLINE" . "TEL;TYPE=\"voice\"")
+       ("LANDLINE_HOME" . "TEL;TYPE=\"voice,home\"")
+       ("LANDLINE_WORK" . "TEL;TYPE=\"voice,work\"")
+       ("N" . "N")
+       ("NICKNAME" . "NICKNAME")
+       ("NOTE" . "NOTE")
+       ("ORG" . "ORG")
+       ("PHONE" . "TEL")
+       ("PHONE" . "TEL;TYPE=\"voice\"")
+       ("PHONE_HOME" . "TEL;TYPE=\"voice,home\"")
+       ("PHONE_WORK" . "TEL;TYPE=\"voice,work\"")
+       ("PHOTO" . "PHOTO")
+       ("ROLE" . "ROLE")
+       ("TITLE" . "TITLE")
+       ("URL" . "URL")
+       ("VERSION" . "VERSION")))
+     ("3.0"
+      (("ADDRESS" . "ADR")
+       ("ADDRESS_HOME" . "ADR;TYPE=home")
+       ("ADDRESS_WORK" . "ADR;TYPE=work")
+       ("ALIAS" . "NICKNAME")
+       ("BIRTHDAY" . "BDAY")
+       ("CATEGORIES" . "CATEGORIES")
+       ("CELL" . "TEL;TYPE=cell")
+       ("CELL_HOME" . "TEL;TYPE=cell,home")
+       ("CELL_WORK" . "TEL;TYPE=cell,work")
+       ("EMAIL" . "EMAIL")
+       ("EMAIL_HOME" . "EMAIL;TYPE=home")
+       ("EMAIL_WORK" . "EMAIL;TYPE=work")
+       ("FAX" . "TEL;TYPE=fax")
+       ("FAX_HOME" . "TEL;TYPE=fax,home")
+       ("FAX_WORK" . "TEL;TYPE=fax,work")
+       ("ICON" . "PHOTO")
+       ("IMPP" . "IMPP")
+       ("IMPP_HOME" . "IMPP;TYPE=home")
+       ("IMPP_WORK" . "IMPP;TYPE=work")
+       ("LANDLINE" . "TEL;TYPE=voice")
+       ("LANDLINE_HOME" . "TEL;TYPE=voice,home")
+       ("LANDLINE_WORK" . "TEL;TYPE=voice,work")
+       ("N" . "N")
+       ("NICKNAME" . "NICKNAME")
+       ("NOTE" . "NOTE")
+       ("ORG" . "ORG")
+       ("PHONE" . "TEL")
+       ("PHONE" . "TEL;TYPE=voice")
+       ("PHONE_HOME" . "TEL;TYPE=voice,home")
+       ("PHONE_WORK" . "TEL;TYPE=voice,work")
+       ("PHOTO" . "PHOTO")
+       ("ROLE" . "ROLE")
+       ("TITLE" . "TITLE")
+       ("URL" . "URL")
+       ("VERSION" . "VERSION")))
+     ("2.1"
+      (("ADDRESS" . "ADR")
+       ("ADDRESS_HOME" . "ADR;HOME")
+       ("ADDRESS_WORK" . "ADR;WORK")
+       ("BIRTHDAY" . "BDAY")
+       ("CATEGORIES" . "CATEGORIES")
+       ("CELL" . "TEL;CELL")
+       ("CELL_HOME" . "TEL;CELL;HOME")
+       ("CELL_WORK" . "TEL;CELL;WORK")
+       ("EMAIL" . "EMAIL")
+       ("EMAIL_HOME" . "EMAIL;HOME")
+       ("EMAIL_WORK" . "EMAIL;WORK")
+       ("FAX" . "TEL;FAX")
+       ("FAX_HOME" . "TEL;FAX;HOME")
+       ("FAX_WORK" . "TEL;FAX;WORK")
+       ("LANDLINE" . "TEL;VOICE")
+       ("LANDLINE_HOME" . "TEL;VOICE;HOME")
+       ("LANDLINE_WORK" . "TEL;VOICE;WORK")
+       ("N" . "N")
+       ("NAME" . "NAME")
+       ("NOTE" . "NOTE")
+       ("ORG" . "ORG")
+       ("PHONE" . "TEL")
+       ("PHONE" . "TEL;VOICE")
+       ("PHONE_HOME" . "TEL;VOICE;HOME")
+       ("PHONE_WORK" . "TEL;VOICE;WORK")
+       ("PHOTO" . "PHOTO")
+       ("ROLE" . "ROLE")
+       ("TITLE" . "TITLE")
+       ("URL" . "URL")
+       ("VERSION" . "VERSION")))))))
+ ("tree"
+  (("en"
+    (("4.0"
+      (("address" . "ADR")
+       ("address-home" . "ADR;TYPE=\"home\"")
+       ("address-work" . "ADR;TYPE=\"work\"")
+       ("alias" . "NICKNAME")
+       ("anniversary" . "ANNIVERSARY")
+       ("birthday" . "BDAY")
+       ("categories" . "CATEGORIES")
+       ("cell" . "TEL;TYPE=\"cell\"")
+       ("cell-home" . "TEL;TYPE=\"cell,home\"")
+       ("cell-work" . "TEL;TYPE=\"cell,work\"")
+       ("email" . "EMAIL")
+       ("email-home" . "EMAIL;TYPE=\"home\"")
+       ("email-work" . "EMAIL;TYPE=\"work\"")
+       ("fax" . "TEL;TYPE=\"fax\"")
+       ("fax-home" . "TEL;TYPE=\"fax,home\"")
+       ("fax-work" . "TEL;TYPE=\"fax,work\"")
+       ("gender" . "GENDER")
+       ("icon" . "PHOTO")
+       ("impp" . "IMPP")
+       ("impp-home" . "IMPP;TYPE=\"home\"")
+       ("impp-work" . "IMPP:TYPE=\"work\"")
+       ("landline" . "TEL;TYPE=\"voice\"")
+       ("landline-home" . "TEL;TYPE=\"voice,home\"")
+       ("landline-work" . "TEL;TYPE=\"voice,home\"")
+       ("mobile" . "TEL;TYPE=\"cell\"")
+       ("mobile-home" . "TEL;TYPE=\"cell,home\"")
+       ("mobile-work" . "TEL;TYPE=\"cell,home\"")
+       ("n" . "N")
+       ("name" . "FN")
+       ("nickname" . "NICKNAME")
+       ("note" . "NOTE")
+       ("org" . "ORG")
+       ("phone" . "TEL")
+       ("phone" . "TEL;TYPE=\"voice\"")
+       ("phone-home" . "TEL;TYPE=\"voice,home\"")
+       ("phone-work" . "TEL;TYPE=\"voice,work\"")
+       ("photo" . "PHOTO")
+       ("role" . "ROLE")
+       ("title" . "TITLE")
+       ("url" . "URL")
+       ("version" . "VERSION")))
+     ("3.0"
+      (("address" . "ADR")
+       ("address-home" . "ADR;TYPE=home")
+       ("address-work" . "ADR;TYPE=work")
+       ("alias" . "NICKNAME")
+       ("birthday" . "BDAY")
+       ("categories" . "CATEGORIES")
+       ("cell" . "TEL;TYPE=cell")
+       ("cell-home" . "TEL;TYPE=cell,home")
+       ("cell-work" . "TEL;TYPE=cell,work")
+       ("email" . "EMAIL")
+       ("email-home" . "EMAIL;TYPE=home")
+       ("email-work" . "EMAIL;TYPE=work")
+       ("fax" . "TEL;TYPE=fax")
+       ("fax-home" . "TEL;TYPE=fax,home")
+       ("fax-work" . "TEL;TYPE=fax,work")
+       ("icon" . "PHOTO")
+       ("impp" . "IMPP")
+       ("impp-home" . "IMPP;TYPE=home")
+       ("impp-work" . "IMPP;TYPE=work")
+       ("landline" . "TEL;TYPE=voice")
+       ("landline-home" . "TEL;TYPE=voice,home")
+       ("landline-work" . "TEL;TYPE=voice,work")
+       ("mobile" . "TEL;TYPE=cell")
+       ("mobile-home" . "TEL;TYPE=cell,home")
+       ("mobile-work" . "TEL;TYPE=cell,work")
+       ("n" . "N")
+       ("nickname" . "NICKNAME")
+       ("note" . "NOTE")
+       ("org" . "ORG")
+       ("phone" . "TEL")
+       ("phone" . "TEL;TYPE=voice")
+       ("phone-home" . "TEL;TYPE=voice,home")
+       ("phone-work" . "TEL;TYPE=voice,work")
+       ("photo" . "PHOTO")
+       ("role" . "ROLE")
+       ("title" . "TITLE")
+       ("url" . "URL")
+       ("version" . "VERSION")))
+     ("2.1"
+      (("address" . "ADR")
+       ("address-home" . "ADR;HOME")
+       ("address-work" . "ADR;WORK")
+       ("birthday" . "BDAY")
+       ("categories" . "CATEGORIES")
+       ("cell" . "TEL;CELL")
+       ("cell-home" . "TEL;CELL;HOME")
+       ("cell-work" . "TEL;CELL;WORK")
+       ("email" . "EMAIL")
+       ("email-home" . "EMAIL;HOME")
+       ("email-work" . "EMAIL;WORK")
+       ("fax" . "TEL;FAX")
+       ("fax-home" . "TEL;FAX;HOME")
+       ("fax-work" . "TEL;FAX;WORK")
+       ("landline" . "TEL;VOICE")
+       ("landline-home" . "TEL;VOICE;HOME")
+       ("landline-work" . "TEL;VOICE;WORK")
+       ("mobile" . "TEL;CELL")
+       ("mobile-home" . "TEL;CELL;HOME")
+       ("mobile-work" . "TEL;CELL;WORK")
+       ("n" . "N")
+       ("name" . "NAME")
+       ("note" . "NOTE")
+       ("org" . "ORG")
+       ("phone" . "TEL")
+       ("phone" . "TEL;VOICE")
+       ("phone-home" . "TEL;VOICE;HOME")
+       ("phone-work" . "TEL;VOICE;WORK")
+       ("photo" . "PHOTO")
+       ("role" . "ROLE")
+       ("title" . "TITLE")
+       ("url" . "URL")
+       ("version" . "VERSION")))))
+   ("en_AU"
+    (("4.0"
+      (("address" . "ADR")
+       ("address-home" . "ADR;TYPE=\"home\"")
+       ("address-work" . "ADR;TYPE=\"work\"")
+       ("alias" . "NICKNAME")
+       ("anniversary" . "ANNIVERSARY")
+       ("birthday" . "BDAY")
+       ("categories" . "CATEGORIES")
+       ("email" . "EMAIL")
+       ("email-home" . "EMAIL;TYPE=\"home\"")
+       ("email-work" . "EMAIL;TYPE=\"work\"")
+       ("fax" . "TEL;TYPE=\"fax\"")
+       ("fax-home" . "TEL;TYPE=\"fax,home\"")
+       ("fax-work" . "TEL;TYPE=\"fax,work\"")
+       ("gender" . "GENDER")
+       ("icon" . "PHOTO")
+       ("impp" . "IMPP")
+       ("impp-home" . "IMPP;TYPE=\"home\"")
+       ("impp-work" . "IMPP:TYPE=\"work\"")
+       ("landline" . "TEL;TYPE=\"voice\"")
+       ("landline-home" . "TEL;TYPE=\"voice,home\"")
+       ("landline-work" . "TEL;TYPE=\"voice,home\"")
+       ("mobile" . "TEL;TYPE=\"cell\"")
+       ("mobile-home" . "TEL;TYPE=\"cell,home\"")
+       ("mobile-work" . "TEL;TYPE=\"cell,home\"")
+       ("n" . "N")
+       ("name" . "FN")
+       ("nickname" . "NICKNAME")
+       ("note" . "NOTE")
+       ("org" . "ORG")
+       ("phone" . "TEL")
+       ("phone" . "TEL;TYPE=\"voice\"")
+       ("phone-home" . "TEL;TYPE=\"voice,home\"")
+       ("phone-work" . "TEL;TYPE=\"voice,work\"")
+       ("photo" . "PHOTO")
+       ("role" . "ROLE")
+       ("title" . "TITLE")
+       ("url" . "URL")
+       ("version" . "VERSION")))
+     ("3.0"
+      (("address" . "ADR")
+       ("address-home" . "ADR;TYPE=home")
+       ("address-work" . "ADR;TYPE=work")
+       ("alias" . "NICKNAME")
+       ("birthday" . "BDAY")
+       ("categories" . "CATEGORIES")
+       ("email" . "EMAIL")
+       ("email-home" . "EMAIL;TYPE=home")
+       ("email-work" . "EMAIL;TYPE=work")
+       ("fax" . "TEL;TYPE=fax")
+       ("fax-home" . "TEL;TYPE=fax,home")
+       ("fax-work" . "TEL;TYPE=fax,work")
+       ("icon" . "PHOTO")
+       ("impp" . "IMPP")
+       ("impp-home" . "IMPP;TYPE=home")
+       ("impp-work" . "IMPP;TYPE=work")
+       ("landline" . "TEL;TYPE=voice")
+       ("landline-home" . "TEL;TYPE=voice,home")
+       ("landline-work" . "TEL;TYPE=voice,work")
+       ("mobile" . "TEL;TYPE=cell")
+       ("mobile-home" . "TEL;TYPE=cell,home")
+       ("mobile-work" . "TEL;TYPE=cell,work")
+       ("n" . "N")
+       ("nickname" . "NICKNAME")
+       ("note" . "NOTE")
+       ("org" . "ORG")
+       ("phone" . "TEL")
+       ("phone" . "TEL;TYPE=voice")
+       ("phone-home" . "TEL;TYPE=voice,home")
+       ("phone-work" . "TEL;TYPE=voice,work")
+       ("photo" . "PHOTO")
+       ("role" . "ROLE")
+       ("title" . "TITLE")
+       ("url" . "URL")
+       ("version" . "VERSION")))
+     ("2.1"
+      (("address" . "ADR")
+       ("address-home" . "ADR;HOME")
+       ("address-work" . "ADR;WORK")
+       ("birthday" . "BDAY")
+       ("categories" . "CATEGORIES")
+       ("email" . "EMAIL")
+       ("email-home" . "EMAIL;HOME")
+       ("email-work" . "EMAIL;WORK")
+       ("fax" . "TEL;FAX")
+       ("fax-home" . "TEL;FAX;HOME")
+       ("fax-work" . "TEL;FAX;WORK")
+       ("landline" . "TEL;VOICE")
+       ("landline-home" . "TEL;VOICE;HOME")
+       ("landline-work" . "TEL;VOICE;WORK")
+       ("mobile" . "TEL;CELL")
+       ("mobile-home" . "TEL;CELL;HOME")
+       ("mobile-work" . "TEL;CELL;WORK")
+       ("n" . "N")
+       ("name" . "NAME")
+       ("note" . "NOTE")
+       ("org" . "ORG")
+       ("phone" . "TEL")
+       ("phone" . "TEL;VOICE")
+       ("phone-home" . "TEL;VOICE;HOME")
+       ("phone-work" . "TEL;VOICE;WORK")
+       ("photo" . "PHOTO")
+       ("role" . "ROLE")
+       ("title" . "TITLE")
+       ("url" . "URL")
+       ("version" . "VERSION")))))
+   ("en_US"
+    (("4.0"
+      (("address" . "ADR")
+       ("address-home" . "ADR;TYPE=\"home\"")
+       ("address-work" . "ADR;TYPE=\"work\"")
+       ("alias" . "NICKNAME")
+       ("anniversary" . "ANNIVERSARY")
+       ("birthday" . "BDAY")
+       ("categories" . "CATEGORIES")
+       ("cell" . "TEL;TYPE=\"cell\"")
+       ("cell-home" . "TEL;TYPE=\"cell,home\"")
+       ("cell-work" . "TEL;TYPE=\"cell,work\"")
+       ("email" . "EMAIL")
+       ("email-home" . "EMAIL;TYPE=\"home\"")
+       ("email-work" . "EMAIL;TYPE=\"work\"")
+       ("fax" . "TEL;TYPE=\"fax\"")
+       ("fax-home" . "TEL;TYPE=\"fax,home\"")
+       ("fax-work" . "TEL;TYPE=\"fax,work\"")
+       ("gender" . "GENDER")
+       ("icon" . "PHOTO")
+       ("impp" . "IMPP")
+       ("impp-home" . "IMPP;TYPE=\"home\"")
+       ("impp-work" . "IMPP:TYPE=\"work\"")
+       ("landline" . "TEL;TYPE=\"voice\"")
+       ("landline-home" . "TEL;TYPE=\"voice,home\"")
+       ("landline-work" . "TEL;TYPE=\"voice,home\"")
+       ("n" . "N")
+       ("name" . "FN")
+       ("nickname" . "NICKNAME")
+       ("note" . "NOTE")
+       ("org" . "ORG")
+       ("phone" . "TEL")
+       ("phone" . "TEL;TYPE=\"voice\"")
+       ("phone-home" . "TEL;TYPE=\"voice,home\"")
+       ("phone-work" . "TEL;TYPE=\"voice,work\"")
+       ("photo" . "PHOTO")
+       ("role" . "ROLE")
+       ("title" . "TITLE")
+       ("url" . "URL")
+       ("version" . "VERSION")))
+     ("3.0"
+      (("address" . "ADR")
+       ("address-home" . "ADR;TYPE=home")
+       ("address-work" . "ADR;TYPE=work")
+       ("alias" . "NICKNAME")
+       ("birthday" . "BDAY")
+       ("categories" . "CATEGORIES")
+       ("cell" . "TEL;TYPE=cell")
+       ("cell-home" . "TEL;TYPE=cell,home")
+       ("cell-work" . "TEL;TYPE=cell,work")
+       ("email" . "EMAIL")
+       ("email-home" . "EMAIL;TYPE=home")
+       ("email-work" . "EMAIL;TYPE=work")
+       ("fax" . "TEL;TYPE=fax")
+       ("fax-home" . "TEL;TYPE=fax,home")
+       ("fax-work" . "TEL;TYPE=fax,work")
+       ("icon" . "PHOTO")
+       ("impp" . "IMPP")
+       ("impp-home" . "IMPP;TYPE=home")
+       ("impp-work" . "IMPP;TYPE=work")
+       ("landline" . "TEL;TYPE=voice")
+       ("landline-home" . "TEL;TYPE=voice,home")
+       ("landline-work" . "TEL;TYPE=voice,work")
+       ("n" . "N")
+       ("nickname" . "NICKNAME")
+       ("note" . "NOTE")
+       ("org" . "ORG")
+       ("phone" . "TEL")
+       ("phone" . "TEL;TYPE=voice")
+       ("phone-home" . "TEL;TYPE=voice,home")
+       ("phone-work" . "TEL;TYPE=voice,work")
+       ("photo" . "PHOTO")
+       ("role" . "ROLE")
+       ("title" . "TITLE")
+       ("url" . "URL")
+       ("version" . "VERSION")))
+     ("2.1"
+      (("address" . "ADR")
+       ("address-home" . "ADR;HOME")
+       ("address-work" . "ADR;WORK")
+       ("birthday" . "BDAY")
+       ("categories" . "CATEGORIES")
+       ("cell" . "TEL;CELL")
+       ("cell-home" . "TEL;CELL;HOME")
+       ("cell-work" . "TEL;CELL;WORK")
+       ("email" . "EMAIL")
+       ("email-home" . "EMAIL;HOME")
+       ("email-work" . "EMAIL;WORK")
+       ("fax" . "TEL;FAX")
+       ("fax-home" . "TEL;FAX;HOME")
+       ("fax-work" . "TEL;FAX;WORK")
+       ("landline" . "TEL;VOICE")
+       ("landline-home" . "TEL;VOICE;HOME")
+       ("landline-work" . "TEL;VOICE;WORK")
+       ("n" . "N")
+       ("name" . "NAME")
+       ("note" . "NOTE")
+       ("org" . "ORG")
+       ("phone" . "TEL")
+       ("phone" . "TEL;VOICE")
+       ("phone-home" . "TEL;VOICE;HOME")
+       ("phone-work" . "TEL;VOICE;WORK")
+       ("photo" . "PHOTO")
+       ("role" . "ROLE")
+       ("title" . "TITLE")
+       ("url" . "URL")
+       ("version" . "VERSION"))))))))))
+  (org-vcard-transfer-helper "buffer" "file" style language version 'export))
