@@ -12,3 +12,6 @@ Categories=System;
 MimeType=x-scheme-handler/org-protocol;" > ~/.local/share/applications/org-protocol.desktop
 # refresh pour org-protocol
 update-desktop-database ~/.local/share/applications/
+
+# correcteur orthographique
+sudo apt-get install -y hunspell

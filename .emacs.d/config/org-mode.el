@@ -1,6 +1,6 @@
 ;; ============================================================
 ;; Don't edit this file, edit config.org' instead ...
-;; Auto-generated at Mon Mar 07 2022-03-07T22:28:51  on host utilisateur-GL65-Leopard-10SER
+;; Auto-generated at Thu Mar 10 2022-03-10T12:14:46  on host utilisateur-GL65-Leopard-10SER
 ;; ============================================================
 
 
@@ -776,53 +776,75 @@
 
   (setq org-capture-templates '
         (
-         ("i" "Inbox (TODO)" entry
-          (file (lambda() (concat orgzly-directory "Inbox.org")))
-          (file "templatesOrgCapture/todo.org")
-          :immediate-finish t
-          )
-         ("s" "Slipbox for org-roam" entry  (file "braindump/org/inbox.org")
-          "* %?\n")
 
-         ("t" "Tickler" entry
+
+         ("t" "Pour les timestamps")
+         ("tt" "Tickler" entry
           (file (lambda() (concat orgzly-directory "AgendaTickler.org")))
           (file "templatesOrgCapture/tickler.org")
           :immediate-finish t
           )
-
-         ("e" "Évènement sur plusieurs heures" entry
+         ("te" "Évènement sur plusieurs heures" entry
           (file (lambda() (concat orgzly-directory "AgendaTickler.org")))
           (file "templatesOrgCapture/evenement.org")
           :immediate-finish t
           )
 
-         ("u" "Évènement sur plusieurs jours" entry
+         ("td" "Évènement sur plusieurs jours" entry
           (file (lambda() (concat orgzly-directory "AgendaTickler.org")))
           (file "templatesOrgCapture/evenementplusieursjours.org")
           :immediate-finish t
           )
 
+
+         ("i" "Inbox (TODO)" entry
+          (file (lambda() (concat orgzly-directory "Inbox.org")))
+          (file "templatesOrgCapture/todo.org")
+          :immediate-finish t
+          )
+         ("n" "Inbox (NEXT)" entry
+          (file (lambda() (concat orgzly-directory "Inbox.org")))
+          (file "templatesOrgCapture/next.org")
+          :immediate-finish t
+          )
+
+         ("s" "Slipbox for org-roam" entry  (file "braindump/org/inbox.org")
+          "* %?\n")
+
          ("d" "Journal de dissactifaction" entry (file  "org/journal_de_dissatisfaction.org")
           "* %<%Y-%m-%d> \n- %?")
 
-         ;; ("P" "org-popup" entry (file+headline "braindump/org/inbox.org" "Titled Notes")
-         ;; "%[~/.emacs.d/.org-popup]" :immediate-finish t :prepend t)
-
-
-
-         ;; ici se trouve les choses utilisé pour org-protocol
-         ("C" "Contacts" entry
-          (file+headline (lambda() (concat orgzly-directory "Contacts.org" ))"1Inbox")
+         ("c" "Contacts" entry
+          (file+headline (lambda() (concat orgzly-directory "Contacts.org" ))"Inbox")
           (file "templatesOrgCapture/contacts.org")
           ;; :immediate-finish t
           ;; :jump-to-captured t
           )
+
+         ("a" "Image dans Artiste")
+
+         ("at" "Image + artiste" entry (file  "org/artistes.org" )
+          (file "templatesOrgCapture/artistes.org")
+          :jump-to-captured 1
+          )
+
+         ("as" "Image" entry (file "org/artistes.org" )
+          (file "templatesOrgCapture/image.org")
+          ;; :jump-to-captured 1
+          )
+
+         ;; ici se trouve les choses utilisé pour org-protocol
          ;; pour mes raccourcis
          ("O" "Link capture" entry
           (file+headline "org/orgzly/Bookmarks.org" "INBOX")
           "* %a %U"
           :immediate-finish t)
-         ))
+
+
+         ;; ("P" "org-popup" entry (file+headline "braindump/org/inbox.org" "Titled Notes")
+         ;; "%[~/.emacs.d/.org-popup]" :immediate-finish t :prepend t)
+         )
+        )
 
 
 
@@ -851,6 +873,14 @@
         )
       (when (string= key "e") 		;etc
         ;; (org-capture-goto-last-stored)
+        ;; (org-schedule nil nil)
+        ;; (winner-undo)
+        )
+      (when (string= key "as") 		;etc
+        (org-capture-goto-last-stored)
+        (newline)
+        (newline)
+        (org-download-clipboard)
         ;; (org-schedule nil nil)
         ;; (winner-undo)
         )
@@ -884,6 +914,38 @@
           (shared-directory-private-all-org-files :maxlevel . 5)
           )
         )
+
+
+
+;; #####################################################################################
+(message "config • Gestion des images de fond d'écran/cool avec org-mode …")
+
+
+    (use-package org-download
+      :config
+
+      ;; pour enlever la description de l'image
+
+
+      (defun dummy-org-download-annotate-function (link)
+        "")
+
+      (defun org-download-annotate-default (link)
+    "Annotate LINK with the time of download."
+    (format "#+DOWNLOADED: %s @ %s\n"
+            (if (equal link org-download-screenshot-file)
+                "screenshot"
+              link)
+            (format-time-string "%Y-%m-%d %H:%M:%S"))
+    (message "%s" link)
+    )
+      ;; setq in doom emacs
+      ;; (setq org-download-annotate-function #'dummy-org-download-annotate-function)
+
+
+      )
+
+  
 
 
 

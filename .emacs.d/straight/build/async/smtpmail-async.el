@@ -1,1 +1,1 @@
-/home/utilisateur/.emacs.d/straight/repos/emacs-async/smtpmail-async.el
+/home/utilisateur/.dotfiles/.emacs.d/straight/repos/emacs-async/smtpmail-async.el

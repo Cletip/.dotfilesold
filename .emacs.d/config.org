@@ -44,7 +44,6 @@ script à éclaté dans chaque morceau de la config et faire un ?
   #installer emacs etc
   sudo apt install
   python3			          # grammalect
-  hunspell				  # correcteur orthographique
   grep					  # pour les recherches (consult-grep notamment)
   xsel yad				  # org-popup
   keepassxc #pour keepass-emacs (logique)

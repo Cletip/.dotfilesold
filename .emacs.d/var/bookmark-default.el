@@ -2,16 +2,26 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("configFichiers"
+(("org notes"
+ (filename . "~/sharedDirectoryPrivate/notes/org/")
+ (front-context-string . ".dir-locals.el\n ")
+ (rear-context-string . " mars   8 20:51 ")
+ (position . 285))
+("zettelkaste braindump"
+ (filename . "~/sharedDirectoryPrivate/notes/zettelkasten/")
+ (front-context-string . "images\n  drwxrwx")
+ (rear-context-string . " mars   8 22:19 ")
+ (position . 362))
+("configFichiers"
  (filename . "~/.emacs.d/config/")
  (front-context-string . "basicOptimisatio")
  (rear-context-string . " mars   6 11:49 ")
  (position . 521))
 ("org-refile-last-stored"
- (filename . "~/sharedDirectoryPrivate/notes/org/orgzly/References.org")
- (front-context-string . "** TODO Les vede")
- (rear-context-string . "17:00]\n\n* Films\n")
- (position . 1442))
+ (filename . "~/sharedDirectoryPrivate/notes/zettelkasten/notesPerso(nepasgarderPointDinterogation)/films_vus.org")
+ (front-context-string . "** TODO Extermin")
+ (rear-context-string . "Godless (série)\n")
+ (position . 2667))
 ("S4"
  (filename . "~/mesdocuments/professionnel/cours/S4/")
  (front-context-string . "AlgoII\n  drwxrwx")
@@ -23,10 +33,10 @@
  (rear-context-string . " mars   2 13:41 ")
  (position . 269))
 ("org-capture-last-stored"
- (filename . "~/sharedDirectoryPrivate/notes/org/orgzly/Contacts.org")
- (front-context-string . "** Nicolas Royet")
- (rear-context-string . "end:\n\n\n* 1Inbox\n")
- (position . 3417))
+ (filename . "~/sharedDirectoryPrivate/notes/org/artistes.org")
+ (front-context-string)
+ (rear-context-string . "anuiet\n* anutie\n")
+ (position . 7593))
 ("GTD.org"
  (filename . "~/sharedDirectoryPrivate/notes/org/orgzly/GTD.org")
  (front-context-string . "* TODO [#B] Deve")

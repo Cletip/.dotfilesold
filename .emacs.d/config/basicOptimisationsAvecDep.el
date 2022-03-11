@@ -1,6 +1,6 @@
 ;; ============================================================
 ;; Don't edit this file, edit config.org' instead ...
-;; Auto-generated at lun. mars 07 2022-03-07T22:35:28  on host utilisateur-GL65-Leopard-10SER
+;; Auto-generated at Wed Mar 09 2022-03-09T21:34:40  on host utilisateur-GL65-Leopard-10SER
 ;; ============================================================
 
 
@@ -15,5 +15,9 @@
 (message "config • ACTIVE Correcteur orthographique :Hight: …")
 
 
-(use-package magit)
-  
+  (use-package magit)
+
+  (use-package nov
+    :config
+    (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode)))
+

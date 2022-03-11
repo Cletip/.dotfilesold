@@ -118,8 +118,7 @@ xah-fly-t-keymap, qui le mettra dans t keymap (3ieme couche)
 ** Les définitions de fonctions
 *** Les fonctions utiles
 
-
-*** TODO Ma fonction pour refile et enlever le state (enlever d'abord le state puis refile)
+*** Ma fonction pour refile et enlever le state (enlever d'abord le state puis refile)
 
 #+begin_src emacs-lisp 
   
@@ -665,7 +664,6 @@ CLOSED: [2021-11-21 Sun 10:24]
 
 
 
-
 *** Nouveaux raccourcis de base/optimisations qui ne dénature pas emacs(sur space space)
 
 
@@ -995,8 +993,10 @@ CLOSED: [2021-11-21 Sun 10:24]
          ("/" . treemacs)
          ("a" . cp/go-to-config)
          ;; ("=" . dw/toggle-command-window)
-         ("d" . org-capture)
-         ("h" . eaf-open-browser-with-history)
+         ("h" . org-capture)
+
+         ;; ("h" . eaf-open-browser-with-history)
+
          ("l" . org-sidebar-tree-toggle)
          ("m" . engine/search-google)
          ("o" . org-agenda)
@@ -1018,7 +1018,7 @@ CLOSED: [2021-11-21 Sun 10:24]
          ("RET" . xah-fly-M-x)
          ("TAB" . xah-fly--tab-key-map)
          ("." . xah-fly-dot-keymap)
-         
+
          ;; ("'" . avy-goto-char-timer) ;;perso
          ;; ("'" . xah-fill-or-unfill)
 
@@ -1187,7 +1187,6 @@ CLOSED: [2021-11-21 Sun 10:24]
 
       
 ** Les nouveaux keymap
-
 *** Pour aller aux différents fichiers
 
 #+begin_src emacs-lisp 

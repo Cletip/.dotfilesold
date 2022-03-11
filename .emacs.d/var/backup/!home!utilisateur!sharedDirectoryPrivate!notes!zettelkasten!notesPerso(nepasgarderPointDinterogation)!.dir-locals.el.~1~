@@ -1,0 +1,14 @@
+(
+ (org-mode . ((org-download-heading-lvl . 0)
+            (org-download-image-dir . "/home/msi/Orgzly/images/")))
+ )
+
+
+;; ((nil . ((indent-tabs-mode . t)
+;;          (fill-column . 80)
+;;          (mode . auto-fill)))
+;;  (c-mode . ((c-file-style . "BSD")
+;;             (subdirs . nil)))
+;;  ("src/imported"
+;;   . ((nil . ((change-log-default-name
+;;               . "ChangeLog.local"))))))

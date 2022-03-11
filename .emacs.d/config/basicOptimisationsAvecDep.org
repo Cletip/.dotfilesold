@@ -35,7 +35,11 @@ For save note press - "Ctrl + Shift + Enter"
 
 #+begin_src emacs-lisp
 
-(use-package magit)
-  
+  (use-package magit)
+
+  (use-package nov
+    :config
+    (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode)))
+
 #+end_src
 

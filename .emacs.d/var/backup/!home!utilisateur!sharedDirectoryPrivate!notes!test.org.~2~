@@ -1,0 +1,12 @@
+* test
+
+
+
+#+DOWNLOADED: file:///tmp/dnd_file-5/like_a_boss___by_dragibuz_df17fx0-pre.jpg @ 2022-03-08 22:28:06
+[[file:org/images/test/2022-03-08_22-28-06_like_a_boss___by_dragibuz_df17fx0-pre.jpg]]
+
+
+* Testn
+
+(setq org-download-image-dir nil)
+

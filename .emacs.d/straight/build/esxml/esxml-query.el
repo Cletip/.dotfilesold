@@ -1,0 +1,1 @@
+/home/utilisateur/.dotfiles/.emacs.d/straight/repos/esxml/esxml-query.el

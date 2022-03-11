@@ -7,7 +7,15 @@
    '("745d03d647c4b118f671c49214420639cb3af7152e81f132478ed1c649d4597d" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default))
  '(dimmer-buffer-exclusion-regexps '(".*Minibuf.*" ".*which-key.*" ".*LV.*") nil nil "Customized with use-package dimmer")
  '(safe-local-variable-values
-   '((eval add-hook 'after-save-hook 'org-html-export-to-html t t)
+   '((org-src-preserve-indentation . t)
+     (eval add-hook 'after-save-hook 'org-babel-tangle nil t)
+     (org-download-image-dir . "//home/msi/Documents/Code/Projetrenpy/TonJeu/game/images")
+     (org-download-heading-lvl . 1)
+     (org-download-image-dir concat org-directory "org/artistesImages/")
+     (org-download-heading-lvl . 0)
+     (org-refile-targets
+      (nil :maxlevel . 0))
+     (eval add-hook 'after-save-hook 'org-html-export-to-html t t)
      (org-refile-targets
       (nil :maxlevel . 9))
      (org-refile-targets

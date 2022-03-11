@@ -994,53 +994,75 @@ Si la touche à appuyer est en maj, ceci est fait pour org-protocol !
 
   (setq org-capture-templates '
         (
-         ("i" "Inbox (TODO)" entry
-          (file (lambda() (concat orgzly-directory "Inbox.org")))
-          (file "templatesOrgCapture/todo.org")
-          :immediate-finish t
-          )
-         ("s" "Slipbox for org-roam" entry  (file "braindump/org/inbox.org")
-          "* %?\n")
 
-         ("t" "Tickler" entry
+
+         ("t" "Pour les timestamps")
+         ("tt" "Tickler" entry
           (file (lambda() (concat orgzly-directory "AgendaTickler.org")))
           (file "templatesOrgCapture/tickler.org")
           :immediate-finish t
           )
-
-         ("e" "Évènement sur plusieurs heures" entry
+         ("te" "Évènement sur plusieurs heures" entry
           (file (lambda() (concat orgzly-directory "AgendaTickler.org")))
           (file "templatesOrgCapture/evenement.org")
           :immediate-finish t
           )
 
-         ("u" "Évènement sur plusieurs jours" entry
+         ("td" "Évènement sur plusieurs jours" entry
           (file (lambda() (concat orgzly-directory "AgendaTickler.org")))
           (file "templatesOrgCapture/evenementplusieursjours.org")
           :immediate-finish t
           )
 
+
+         ("i" "Inbox (TODO)" entry
+          (file (lambda() (concat orgzly-directory "Inbox.org")))
+          (file "templatesOrgCapture/todo.org")
+          :immediate-finish t
+          )
+         ("n" "Inbox (NEXT)" entry
+          (file (lambda() (concat orgzly-directory "Inbox.org")))
+          (file "templatesOrgCapture/next.org")
+          :immediate-finish t
+          )
+
+         ("s" "Slipbox for org-roam" entry  (file "braindump/org/inbox.org")
+          "* %?\n")
+
          ("d" "Journal de dissactifaction" entry (file  "org/journal_de_dissatisfaction.org")
           "* %<%Y-%m-%d> \n- %?")
 
-         ;; ("P" "org-popup" entry (file+headline "braindump/org/inbox.org" "Titled Notes")
-         ;; "%[~/.emacs.d/.org-popup]" :immediate-finish t :prepend t)
-
-
-
-         ;; ici se trouve les choses utilisé pour org-protocol
-         ("C" "Contacts" entry
-          (file+headline (lambda() (concat orgzly-directory "Contacts.org" ))"1Inbox")
+         ("c" "Contacts" entry
+          (file+headline (lambda() (concat orgzly-directory "Contacts.org" ))"Inbox")
           (file "templatesOrgCapture/contacts.org")
           ;; :immediate-finish t
           ;; :jump-to-captured t
           )
+
+         ("a" "Image dans Artiste")
+
+         ("at" "Image + artiste" entry (file  "org/artistes.org" )
+          (file "templatesOrgCapture/artistes.org")
+          :jump-to-captured 1
+          )
+
+         ("as" "Image" entry (file "org/artistes.org" )
+          (file "templatesOrgCapture/image.org")
+          ;; :jump-to-captured 1
+          )
+
+         ;; ici se trouve les choses utilisé pour org-protocol
          ;; pour mes raccourcis
          ("O" "Link capture" entry
           (file+headline "org/orgzly/Bookmarks.org" "INBOX")
           "* %a %U"
           :immediate-finish t)
-         ))
+
+
+         ;; ("P" "org-popup" entry (file+headline "braindump/org/inbox.org" "Titled Notes")
+         ;; "%[~/.emacs.d/.org-popup]" :immediate-finish t :prepend t)
+         )
+        )
 
 
 #+end_src
@@ -1069,6 +1091,14 @@ Si la touche à appuyer est en maj, ceci est fait pour org-protocol !
         )
       (when (string= key "e") 		;etc
         ;; (org-capture-goto-last-stored)
+        ;; (org-schedule nil nil)
+        ;; (winner-undo)
+        )
+      (when (string= key "as") 		;etc
+        (org-capture-goto-last-stored)
+        (newline)
+        (newline)
+        (org-download-clipboard)
         ;; (org-schedule nil nil)
         ;; (winner-undo)
         )
@@ -1106,6 +1136,71 @@ Si la touche à appuyer est en maj, ceci est fait pour org-protocol !
         )
 
 #+end_src
+**** Org-linkz, pour avoir mes bookmarks sur org
+
+1. Avoir les raccourcis de dispo :Avoir org-linkz dans dossier_partage mettre Bookmark.org dans orgzly, puis l'exporter dans org-linkz #+export_file_name: ../../../dossier_partage/Clement/org-linkz/Bookmarks.html. Rajouter ce raccourci a mozzila file:~/sharedDirectoryPrivate/org-linkz/3Bookmarks.html
+2. ajouter des raccourcis : avoir ogr protocol, et rajouter un raccourcis qui va simuler org-capture
+   1. Le protocol [[id:9bfc7d04-7650-4cd1-a9d4-1982bd667eb7][org-protocol]]
+   2. Le org-capture (mettre sur une touche de org-capture pas utilisé (j'ai mis en Z, pour org linkZ))
+   3. le raccourcis firexfox (ne pas oublier de changer la touche, avant dans template=TOUCHEÀMETTRE&url), ici c'est O
+      
+#+begin_src js
+javascript:location.href='org-protocol://capture?template=O&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)+'&body='+encodeURIComponent(window.getSelection())
+#+end_src
+**** Gestion des images de fond d'écran/cool avec org-mode
+
+Pour ceci, deux templates pour les capture (voir org-capture).
+Tout est dans un fichier (ici, artiste.org), et j'utilise org-download, qui permet de drag and drop des images ou bien depuis le clipboard.
+
+#+begin_src emacs-lisp :tangle no
+
+  (use-package org-download
+    :config
+    ;;lieu où sont stocké les images
+    ;; (setq-default org-download-image-dir (concat org-directory "org/images/"))
+
+    ;; le nom du dossier est le nom du premier heading (pour donner au nom du dossier "Principales oeuvre de blabla")
+    ;; (setq-default org-download-heading-lvl 0)
+
+    ;;pour drag and drop dans dired
+    (add-hook 'dired-mode-hook 'org-download-enable)
+    ;; pour rename l'image à chaque fois
+    ;; (add-hook #'org-download-yank #'org-download-rename-last-file)
+    )
+
+#+end_src
+
+#+begin_src emacs-lisp
+
+    (use-package org-download
+      :config
+
+      ;; pour enlever la description de l'image
+
+
+      (defun dummy-org-download-annotate-function (link)
+        "")
+
+      (defun org-download-annotate-default (link)
+    "Annotate LINK with the time of download."
+    (format "#+DOWNLOADED: %s @ %s\n"
+            (if (equal link org-download-screenshot-file)
+                "screenshot"
+              link)
+            (format-time-string "%Y-%m-%d %H:%M:%S"))
+    (message "%s" link)
+    )
+      ;; setq in doom emacs
+      ;; (setq org-download-annotate-function #'dummy-org-download-annotate-function)
+
+
+      )
+
+  
+
+#+end_src
+
+
 **** Org protocol, pour liéer org-mode et le navigateur web
 :PROPERTIES:
 :ID:       9bfc7d04-7650-4cd1-a9d4-1982bd667eb7
@@ -1122,18 +1217,6 @@ Si la touche à appuyer est en maj, ceci est fait pour org-protocol !
 
 #+begin_src emacs-lisp
   (require 'org-protocol)
-#+end_src
-
-**** Org-linkz, pour avoir mes bookmarks sur org
-
-1. Avoir les raccourcis de dispo :Avoir org-linkz dans dossier_partage mettre Bookmark.org dans orgzly, puis l'exporter dans org-linkz #+export_file_name: ../../../dossier_partage/Clement/org-linkz/Bookmarks.html. Rajouter ce raccourci a mozzila file:~/sharedDirectoryPrivate/org-linkz/3Bookmarks.html
-2. ajouter des raccourcis : avoir ogr protocol, et rajouter un raccourcis qui va simuler org-capture
-   1. Le protocol [[id:9bfc7d04-7650-4cd1-a9d4-1982bd667eb7][org-protocol]]
-   2. Le org-capture (mettre sur une touche de org-capture pas utilisé (j'ai mis en Z, pour org linkZ))
-   3. le raccourcis firexfox (ne pas oublier de changer la touche, avant dans template=TOUCHEÀMETTRE&url), ici c'est O
-      
-#+begin_src js
-javascript:location.href='org-protocol://capture?template=O&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)+'&body='+encodeURIComponent(window.getSelection())
 #+end_src
 
 *** Org roam

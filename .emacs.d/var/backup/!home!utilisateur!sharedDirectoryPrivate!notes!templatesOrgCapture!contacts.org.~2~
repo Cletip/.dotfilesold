@@ -1,0 +1,19 @@
+* %^{Prénom} %^{Nom}
+:PROPERTIES:
+:VERSION: 3.0
+:EMAIL: %^{Email}
+:EMAIL_HOME: 
+:EMAIL_WORK: 
+:PHONE: 
+:CELL: %^{Téléphone Mobile avec des espaces, +33 c'est mieux}
+:LANDLINE_HOME: 
+:LANDLINE_WORK: %^{Téléphone boulot}
+:TITLE: %^{Sa fonction}
+:ORG: %^{Nom de l'entreprise où il bosse}
+:ADDRESS_HOME: 
+:ADDRESS_WORK: 
+:BIRTHDAY:
+:URL: 
+:NOTE: %^{Notes sur lui}
+:CATEGORIES: %^{Untag, unautre, dernierTag (Pro, Perso)} 
+:END:

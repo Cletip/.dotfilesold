@@ -55,12 +55,11 @@ les trois dossiers doivent être à la racine !
 - notes
   - .stfolder (créer par syncthing)
   - templatesOrgCapture (pour mes capture org mode et org roam. mis ici car très pratique (et impossible d'y mettre ailleurs pour que ça marche sans passer par des variables relatives mdrr))
-  - org
-    - archives (tous mes archives, pas besoins de l'avoir dans orgzly)
-      - archivetickler.org
-      - etc TODO
-    - onenote.org
-    - anotheretc
+  - org (mes notes "persos" pour l'instant) (=Ce dossier : notes "perso", utilisant les id pour les headline, mais les liens "normaux" pour les liens inter-fichiers. Exemple= :  [[file:unenotesorg.org]])
+    (Conversion un jour peut-être : Créer un id pour chaque note dans ce dossier, et remplacer les file:blabla par le numéro de l'id du fichier donné juste avant.)
+    - onenoteprivé.org
+    - uneautre.org
+    - etc.org
     - orgzly (tous les fichiers qui doivent être =modifié=, =unique lien avec mon tel= directement.)
       - Inbox.org (là où je mets toutes mes idées en vrac + mes org scheduled et deadline. Fonction à faire)
       - Agendatickler.org (où il y a tous ce qui va dans l'edt)
@@ -69,10 +68,15 @@ les trois dossiers doivent être à la racine !
       - References.org (fichiers où je met presque tout. À ranger d'ailleurs)
       - Contact.org (tous mes contacts)
       - 8Artiste.org, à mettre ailleurs
-  - Classique, classique org file (vide ?)
-  - roam (où est "mon second cerveau", lieu pour prendre des notes. =le mettre dans mes documents ?=)
-    
-    
+  - zettelzasten (où est "mon second cerveau", lieu pour prendre des notes, =Idem, mais en utilisant uniquement les id.=)
+    - articles
+    - main
+    - reference
+    - notesperso?
+
+
+
+        
 **** Notes  (mettre ici)
 ***** Org
 Archives.org
@@ -82,7 +86,7 @@ INBOX.org
 etc
 ***** Roam
 
-*** Mes contacts :
+*** Mes cntacts :
 Org contact + org-vcard + org capture     (setq org-vcard-default-version "3.0") ;;la version utilisée (pour
 Cela me permet de gérer mes contacts rapidement et efficacement + de les exporter sur google agenda. 
 *** Mes todo avec Org mode, Task Management
@@ -96,7 +100,6 @@ Bookmarks.org
 GTD.org
 References.org
 Contact.org
-
 
 **** Comment ça marche ?
 
@@ -115,8 +118,6 @@ Org directories = org.
 
 Mais rien ne m'empêche de faire des liens entre les deux, si, pas de
 liens de roam à org, mais l'inverse oui.
-
-
 
 
 **** Gestion des "citations"
