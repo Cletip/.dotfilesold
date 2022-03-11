@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-03-11 Fri 09:28 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bookmarks</title>
+<meta name="author" content="Utilisateur" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="css/theme.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.searchable.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Bookmarks</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org46a4799">INBOX</a></li>
+<li><a href="#orgfd45d56">Administratif</a></li>
+<li><a href="#org9734eae">Vie professionnelle</a></li>
+<li><a href="#org2ce61c0">Perso</a></li>
+</ul>
+</div>
+</div>
+
+<input id="search" autofocus>
+
+<wrapper id="outline-container-org46a4799" class="outline-2">
+<h2 id="org46a4799">INBOX</h2>
+</wrapper>
+<wrapper id="outline-container-orgfd45d56" class="outline-2">
+<h2 id="orgfd45d56">Administratif</h2>
+<div class="outline-text-2" id="text-orgfd45d56">
+</div>
+<div id="outline-container-orgec226dd" class="outline-3">
+<h3 id="orgec226dd">Mails</h3>
+<div class="outline-text-3" id="text-orgec226dd">
+</div>
+<ul class="org-ul">
+<li><a id="orgaa6bf4b"></a><a href="https://mail.google.com/mail/u/0/#inbox">Boîte de réception - payard.clement63@gmail.com - Gmail</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:09]</span></span><br></li>
+<li><a id="org6a9fa0a"></a><a href="https://mail.google.com/mail/u/1/#inbox">Boîte de réception (310) - clement020302@gmail.com - Gmail</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:09]</span></span><br></li>
+<li><a id="org50f410c"></a><a href="https://mail.uca.fr/zimbra/mail#1">Zimbra: Réception</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:09]</span></span><br></li>
+<li><a id="org136c316"></a><a href="https://mail.protonmail.com/u/1/inbox">(1) Boîte de réception | payard.clement@protonmail.com | ProtonMail</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:09]</span></span><br></li>
+<li><a id="org7a44911"></a><a href="https://drive.google.com/drive/u/0/my-drive">Mon Drive - Google Drive</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:10]</span></span><br></li>
+</ul>
+</div>
+<div id="outline-container-org5d096cf" class="outline-3">
+<h3 id="org5d096cf">Compte</h3>
+<div class="outline-text-3" id="text-org5d096cf">
+</div>
+<ul class="org-ul">
+<li><a id="org6e210c4"></a><a href="https://github.com/Cletip">Cletip · GitHub</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:15]</span></span><br></li>
+</ul>
+</div>
+</wrapper>
+<wrapper id="outline-container-org9734eae" class="outline-2">
+<h2 id="org9734eae">Vie professionnelle</h2>
+<div class="outline-text-2" id="text-org9734eae">
+</div>
+<div id="outline-container-org7e4a426" class="outline-3">
+<h3 id="org7e4a426">Cours s4 (moodle, caséine etc)</h3>
+<div class="outline-text-3" id="text-org7e4a426">
+</div>
+<ul class="org-ul">
+<li><a id="orga831c3e"></a><a href="https://ent.uca.fr/moodle/login/index.php">Moodle</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-24 Mon 19:42]</span></span><br></li>
+<li><a id="org649fa40"></a><a href="https://drive.google.com/drive/folders/1b9wIdP4qhhGChaGh3fesR4IJmY-bztCi">nouveau drive prep isima</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:10]</span></span><br></li>
+<li><a id="org4f47601"></a><a href="https://drive.google.com/drive/u/0/folders/1wBrmNEZFUoDof63pm9YaVF6hon_sHMlf">ancien drive prep isima</a><br></li>
+<li><a id="orgf4e0f22"></a><a href="https://ent.uca.fr/core/home">ent</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:12]</span></span><br></li>
+<li><a id="org814d493"></a><a href="https://guacamole.isima.fr/#/">Apache Guacamole</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:12]</span></span><br></li>
+<li><a id="orgdf5d0a2"></a><a href="https://moodle.caseine.org/">Caseine moodle</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 19:49]</span></span><br></li>
+</ul>
+</div>
+<div id="outline-container-orga27d46c" class="outline-3">
+<h3 id="orga27d46c">Vie pro ? (mettre les test fizz-buzz et autre ici par exemple)</h3>
+</div>
+</wrapper>
+<wrapper id="outline-container-org2ce61c0" class="outline-2">
+<h2 id="org2ce61c0">Perso</h2>
+<div class="outline-text-2" id="text-org2ce61c0">
+</div>
+<div id="outline-container-org686e7dd" class="outline-3">
+<h3 id="org686e7dd">Informatique</h3>
+<div class="outline-text-3" id="text-org686e7dd">
+</div>
+<ul class="org-ul">
+<li><a id="org16f6f78"></a>Pratique<br>
+<ul class="org-ul">
+<li><a id="org275f348"></a><a href="https://haveibeenpwned.com/">Have I Been Pwned: Check if your email has been compromised in a data breach</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 19:24]</span></span><br></li>
+</ul>
+</li>
+<li><a id="orgdf3ad1d"></a>Emacs<br>
+<ul class="org-ul">
+<li><a id="org3cc2034"></a>Braindump<br>
+<ul class="org-ul">
+<li><a id="orge3c4b2b"></a><a href="https://jethrokuan.github.io/org-roam-guide/">Méthode braindump</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:06]</span></span><br></li>
+<li><a id="org8388915"></a><a href="https://github.com/jethrokuan/braindump">GitHub - jethrokuan/braindump: knowledge repository managed with org-mode and org-roam.</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:06]</span></span><br></li>
+</ul>
+</li>
+<li><a id="orgd1bc639"></a>Org-mode<br>
+<ul class="org-ul">
+<li><a id="org1e7a388"></a><a href="https://orgmode.org/manual/Template-expansion.html">Template expansion (The Org Manual)</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-28 Fri 11:50]</span></span><br></li>
+</ul>
+</li>
+<li><a id="orge292314"></a>Les .emacs.d<br>
+<ul class="org-ul">
+<li><a id="org36669a4"></a><a href="https://github.com/emacs-tw/awesome-emacs#appearance">awesome-emacs</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-27 Thu 14:58]</span></span><br></li>
+<li><a id="org56db912"></a><a href="https://config.daviwil.com/emacs">Emacs Configuration - config.daviwil.com</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:36]</span></span><br></li>
+<li><a id="org1a6a1c4"></a><a href="https://github.com/novoid/dot-emacs">Le .emacs.d</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:07]</span></span><br></li>
+</ul>
+</li>
+<li><a id="org76797f8"></a>Systemcrafter notes<br>
+<ul class="org-ul">
+<li><a id="org1c4656e"></a><a href="https://config.daviwil.com/emacs">Emacs Configuration - config.daviwil.com</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:18]</span></span><br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org4bc1368"></a>Mes sites<br></li>
+<li><a id="orga76e686"></a>Sécurité<br></li>
+<li><a id="orge1cfea1"></a>Guix ?<br>
+<ul class="org-ul">
+<li><a id="orgca9db5a"></a><a href="https://www.youtube.com/playlist?list=PLEoMzSkcN8oNxnj7jm5V2ZcGc52002pQU">GNU Guix, liens yt</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-27 Thu 14:34]</span></span><br></li>
+<li><a id="org463bce8"></a><a href="https://systemcrafters.net/craft-your-system-with-guix/">GNU Guix, liens note</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-27 Thu 14:42]</span></span><br></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="outline-container-org272b20e" class="outline-3">
+<h3 id="org272b20e">Mes sites web</h3>
+<div class="outline-text-3" id="text-org272b20e">
+</div>
+<ul class="org-ul">
+<li><a id="org1c0ce9b"></a><a href="https://clementpayard.netlify.app/">Site de Clément Payard</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-08 Tue 14:15]</span></span><br></li>
+<li><a id="org74f1b5f"></a><a href="https://notresitederecettes.netlify.app/">Site de recette</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-08 Tue 14:16]</span></span><br></li>
+<li><a id="org6420e4d"></a><a href="https://cletip.github.io/">Site web github</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-08 Tue 14:16]</span></span><br></li>
+<li><a id="orgafee53c"></a><a href="https://perso.isima.fr/~clpayard/">Site perso isima</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-08 Tue 14:17]</span></span><br></li>
+</ul>
+</div>
+<div id="outline-container-orgebee999" class="outline-3">
+<h3 id="orgebee999">Liseuse</h3>
+<div class="outline-text-3" id="text-orgebee999">
+</div>
+<ul class="org-ul">
+<li><a id="orgd4b0d16"></a><a href="http://www.fourtoutici.ac/">Fourtoutici upload</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:18]</span></span><br></li>
+<li><a id="orgc749a3e"></a><a href="https://www.youtube.com/watch?v=qQSlJtGOBbA">Organiser sa bibliothèque numérique avec Calibre | @Lanylabooks - YouTube</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:18]</span></span><br></li>
+<li><a id="orgcf35cb8"></a><a href="https://www.youtube.com/watch?v=GSMP_Ee-_jY&amp;t=361s">CALIBRE &amp; KOBO : repartir à zéro avec une bibliothèque propre | @Lanylabooks - YouTube</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:19]</span></span><br></li>
+</ul>
+</div>
+<div id="outline-container-orgb3ea965" class="outline-3">
+<h3 id="orgb3ea965">Anglais</h3>
+<div class="outline-text-3" id="text-orgb3ea965">
+</div>
+<ul class="org-ul">
+<li><a id="org84e19a0"></a><a href="https://bilingueanglais.com/blog/2511/les-temps-en-anglais/#Temps_times_Aspects_anglais">Guide des temps en anglais · L'utilisation des temps en anglais</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:22]</span></span><br></li>
+<li><a id="orge1f485b"></a><a href="https://www.deepl.com/fr/translator">DeepL Traduction – DeepL Translate : le meilleur traducteur au monde</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:23]</span></span><br></li>
+</ul>
+</div>
+<div id="outline-container-orgfa29c4b" class="outline-3">
+<h3 id="orgfa29c4b">Streaming</h3>
+<div class="outline-text-3" id="text-orgfa29c4b">
+</div>
+<ul class="org-ul">
+<li><a id="org0951aa2"></a>Films<br>
+<ul class="org-ul">
+<li><a id="orgcccff24"></a><a href="https://www.zustream.one/">zuStream - Films streaming gratuit en VF et VOSTFR, séries et animes streaming</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:18]</span></span><br></li>
+<li><a id="org57f2396"></a><a href="https://www.zustream.one/film/apache-junction/">Voir Apache Junction - zuStream</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:18]</span></span><br></li>
+<li><a id="orgd1ff89f"></a><a href="https://yoowootch.com/">Yoowootch les meilleures series en streaming</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:18]</span></span><br></li>
+<li><a id="org993dcf1"></a><a href="https://wwv.tirexo.rip/">Tirexo - 1er site Serie Streaming GRATUIT en VF et Vostfr, Series streaming complets</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:18]</span></span><br></li>
+<li><a id="org8d59793"></a><a href="https://streamcomplet.guru/">Streamcomplet - Stream complet | Regardez des films gratuits en ligne en français</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:18]</span></span><br></li>
+<li><a id="org4a59062"></a><a href="https://hdtoday.tv/">Watch Movies Online Free | Watch Series HD Free</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:18]</span></span><br></li>
+<li><a id="orgf8f434d"></a><a href="https://voirfilms1.org/">voir Films Streaming VF Gratuit Complet HD - FilmStoon</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:19]</span></span><br></li>
+<li><a id="orgf1e0118"></a><a href="https://lookmovie.io/">Watch latest movies and shows free - lookmovie</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:19]</span></span><br></li>
+</ul>
+</li>
+<li><a id="org8784845"></a>Séries<br></li>
+<li><a id="org25c56d4"></a>Animées<br>
+<ul class="org-ul">
+<li><a id="org44cb259"></a><a href="https://vostfree.tv/">Vostfree - Animes VF et VOSTFR en Streaming et Téléchargement Gratuit</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:19]</span></span><br></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgc3762f3" class="outline-3">
+<h3 id="orgc3762f3">Sites que j'aime bien</h3>
+<div class="outline-text-3" id="text-orgc3762f3">
+</div>
+<ul class="org-ul">
+<li><a id="orgb4d72b6"></a><a href="https://www.etaletaculture.fr/">Étale Ta Culture !</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun 18:24]</span></span><br></li>
+</ul>
+</div>
+<div id="outline-container-org361e3e7" class="outline-3">
+<h3 id="org361e3e7">Pouvoir d’achat</h3>
+<div class="outline-text-3" id="text-org361e3e7">
+</div>
+<ul class="org-ul">
+<li><a id="orgf93c2d0"></a>Jeux vidéo<br>
+<ul class="org-ul">
+<li><a id="orgb2c519f"></a><a href="https://www.instant-gaming.com/fr/">Instant-Gaming.com</a> <span class="timestamp-wrapper"><span class="timestamp">[2022-01-29 Sat 10:15]</span></span><br></li>
+</ul>
+</li>
+<li><a id="orgbe4473a"></a>Autres (à trier)<br>
+<ul class="org-ul">
+<li><a id="org8b38f9c"></a>Tout<br>
+<div class="outline-text-5" id="text-org8b38f9c">
+<ul class="org-ul">
+<li>dealabs</li>
+<li>leboncoin, paruvendu</li>
+<li>google shopping</li>
+<li>Cdiscount</li>
+<li>amazon (avis)</li>
+<li>aliexpres <a href="https://fr.aliexpress.com/">https://fr.aliexpress.com/</a></li>
+<li>gearbest</li>
+<li><a href="https://www.idealo.fr/">https://www.idealo.fr/</a> (comparateur), touslesprix</li>
+<li><a href="https://fr.shopping.rakuten.com/">https://fr.shopping.rakuten.com/</a> (+ promos), comme amazon</li>
+<li>cashexpress <a href="https://www.cashexpress.fr/">https://www.cashexpress.fr/</a>, happy cash  (dernier recours)</li>
+<li>touteslesréduc</li>
+<li>Anidays (étudiant), codes promos</li>
+<li>ebay</li>
+<li>grobill</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org608d84b"></a>Nourriture<br>
+<div class="outline-text-5" id="text-org608d84b">
+<ul class="org-ul">
+<li>appli pour chercher les surplus alimentaire <a href="https://zero-gachis.com/">https://zero-gachis.com/</a></li>
+</ul>
+</div>
+</li>
+
+<li><a id="org7b8f3cb"></a>Vêtement<br>
+<div class="outline-text-5" id="text-org7b8f3cb">
+<ul class="org-ul">
+<li>showroomprive</li>
+<li>privatesportshop</li>
+<li><a href="https://www.ekosport.fr/">https://www.ekosport.fr/</a></li>
+</ul>
+</div>
+</li>
+
+<li><a id="org0bd76a6"></a>Location<br>
+<div class="outline-text-5" id="text-org0bd76a6">
+<ul class="org-ul">
+<li>airbnb ?</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgf535f6a"></a>Maison<br>
+<div class="outline-text-5" id="text-orgf535f6a">
+<ul class="org-ul">
+<li>immonot</li>
+<li>leboncoin (meuble et maison)</li>
+<li><a href="https://www.entreparticuliers.com/">https://www.entreparticuliers.com/</a> (comme leboncoin mais en mieux pour l'immo)</li>
+<li>Pour les crédits <a href="https://www.meilleurtaux.com/?campaign=newsitev2#xtref">https://www.meilleurtaux.com/?campaign=newsitev2#xtref</a></li>
+</ul>
+</div>
+</li>
+
+<li><a id="org17b92a8"></a>Numérique<br>
+<div class="outline-text-5" id="text-org17b92a8">
+<ul class="org-ul">
+<li><a href="https://www.planetenumerique.com/">https://www.planetenumerique.com/</a> (on peut demander au mec pour se faire aider)</li>
+<li><a href="https://fr.gearbest.com/">gearbest</a></li>
+<li><a href="https://www.grosbill.com/">grobill</a></li>
+<li><a href="https://www.ldlc.com/">ldlc</a> (machine démontable) (le plus de choix je pense)</li>
+<li><a href="https://certideal.com/">certydeal</a>, pour les téléphones reconditionnés (cher ?)</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org62cfdfb"></a>Voiture/moto<br>
+<ul class="org-ul">
+<li><a id="orgda942e6"></a>Moto<br>
+<div class="outline-text-6" id="text-orgda942e6">
+<ul class="org-ul">
+<li><a href="https://www.louis-moto.fr/">https://www.louis-moto.fr/</a></li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgc124fc2"></a>Voiture<br>
+<div class="outline-text-6" id="text-orgc124fc2">
+<ul class="org-ul">
+<li><a href="https://www.caroom.fr/achat-voiture">https://www.caroom.fr/achat-voiture</a> (compare les mandateurs) (pas toujours garantie)</li>
+<li>Passer par les assurances (garantie sur)</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+
+<li><a id="org04c2ee8"></a>Trajet<br>
+<div class="outline-text-5" id="text-org04c2ee8">
+<ul class="org-ul">
+<li>rome2rio</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org2cdc6da"></a>Voyage<br>
+<div class="outline-text-5" id="text-org2cdc6da">
+<ul class="org-ul">
+<li>booking</li>
+<li><a href="https://www.fr.lastminute.com/">https://www.fr.lastminute.com/</a></li>
+</ul>
+</div>
+</li>
+
+<li><a id="orge3d6a0c"></a>Films/vidéo/multimédia<br>
+<ul class="org-ul">
+<li><a id="orge4249f0"></a>streaming, voir les raccourcis<br>
+<div class="outline-text-6" id="text-orge4249f0">
+<ul class="org-ul">
+<li>uptostream ?</li>
+<li><a href="https://lookmovie.io/">https://lookmovie.io/</a></li>
+<li><a href="https://voirfilms1.org/">voirfilm</a></li>
+<li><a href="https://w6.streamcomplet3.tv/">streacomplet3</a></li>
+<li></li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgf01ebe7"></a>free youtube<br>
+<div class="outline-text-6" id="text-orgf01ebe7">
+<ul class="org-ul">
+<li><a href="https://odysee.com/">https://odysee.com/</a> (alternative (viable?) à youtbe)</li>
+
+<li>Vanced youtbe</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org2ac42b0"></a>Livres audio (à tester)<br>
+<div class="outline-text-6" id="text-org2ac42b0">
+<ul class="org-ul">
+<li>Litteratureaudio.co</li>
+<li>audiocite.net</li>
+<li>bibliboom.com</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org9ff96e6"></a>Trouver un film<br>
+<div class="outline-text-6" id="text-org9ff96e6">
+<ul class="org-ul">
+<li><a href="https://trouverunfilm.fr/trouver">https://trouverunfilm.fr/trouver</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+
+<li><a id="orgef19c58"></a>Activité de plein air (lol)<br>
+<div class="outline-text-5" id="text-orgef19c58">
+<ul class="org-ul">
+<li>Sortie-Visite.com,</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org3da80bd"></a>Livres<br>
+<ul class="org-ul">
+<li><a id="org0eb43af"></a>Pour trouver un livre<br>
+<div class="outline-text-6" id="text-org0eb43af">
+<ul class="org-ul">
+<li><a href="https://data.bnf.fr/fr/">https://data.bnf.fr/fr/</a></li>
+</ul>
+</div>
+</li>
+
+<li><a id="org37f3923"></a>Emprunter<br></li>
+<li><a id="org5ec4898"></a>Acheter physique<br></li>
+<li><a id="org768d92f"></a>Epub gratuit<br>
+<div class="outline-text-6" id="text-org768d92f">
+<ul class="org-ul">
+<li><a href="http://www.fourtoutici.pro/">fourtoutici</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</wrapper>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Utilisateur</p>
+<p class="date">Created: 2022-03-11 Fri 09:28</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

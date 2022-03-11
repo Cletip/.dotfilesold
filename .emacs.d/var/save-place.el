@@ -1,34 +1,78 @@
 ;;; -*- coding: utf-8 -*-
 (("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/AgendaTickler.org" . 1010)
- ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Bookmarks.org" . 481)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Bookmarks.org" . 809)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Contacts.org" . 1139)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/GTD.org" . 47580)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Inbox.org" . 9845)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/References.org" . 51517)
- ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Contacts.org" . 1137)
- ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Inbox.org" . 9212)
- ("/home/utilisateur/.dotfiles/.emacs.d/var/recentf-save.el" . 8740)
- ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/Lessauvegardes.org" . 23435)
+ ("/home/utilisateur/.emacs.dAutreOrdi/config.org" . 115106)
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.org" . 5529)
+ ("/home/utilisateur/.dotfiles/.emacs.d/var/recentf-save.el" . 8776)
+ ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/Lessauvegardes.org" . 5108)
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/integration.org" . 3707)
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisations.org" . 27737)
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.sh" . 445)
+ ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/test.org" . 53)
+ ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/"
+  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/Lessauvegardes.org"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/flycheck-grammalecte-autoloads.el" . 2520)
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/grammalecte.el" . 9890)
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/grammalecte.el"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/grammalecte/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/grammalecte/README.txt"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisations.org"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.el" . 1686)
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/org-mode.org" . 60447)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/"
+  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Inbox.org"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/config.org"))
+ ("/home/utilisateur/sharedDirectoryPrivate/"
+  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel"))
+ ("/home/"
+  (dired-filename . "/home/utilisateur"))
+ ("/home/utilisateur/.emacs.d/straight/"
+  (dired-filename . "/home/utilisateur/.emacs.d/straight/build"))
+ ("/home/utilisateur/.emacs.d/straight/build/"
+  (dired-filename . "/home/utilisateur/.emacs.d/straight/build/flycheck-grammalecte"))
+ ("/home/utilisateur/.dotfiles/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build"))
+ ("/home/utilisateur/.emacs.d/straight/build/flycheck-grammalecte/flycheck_grammalecte.py" . 8058)
+ ("/home/utilisateur/.emacs.d/straight/build/flycheck-grammalecte/"
+  (dired-filename . "/home/utilisateur/.emacs.d/straight/build/flycheck-grammalecte/grammalecte.el"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte"))
+ ("/home/utilisateur/Téléchargements/" . 510)
+ ("/home/utilisateur/"
+  (dired-filename . "/home/utilisateur/.emacs.d"))
+ ("/home/utilisateur/.emacs.d/"
+  (dired-filename . "/home/utilisateur/.emacs.d/straight"))
+ ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/ordi/" . 623)
+ ("/home/utilisateur/.dotfiles/.emacs.d/var/custom.el" . 1599)
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/repos/xah-fly-keys/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/repos/xah-fly-keys/.git"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/repos/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/repos/xah-fly-keys"))
+ ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/Bookmarks.html" . 19355)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/org-download/org-download-autoloads.el" . 396)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/templatesOrgCapture/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/templatesOrgCapture/contacts.org"))
- ("/home/utilisateur/sharedDirectoryPrivate/notes/org/images/Testn/2022-03-08_22-29-42_like_a_boss___by_dragibuz_df17fx0-pre.jpg" . 410)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Contacts.vcf" . 12)
- ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Contacts.org"))
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/images/Testn/" . 603)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/images/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/org/images/Testn"))
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/org/images"))
- ("/home/utilisateur/sharedDirectoryPrivate/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes"))
- ("/home/utilisateur/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate"))
  ("/home/utilisateur/.dotfiles/.emacs.d/config.org" . 9996)
- ("/home/utilisateur/.dotfiles/.emacs.d/"
-  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/config.org"))
  ("/home/utilisateur/sharedDirectoryPrivate/notes/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/testimage.org"))
  ("/home/utilisateur/sharedDirectoryPrivate/notes/testimage.org" . 239)
- ("/home/utilisateur/.dotfiles/.emacs.d/config/org-mode.org" . 39765)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/org-download/org-download.el" . 16693)
  ("/home/utilisateur/.dotfiles/.emacs.d/LEinit.el" . 1233)
  ("/home/utilisateur/.dotfiles/.emacs.d/Awesome.org" . 48058)
@@ -57,17 +101,6 @@
  ("/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/notesPerso(nepasgarderPointDinterogation)/" . 651)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/journal_de_dissatisfaction.org" . 3035)
  ("/home/utilisateur/.emacs.dAutreOrdi/#config.org#" . 115972)
- ("/home/utilisateur/.emacs.dAutreOrdi/config.org" . 116107)
- ("/home/utilisateur/.emacs.dAutreOrdi/"
-  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/config.org"))
- ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.org" . 1162)
- ("/home/utilisateur/.dotfiles/.emacs.d/config/"
-  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.org"))
- ("/home/utilisateur/.dotfiles/"
-  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d"))
- ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisations.org" . 12583)
- ("/home/utilisateur/Téléchargements/"
-  (dired-filename . "/home/utilisateur/Téléchargements/EBOOK The Shift Project- Le plan de transformation de leconomie francaise.epub"))
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/repos/yasnippet-snippets/snippets/emacs-lisp-mode/match-string" . 40)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/repos/yasnippet-snippets/snippets/emacs-lisp-mode/file.read-lines" . 70)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/repos/yasnippet-snippets/snippets/emacs-lisp-mode/word-or-region" . 86)
@@ -112,14 +145,10 @@
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/nov/nov-autoloads.el" . 508)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/esxml/esxml-autoloads.el" . 634)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/kv/kv-autoloads.el" . 287)
- ("/home/utilisateur/.dotfiles/.emacs.d/var/custom.el" . 1134)
  ("/tmp/"
   (dired-filename . "/tmp/systemd-private-7787502c020c43ae83a47f933326a941-systemd-resolved.service-ZFFIfi"))
- ("/home/utilisateur/.emacs.d/"
-  (dired-filename . "/home/utilisateur/.emacs.d/var"))
  ("/home/utilisateur/.emacs.d/var/"
   (dired-filename . "/home/utilisateur/.emacs.d/var/custom.el"))
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/Bookmarks.html" . 19378)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/Nom_de_l'image/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/Nom_de_l'image/2022-03-09_13-29-17_floating_house_by_deniszhbankov_df04lx0-fullview.jpg"))
  ("/home/utilisateur/.emacs.dAutreOrdi/straight/build/org-download/"
@@ -133,8 +162,6 @@
   (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/repos/org-download/org-download.el"))
  ("/home/utilisateur/.emacs.dAutreOrdi/straight/repos/"
   (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/repos/org-download"))
- ("/home/"
-  (dired-filename . "/home/utilisateur"))
  ("/"
   (dired-filename . "/home"))
  ("/home/utilisateur/.emacs.dAutreOrdi/straight/repos/org-roam/doc/org-roam.texi" . 53708)
@@ -154,7 +181,6 @@
   (dired-filename . "/media/utilisateur"))
  ("/media/utilisateur/"
   (dired-filename . "/media/utilisateur/8726733b-80c1-4ed4-9915-ed73e21cab26"))
- ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/peep-dired/peep-dired.el" . 3683)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/templatesOrgCapture/àFairePetitÀPetit/snippets/Image" . 141)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/templatesOrgCapture/àFairePetitÀPetit/snippets/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/templatesOrgCapture/àFairePetitÀPetit/snippets/Image"))
@@ -186,12 +212,7 @@
  ("/home/utilisateur/.dotfiles/.emacs.d/config/programmation.org" . 3226)
  ("/home/utilisateur/mesdocuments/professionnel/cours/S4/"
   (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/AlgoII"))
- ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.sh" . 444)
  ("/home/utilisateur/sharedDirectoryPrivate/.stfolder/" . 227)
- ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/Lessauvegardes.org"))
- ("/home/utilisateur/.dotfiles/.emacs.d/config/integration.org" . 4725)
- ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.el" . 660)
  ("/home/utilisateur/.dotfiles/.emacs.d/init.el" . 413)
  ("/home/utilisateur/.dotfiles/.emacs.d/Organisation.jpg" . 614)
  ("/home/utilisateur/mesdocuments/professionnel/cours/S4/ProjetPrepIsima/"
@@ -203,9 +224,7 @@
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/org-contrib/org-contacts.el" . 41223)
  ("/home/utilisateur/Documents/"
   (dired-filename . "/home/utilisateur/Documents/.."))
- ("/home/utilisateur/Téléchargements/contacts(2).vcf" . 268)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/org-vcard/org-vcard.el" . 30426)
- ("/home/utilisateur/contacts.vcf" . 197)
  ("/home/utilisateur/.dotfiles/.emacs.d/config/contacts.vcf" . 197)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/magit/magit-autoloads.el" . 93325)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/git-commit/git-commit-autoloads.el" . 635)
@@ -405,7 +424,6 @@
  ("/home/utilisateur/.emacs.d/config/raccourcis.org" . 27)
  ("/home/utilisateur/.emacs.d/config/basicOptimisations.el" . 2734)
  ("/home/utilisateur/.emacs.d/config/programmation.sh" . 278)
- ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/ordi/" . 623)
  ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/tel/orgzly/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/tel/orgzly/.."))
  ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/tel/"
@@ -443,13 +461,4 @@
  ("/home/utilisateur/.emacs.d/straight/build/markdown-mode/markdown-mode-autoloads.el" . 1285)
  ("/home/utilisateur/.emacs.d/straight/build/spinner/spinner-autoloads.el" . 2427)
  ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/js/jquery-3.3.1.min.js" . 2842)
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/js/jquery.searchable.js" . 5827)
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/js/smooth-scroll.js" . 186)
- ("/home/utilisateur/Téléchargements/test.png" . 158801)
- ("/home/utilisateur/sharedDirectoryPrivate/orgzlyBisTest/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/orgzlyBisTest/gustave_le_bon.org"))
- ("/home/utilisateur/.emacs.d/straight/build/pdf-tools/pdf-tools-autoloads.el" . 16938)
- ("/home/utilisateur/.emacs.d/straight/build/tablist/tablist-autoloads.el" . 723)
- ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/TD1/files_biblio/CONFERENCE.csv" . 17315)
- ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/TD1/files_biblio/ARTICLE.csv" . 578240)
- ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/TD1/files_biblio/LECTEUR.csv" . 95582))
+ ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/js/jquery.searchable.js" . 5827))

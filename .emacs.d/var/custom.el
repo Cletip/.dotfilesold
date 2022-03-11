@@ -6,6 +6,8 @@
  '(custom-safe-themes
    '("745d03d647c4b118f671c49214420639cb3af7152e81f132478ed1c649d4597d" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default))
  '(dimmer-buffer-exclusion-regexps '(".*Minibuf.*" ".*which-key.*" ".*LV.*") nil nil "Customized with use-package dimmer")
+ '(org-agenda-files
+   '("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/References.org" "/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Inbox.org" "/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/GTD.org" "/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Contacts.org" "/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Bookmarks.org" "/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/AgendaTickler.org"))
  '(safe-local-variable-values
    '((org-src-preserve-indentation . t)
      (eval add-hook 'after-save-hook 'org-babel-tangle nil t)

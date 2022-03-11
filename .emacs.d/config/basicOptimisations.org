@@ -853,7 +853,6 @@ merci encore à xah, [[http://ergoemacs.org/emacs/emacs_toggle_line_spacing.html
   
 #+end_src
 
-
 **** Editing
 ***** Pour bouger les lignes/paragraphe comme dans org (avec CTRL)
 
@@ -939,7 +938,6 @@ Doc : https://github.com/Fuco1/smartparens et [[https://smartparens.readthedocs.
   (use-package sudo-edit)
 #+end_src
 
-
 **** Compter le nombre de chaque commande faite (bien pour optimiser les raccourcis)
 
 keyfreq-show pour voir le nombre de commandes
@@ -977,5 +975,22 @@ keyfreq-show pour voir le nombre de commandes
       :config (defalias 'emacs-restart #'restart-emacs)
       )
 #+end_src
+
+
+
+**** Gérer Git dans emacs
+
+#+begin_src emacs-lisp
+  (use-package magit)
+#+end_src
+
+**** Lire des epub
+
+#+begin_src emacs-lisp
+(use-package nov
+    :config
+    (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode)))
+#+end_src
+
 
 

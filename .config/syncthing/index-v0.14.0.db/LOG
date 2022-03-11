@@ -745,3 +745,33 @@
 09:24:59.112641 table@compaction committed F-1 S-3KiB Ke·0 D·104 T·6.305475ms
 09:24:59.112697 table@remove removed @164
 09:24:59.112746 table@remove removed @163
+09:34:59.915461 memdb@flush N·68561 S·15MiB
+09:34:59.964810 memdb@flush created L0@169 N·68561 S·3MiB "\x00\x00\x00..ics,v21356":"\f\x00\x00..org,v21381"
+09:34:59.964835 version@stat F·[1 1] S·4MiB[3MiB 361KiB] Sc·[0.25 0.00]
+09:34:59.966050 memdb@flush committed F·1 T·50.564192ms
+09:34:59.967736 journal@remove removed @165
+09:34:59.998129 table@compaction L0·1 -> L1·1 S·4MiB Q·97948
+09:35:00.021483 table@build created L1@170 N·29274 S·2MiB "\x00\x00\x00..ics,v21356":"\x01\x00\x00..x.h,v49210"
+09:35:00.050634 table@build created L1@171 N·40337 S·2MiB "\x01\x00\x00..lob,v48833":"\v\x00\x00..\x006(,v69698"
+09:35:00.052958 table@build created L1@172 N·3114 S·87KiB "\v\x00\x00..\x006),v69702":"\v\x00\x00..\x00BR,v89906"
+09:35:00.052980 version@stat F·[0 3] S·4MiB[0B 4MiB] Sc·[0.00 0.04]
+09:35:00.054521 table@compaction committed F+1 S-12KiB Ke·0 D·260 T·56.376709ms
+09:35:00.054861 table@remove removed @169
+09:35:00.054929 table@remove removed @167
+09:40:23.437816 memdb@flush N·85488 S·15MiB
+09:40:23.477781 memdb@flush created L0@174 N·85488 S·4MiB "\x00\x00\x00..odt,v167330":"\v\x00\x00..\x00\x89\t,v167390"
+09:40:23.477809 version@stat F·[1 3] S·8MiB[4MiB 4MiB] Sc·[0.25 0.04]
+09:40:23.478424 memdb@flush committed F·1 T·40.575348ms
+09:40:23.479557 journal@remove removed @168
+09:40:25.233734 table@compaction L0·1 -> L1·3 S·8MiB Q·176192
+09:40:25.252797 table@build created L1@175 N·22130 S·2MiB "\x00\x00\x00..ics,v21356":"\x00\x00\x00..7d0,v154119"
+09:40:25.272716 table@build created L1@176 N·25239 S·2MiB "\x00\x00\x00../93,v43244":"\x01\x00\x00...el,v145396"
+09:40:25.301286 table@build created L1@177 N·46656 S·2MiB "\x01\x00\x00...el,v145512":"\x02\x00\x00..7ee,v160162"
+09:40:25.322366 table@build created L1@178 N·30358 S·2MiB "\x02\x00\x00..7ee,v148666":"\v\x00\x00..\x00\x12\x9e,v35902"
+09:40:25.336370 table@build created L1@179 N·30315 S·944KiB "\v\x00\x00..\x00\x12\x9f,v35905":"\v\x00\x00..\x00\x89\t,v167390"
+09:40:25.336447 version@stat F·[0 5] S·9MiB[0B 9MiB] Sc·[0.00 0.09]
+09:40:25.337047 table@compaction committed F+1 S+202KiB Ke·0 D·3515 T·103.289446ms
+09:40:25.370787 table@remove removed @174
+09:40:25.371066 table@remove removed @170
+09:40:25.371294 table@remove removed @171
+09:40:25.371369 table@remove removed @172

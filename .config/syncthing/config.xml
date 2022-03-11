@@ -1,4 +1,26 @@
 <configuration version="28">
+    <folder id="jq2sv-2cstq" label="mesdocuments" path="/home/utilisateur/mesdocuments" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="KL3GMYF-KLJAQXO-O5NSET6-DBJORKI-FSC334V-KF7JL67-U3XKGDQ-6EOGWA6" introducedBy=""></device>
+        <device id="PJDNP4T-FPOWBVF-QCVVRPD-OJHX372-YCSKRC3-QP5PV2P-RDT7RZD-4JYGCQD" introducedBy=""></device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning></versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <useLargeBlocks>true</useLargeBlocks>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+    </folder>
     <folder id="tybh5-cu6zk" label="sharedDirectoryPrivate" path="/home/utilisateur/sharedDirectoryPrivate" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
         <device id="KL3GMYF-KLJAQXO-O5NSET6-DBJORKI-FSC334V-KF7JL67-U3XKGDQ-6EOGWA6" introducedBy=""></device>

@@ -1,6 +1,6 @@
 ;; ============================================================
 ;; Don't edit this file, edit config.org' instead ...
-;; Auto-generated at Mon Mar 07 2022-03-07T16:14:29  on host utilisateur-GL65-Leopard-10SER
+;; Auto-generated at Fri Mar 11 2022-03-11T10:23:02  on host utilisateur-GL65-Leopard-10SER
 ;; ============================================================
 
 
@@ -830,3 +830,17 @@
   (use-package restart-emacs
       :config (defalias 'emacs-restart #'restart-emacs)
       )
+
+
+;; #####################################################################################
+(message "config • Gérer Git dans emacs …")
+
+  (use-package magit)
+
+
+;; #####################################################################################
+(message "config • Lire des epub …")
+
+(use-package nov
+    :config
+    (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode)))
