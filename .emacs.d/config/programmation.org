@@ -91,10 +91,20 @@ Pour installer facilement un language server protocol, deux cas :
 ****** Java                                                        :Low:
 
 #+begin_src emacs-lisp
-      (use-package lsp-java
-        :config
-        (setq lsp-java-jdt-download-url  "https://download.eclipse.org/jdtls/milestones/0.57.0/jdt-language-server-0.57.0-202006172108.tar.gz")
-        )
+
+    ;; pour corriger la variable $JAVA_HOME
+    (use-package exec-path-from-shell
+      :config
+      (exec-path-from-shell-initialize)
+      )
+    ;; (when (daemonp)
+      ;; (exec-path-from-shell-initialize)
+      ;; )
+
+    (use-package lsp-java
+      :config
+      ;; (setq lsp-java-jdt-download-url  "https://download.eclipse.org/jdtls/milestones/0.57.0/jdt-language-server-0.57.0-202006172108.tar.gz")
+      )
 #+end_src
 
 **** Completion et proposition

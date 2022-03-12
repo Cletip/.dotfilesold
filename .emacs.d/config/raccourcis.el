@@ -1,6 +1,6 @@
 ;; ============================================================
 ;; Don't edit this file, edit config.org' instead ...
-;; Auto-generated at Mon Mar 07 2022-03-07T17:42:16  on host utilisateur-GL65-Leopard-10SER
+;; Auto-generated at Sat Mar 12 2022-03-12T12:42:27  on host utilisateur-GL65-Leopard-10SER
 ;; ============================================================
 
 
@@ -108,3 +108,10 @@
   ;; (org-babel-load-file (expand-file-name "/home/msi/.emacs.d/lisp/LayerXahFlyKey/LayerXahFlyKey.org"))
 
 
+
+
+;; #####################################################################################
+(message "config • Les contrôles au bon endroit …")
+
+  (shell-command "setxkbmap -option caps:none")
+  (shell-command "xmodmap /home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/ordi/Xmodmap")

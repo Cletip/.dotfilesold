@@ -1,8 +1,9 @@
 exécuter ceci pour mettre à jour le fichier .el
-(org-babel-load-file (expand-file-name "/home/msi/.emacs.d/lisp/LayerXahFlyKey/LayerXahFlyKey.org"))
+(org-babel-load-file (expand-file-name "/home/utilisateur/.dotfiles/.emacs.d/lisp/LayerXahFlyKey/LayerXahFlyKey.org"))
 
 Les touches peuvent être "free"
-Nom de mes fonction : cp/blabla
+Les touches peuvent être "perso"
+Nom de mes fonctions : cp/blabla
 / et non - car cela vient de moi et pas d'un package
 
 =lsp-command-map=
@@ -168,7 +169,7 @@ xah-fly-t-keymap, qui le mettra dans t keymap (3ieme couche)
     
     (defun cp/go-to-config ()
       (interactive)
-      (find-file "~/.emacs.d/config/config.org")
+      (find-file my-user-emacs-configuration)
       )
     
 #+end_src
@@ -860,9 +861,14 @@ CLOSED: [2021-11-21 Sun 10:24]
          ("g" . xah-toggle-read-novel-mode)
          ("h" . widen)
          ("i" . make-frame-command)
-         ("j" . flyspell-buffer)
-         ("s" . flyspell-check-previous-highlighted-word)
-         ("k" . menu-bar-open)
+
+         ;; ("j" . flyspell-buffer)
+         ("j" . flyspell-check-previous-highlighted-word) ;;perso
+         ;; ("s" . flyspell-check-previous-highlighted-word)
+
+         ;; ("k" . menu-bar-open)
+         ("k" . flycheck-grammalecte-correct-error-before-point)
+
          ("l" . toggle-word-wrap)
          ("m" . jump-to-register)
          ("n" . narrow-to-region)
@@ -999,8 +1005,10 @@ CLOSED: [2021-11-21 Sun 10:24]
 
          ("l" . org-sidebar-tree-toggle)
          ("m" . engine/search-google)
+         ("n" . flycheck-grammalecte-correct-error-before-point)
          ("o" . org-agenda)
          ("t" . flyspell-check-previous-highlighted-word)
+
          ;; ("x" . universal-argument)
 
 

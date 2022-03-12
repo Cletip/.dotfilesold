@@ -116,3 +116,13 @@ if ! shopt -oq posix; then
   fi
 fi
 PATH="$HOME/.local/bin:$PATH"
+
+
+# -------------------------------------------------------------------
+# ma config
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+# java home
+. ~/.asdf/plugins/java/set-java-home.bash

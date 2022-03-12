@@ -1,65 +1,178 @@
 ;;; -*- coding: utf-8 -*-
 (("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/AgendaTickler.org" . 1010)
- ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Bookmarks.org" . 809)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Bookmarks.org" . 1195)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Contacts.org" . 1139)
- ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/GTD.org" . 47580)
- ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Inbox.org" . 9845)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Inbox.sync-conflict-20220312-113011-PJDNP4T.org" . 10187)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/References.org" . 51517)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/GTD.org" . 47819)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Inbox.org" . 3015)
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.org" . 4996)
+ ("/home/utilisateur/.dotfiles/.emacs.d/var/recentf-save.el" . 8753)
+ ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/Lessauvegardes.org" . 3017)
+ ("/home/utilisateur/mesdocuments/personnel/informatique/emacs/emacs.dyoutube/README.org" . 201)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/"
+  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/GTD.org"))
+ ("/home/utilisateur/mesdocuments/personnel/informatique/emacs/emacs.dyoutube/"
+  (dired-filename . "/home/utilisateur/mesdocuments/personnel/informatique/emacs/emacs.dyoutube/README.org"))
+ ("/home/utilisateur/mesdocuments/"
+  (dired-filename . "/home/utilisateur/mesdocuments/.stfolder"))
+ ("/home/utilisateur/Testdedossier/HelloWorld.java" . 257)
+ ("/home/utilisateur/Testdedossier/" . 427)
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/programmation.org" . 3213)
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/config/programmation.org"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/var"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/var/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/var/lsp-java"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/var/lsp-java/" . 227)
+ ("/home/utilisateur/.dotfiles/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/var/custom.el" . 1599)
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/exec-path-from-shell/exec-path-from-shell-autoloads.el" . 1320)
+ ("/home/utilisateur/"
+  (dired-filename . "/home/utilisateur/.asdf"))
+ ("/home/utilisateur/.asdf/"
+  (dired-filename . "/home/utilisateur/.asdf/installs"))
+ ("/home/utilisateur/.asdf/installs/"
+  (dired-filename . "/home/utilisateur/.asdf/installs/java"))
+ ("/home/utilisateur/.asdf/installs/java/"
+  (dired-filename . "/home/utilisateur/.asdf/installs/java/openjdk-16.0.2"))
+ ("/home/utilisateur/.asdf/installs/java/openjdk-16.0.2/" . 691)
+ ("/home/utilisateur/.dotfiles/.emacs.d/config.org" . 9996)
+ ("/home/utilisateur/.dotfiles/.emacs.d/LEinit.el" . 7629)
+ ("/home/utilisateur/.dotfiles/.emacs.d/var/savehist.el" . 62628)
+ ("/home/utilisateur/.dotfiles/.emacs.d/config/programmation.el" . 1504)
+ ("/tmp/"
+  (dired-filename . "/tmp/lsp-java-installmWQCGH"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/repos/lsp-java/install/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/repos/lsp-java/install/.mvn"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/repos/lsp-java/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/repos/lsp-java/Makefile"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/repos/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/repos/lsp-java"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/straight/build/lsp-java/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/build/lsp-java/dap-java.el"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/straight/build/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/build/lsp-java"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/straight/repos/lsp-java/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/repos/lsp-java/.git"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/straight/repos/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/repos/lsp-java"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/straight/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/repos"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/lsp-java/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build/lsp-java/icons"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls/server/java-test/extension/CHANGELOG.md" . 15579)
+ ("/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls/server/java-test/extension/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls/server/java-test/extension/CHANGELOG.md"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls/server/java-test/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls/server/java-test/extension"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build/lsp-java"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/straight/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/var/lsp/server/clangd/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/var/lsp/server/clangd/clangd.zip.zip"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/var/lsp/server/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/var/lsp/server/clangd"))
+ ("/home/utilisateur/.dotfiles/.emacs.d/var/lsp/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/var/lsp/server"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/var"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/var/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/workspace/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/workspace/.metadata"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls/server/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls/server/java-test"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls/"
+  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls/server"))
+ ("/home/utilisateur/.emacs.dAutreOrdi/var/lsp-java/eclipse.jdt.ls/server/java-test/extension/dist/extension.bundle.js" . 99740)
+ ("/home/utilisateur/.emacs.dAutreOrdi/straight/build/lsp-java/lsp-java-autoloads.el" . 554)
+ ("/home/utilisateur/.asdf/plugins/java/set-java-home.bash" . 719)
+ ("/home/utilisateur/.asdf/plugins/java/"
+  (dired-filename . "/home/utilisateur/.asdf/plugins/java/set-java-home.bash"))
+ ("/home/utilisateur/.asdf/plugins/"
+  (dired-filename . "/home/utilisateur/.asdf/plugins/java"))
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/org/" . 1115)
+ ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/"
+  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/Lessauvegardes.org"))
+ ("/home/utilisateur/sharedDirectoryPrivate/"
+  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel"))
+ ("/home/"
+  (dired-filename . "/home/utilisateur"))
+ ("/home/utilisateur/.dotfiles/.asdf/plugins/"
+  (dired-filename . "/home/utilisateur/.dotfiles/.asdf/plugins/java"))
+ ("/home/utilisateur/.dotfiles/.bashrc" . 4008)
+ ("/home/utilisateur/Téléchargements/qmk_firmware/Doxyfile" . 1702)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/"
+  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/org"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/Exercicespython/seance1/Exos-Vracfinal.py" . 10895)
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/Exercicespython/seance1/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/Exercicespython/seance1/Exos-Vracfinal.py"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/Exercicespython/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/Exercicespython/seance1"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/Exercicespython"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/sujet3/sqlTP" . 1327)
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/sujet3/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/sujet3/sqlTP"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/sujet3"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/ProgrammationOBJ/TP/3bis/src/Jeu.java" . 603)
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/ProgrammationOBJ/TP/3bis/src/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/ProgrammationOBJ/TP/3bis/src/Jeu.class"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/ProgrammationOBJ/TP/3bis/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/ProgrammationOBJ/TP/3bis/src"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/ProgrammationOBJ/TP/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/ProgrammationOBJ/TP/3bis"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/ProgrammationOBJ/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/ProgrammationOBJ/TP"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/RéalitéVirtuelle"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/RéalitéVirtuelle/Cours/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/RéalitéVirtuelle/Cours/Ch III - Réalité Virtuelle Prep ISIMA - Processing.pdf"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/RéalitéVirtuelle/TD/TD4/" . 867)
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/RéalitéVirtuelle/TD/"
+  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/RéalitéVirtuelle/TD/seance5"))
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/RéalitéVirtuelle/" . 445)
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/sujet2/Exercices.org" . 579)
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/Exercicespython/3/Exos-Itérateurs-Yield.py" . 620)
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/Exercicespython/3/Exos-Itérateurs-Yieldperso.py" . 2038)
+ ("/home/utilisateur/mesdocuments/professionnel/cours/S4/MRP/Exercicespython/seance1/Exos-Vrac.py" . 8698)
+ ("/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/"
+  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/images"))
+ ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/Bookmarks.html" . 19352)
  ("/home/utilisateur/.emacs.dAutreOrdi/config.org" . 115106)
- ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.org" . 5529)
- ("/home/utilisateur/.dotfiles/.emacs.d/var/recentf-save.el" . 8776)
- ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/Lessauvegardes.org" . 5108)
  ("/home/utilisateur/.dotfiles/.emacs.d/config/integration.org" . 3707)
  ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisations.org" . 27737)
  ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.sh" . 445)
- ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/test.org" . 53)
- ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/Lessauvegardes.org"))
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/flycheck-grammalecte-autoloads.el" . 2520)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/grammalecte.el" . 9890)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/"
   (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/grammalecte.el"))
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/grammalecte/"
   (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte/grammalecte/README.txt"))
- ("/home/utilisateur/.dotfiles/.emacs.d/"
-  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight"))
- ("/home/utilisateur/.dotfiles/.emacs.d/config/"
-  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisations.org"))
  ("/home/utilisateur/.dotfiles/.emacs.d/config/basicOptimisationsAvecDep.el" . 1686)
  ("/home/utilisateur/.dotfiles/.emacs.d/config/org-mode.org" . 60447)
- ("/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/org/orgzly/Inbox.org"))
- ("/home/utilisateur/.emacs.dAutreOrdi/"
-  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/config.org"))
- ("/home/utilisateur/sharedDirectoryPrivate/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel"))
- ("/home/"
-  (dired-filename . "/home/utilisateur"))
  ("/home/utilisateur/.emacs.d/straight/"
   (dired-filename . "/home/utilisateur/.emacs.d/straight/build"))
  ("/home/utilisateur/.emacs.d/straight/build/"
   (dired-filename . "/home/utilisateur/.emacs.d/straight/build/flycheck-grammalecte"))
- ("/home/utilisateur/.dotfiles/"
-  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d"))
- ("/home/utilisateur/.dotfiles/.emacs.d/straight/"
-  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build"))
  ("/home/utilisateur/.emacs.d/straight/build/flycheck-grammalecte/flycheck_grammalecte.py" . 8058)
  ("/home/utilisateur/.emacs.d/straight/build/flycheck-grammalecte/"
   (dired-filename . "/home/utilisateur/.emacs.d/straight/build/flycheck-grammalecte/grammalecte.el"))
- ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/"
-  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/build/flycheck-grammalecte"))
  ("/home/utilisateur/Téléchargements/" . 510)
- ("/home/utilisateur/"
-  (dired-filename . "/home/utilisateur/.emacs.d"))
  ("/home/utilisateur/.emacs.d/"
   (dired-filename . "/home/utilisateur/.emacs.d/straight"))
  ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/ordi/" . 623)
- ("/home/utilisateur/.dotfiles/.emacs.d/var/custom.el" . 1599)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/repos/xah-fly-keys/"
   (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/repos/xah-fly-keys/.git"))
- ("/home/utilisateur/.dotfiles/.emacs.d/straight/repos/"
-  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/straight/repos/xah-fly-keys"))
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/Bookmarks.html" . 19355)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/org-download/org-download-autoloads.el" . 396)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/templatesOrgCapture/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/templatesOrgCapture/contacts.org"))
@@ -67,16 +180,9 @@
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/images/Testn/" . 603)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/images/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/org/images/Testn"))
- ("/home/utilisateur/sharedDirectoryPrivate/notes/org/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/org/images"))
- ("/home/utilisateur/.dotfiles/.emacs.d/config.org" . 9996)
- ("/home/utilisateur/sharedDirectoryPrivate/notes/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/testimage.org"))
  ("/home/utilisateur/sharedDirectoryPrivate/notes/testimage.org" . 239)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/org-download/org-download.el" . 16693)
- ("/home/utilisateur/.dotfiles/.emacs.d/LEinit.el" . 1233)
  ("/home/utilisateur/.dotfiles/.emacs.d/Awesome.org" . 48058)
- ("/home/utilisateur/.dotfiles/.emacs.d/var/savehist.el" . 848)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/main/comment_je_vais_faire_mon_braindump.org" . 456)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/reference/BiaisAutocomplaisance2021.org" . 255)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/templatesOrgCapture/artistes.org" . 115)
@@ -92,12 +198,9 @@
  ("/home/utilisateur/sharedDirectoryPrivate/orgzlyBisTest/beethoven.org" . 6842)
  ("/home/utilisateur/sharedDirectoryPrivate/orgzlyBisTest/Gab.org" . 5159)
  ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/TD1/Exercices.org" . 1924)
- ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/sujet2/Exercices.org" . 2707)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/artistes.org" . 7593)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/notesPerso(nepasgarderPointDinterogation)/films_vus.org" . 2667)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/.dir-locals.el" . 130)
- ("/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/notesPerso(nepasgarderPointDinterogation)"))
  ("/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/notesPerso(nepasgarderPointDinterogation)/" . 651)
  ("/home/utilisateur/sharedDirectoryPrivate/notes/org/journal_de_dissatisfaction.org" . 3035)
  ("/home/utilisateur/.emacs.dAutreOrdi/#config.org#" . 115972)
@@ -145,23 +248,15 @@
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/nov/nov-autoloads.el" . 508)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/esxml/esxml-autoloads.el" . 634)
  ("/home/utilisateur/.dotfiles/.emacs.d/straight/build/kv/kv-autoloads.el" . 287)
- ("/tmp/"
-  (dired-filename . "/tmp/systemd-private-7787502c020c43ae83a47f933326a941-systemd-resolved.service-ZFFIfi"))
  ("/home/utilisateur/.emacs.d/var/"
   (dired-filename . "/home/utilisateur/.emacs.d/var/custom.el"))
  ("/home/utilisateur/sharedDirectoryPrivate/notes/Nom_de_l'image/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/Nom_de_l'image/2022-03-09_13-29-17_floating_house_by_deniszhbankov_df04lx0-fullview.jpg"))
  ("/home/utilisateur/.emacs.dAutreOrdi/straight/build/org-download/"
   (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/build/org-download/org-download.el"))
- ("/home/utilisateur/.emacs.dAutreOrdi/straight/build/"
-  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/build/org-download"))
- ("/home/utilisateur/.emacs.dAutreOrdi/straight/"
-  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/repos"))
  ("/home/utilisateur/.emacs.dAutreOrdi/straight/repos/org-download/org-download.el" . 27571)
  ("/home/utilisateur/.emacs.dAutreOrdi/straight/repos/org-download/"
   (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/repos/org-download/org-download.el"))
- ("/home/utilisateur/.emacs.dAutreOrdi/straight/repos/"
-  (dired-filename . "/home/utilisateur/.emacs.dAutreOrdi/straight/repos/org-download"))
  ("/"
   (dired-filename . "/home"))
  ("/home/utilisateur/.emacs.dAutreOrdi/straight/repos/org-roam/doc/org-roam.texi" . 53708)
@@ -200,8 +295,6 @@
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/main/comment_je_vais_faire_mon_braindump.org"))
  ("/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/reference/"
   (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/notes/zettelkasten/reference/BiaisAutocomplaisance2021.org"))
- ("/home/utilisateur/mesdocuments/"
-  (dired-filename . "/home/utilisateur/mesdocuments/personnel"))
  ("/home/utilisateur/mesdocuments/personnel/"
   (dired-filename . "/home/utilisateur/mesdocuments/personnel/informatique"))
  ("/home/utilisateur/mesdocuments/personnel/informatique/"
@@ -209,9 +302,6 @@
  ("/home/utilisateur/mesdocuments/personnel/informatique/mesSitesWeb/"
   (dired-filename . "/home/utilisateur/mesdocuments/personnel/informatique/mesSitesWeb/Netlify"))
  ("/home/utilisateur/.dotfiles/Readme.org" . 22)
- ("/home/utilisateur/.dotfiles/.emacs.d/config/programmation.org" . 3226)
- ("/home/utilisateur/mesdocuments/professionnel/cours/S4/"
-  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/AlgoII"))
  ("/home/utilisateur/sharedDirectoryPrivate/.stfolder/" . 227)
  ("/home/utilisateur/.dotfiles/.emacs.d/init.el" . 413)
  ("/home/utilisateur/.dotfiles/.emacs.d/Organisation.jpg" . 614)
@@ -389,76 +479,7 @@
  ("/home/utilisateur/.dotfiles/.stow-local-ignore" . 28)
  ("/home/utilisateur/.emacs.d/straight/build/ox-hugo/ox-hugo-autoloads.el" . 9915)
  ("/home/utilisateur/.emacs.d/straight/build/magit-section/magit-section-autoloads.el" . 421)
- ("/home/utilisateur/.dotfiles/.emacs.d/var/"
-  (dired-filename . "/home/utilisateur/.dotfiles/.emacs.d/var/eww"))
  ("/home/utilisateur/.dotfiles/.emacs.d/config/try.org" . 27)
  ("/home/utilisateur/.dotfiles/.emacs.d/config/raccourcis.org" . 3709)
  ("/home/utilisateur/.emacs.d/etc/"
-  (dired-filename . "/home/utilisateur/.emacs.d/etc/yasnippet"))
- ("/home/utilisateur/.bash_history" . 10448)
- ("/home/utilisateur/.ssh/id_rsa.pub" . 733)
- ("/home/utilisateur/.ssh/"
-  (dired-filename . "/home/utilisateur/.ssh/id_rsa.pub"))
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/css/theme.css" . 1249)
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/css/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/org-linkz/css/theme.css"))
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/js/main.js" . 578)
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/js/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/org-linkz/js/main.js"))
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/org-linkz/js"))
- ("/home/utilisateur/mesdocuments/professionnel/"
-  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours"))
- ("/home/utilisateur/mesdocuments/professionnel/cours/"
-  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4"))
- ("/home/utilisateur/mesdocuments/professionnel/cours/S4/TechnoDuWeb/TP/"
-  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/TechnoDuWeb/TP/1"))
- ("/home/utilisateur/mesdocuments/professionnel/cours/S4/TechnoDuWeb/Projetweb/" . 1415)
- ("/home/utilisateur/mesdocuments/professionnel/cours/S4/TechnoDuWeb/" . 660)
- ("/home/utilisateur/Testdedossier/test.c" . 72)
- ("/home/utilisateur/Testdedossier/"
-  (dired-filename . "/home/utilisateur/Testdedossier/test.c"))
- ("/home/utilisateur/.emacs.d/config/basicOptimisations.org" . 27)
- ("/home/utilisateur/.emacs.d/config/programmation.org" . 26)
- ("/home/utilisateur/.emacs.d/config/try.org" . 26)
- ("/home/utilisateur/.emacs.d/config/raccourcis.org" . 27)
- ("/home/utilisateur/.emacs.d/config/basicOptimisations.el" . 2734)
- ("/home/utilisateur/.emacs.d/config/programmation.sh" . 278)
- ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/tel/orgzly/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/tel/orgzly/.."))
- ("/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/tel/"
-  (dired-filename . "/home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/tel/.."))
- ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/"
-  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/sujet2"))
- ("/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/sujet2/"
-  (dired-filename . "/home/utilisateur/mesdocuments/professionnel/cours/S4/BaseDeDonnees/sujet2/Exercices.org"))
- ("/home/utilisateur/.emacs.d/straight/build/processing-mode/processing-mode-autoloads.el" . 761)
- ("/home/utilisateur/.emacs.d/straight/build/xah-elisp-mode/xah-elisp-mode-autoloads.el" . 1046)
- ("/home/utilisateur/.emacs.d/straight/build/projectile/projectile-autoloads.el" . 21323)
- ("/home/utilisateur/.emacs.d/straight/build/flycheck/flycheck-autoloads.el" . 10429)
- ("/home/utilisateur/.emacs.d/straight/build/let-alist/let-alist-autoloads.el" . 1287)
- ("/home/utilisateur/.emacs.d/straight/build/pkg-info/pkg-info-autoloads.el" . 3763)
- ("/home/utilisateur/.emacs.d/straight/build/epl/epl-autoloads.el" . 261)
- ("/home/utilisateur/.emacs.d/straight/build/yasnippet-snippets/yasnippet-snippets-autoloads.el" . 548)
- ("/home/utilisateur/.emacs.d/straight/build/yasnippet/yasnippet-autoloads.el" . 1847)
- ("/home/utilisateur/.emacs.d/straight/build/company-prescient/company-prescient-autoloads.el" . 1139)
- ("/home/utilisateur/.emacs.d/straight/build/prescient/prescient-autoloads.el" . 297)
- ("/home/utilisateur/.emacs.d/straight/build/company-box/company-box-autoloads.el" . 652)
- ("/home/utilisateur/.emacs.d/straight/build/frame-local/frame-local-autoloads.el" . 309)
- ("/home/utilisateur/.emacs.d/straight/build/company/company-autoloads.el" . 2803)
- ("/home/utilisateur/.emacs.d/straight/build/lsp-java/lsp-java-autoloads.el" . 2092)
- ("/home/utilisateur/.emacs.d/straight/build/dap-mode/dap-mode-autoloads.el" . 10606)
- ("/home/utilisateur/.emacs.d/straight/build/bui/bui-autoloads.el" . 268)
- ("/home/utilisateur/.emacs.d/straight/build/request/request-autoloads.el" . 285)
- ("/home/utilisateur/.emacs.d/straight/build/lsp-treemacs/lsp-treemacs-autoloads.el" . 2278)
- ("/home/utilisateur/.emacs.d/straight/build/treemacs/treemacs-autoloads.el" . 26552)
- ("/home/utilisateur/.emacs.d/straight/build/cfrs/cfrs-autoloads.el" . 416)
- ("/home/utilisateur/.emacs.d/straight/build/posframe/posframe-autoloads.el" . 7930)
- ("/home/utilisateur/.emacs.d/straight/build/pfuture/pfuture-autoloads.el" . 865)
- ("/home/utilisateur/.emacs.d/straight/build/ace-window/ace-window-autoloads.el" . 2190)
- ("/home/utilisateur/.emacs.d/straight/build/lsp-ui/lsp-ui-autoloads.el" . 685)
- ("/home/utilisateur/.emacs.d/straight/build/lsp-mode/lsp-mode-autoloads.el" . 27915)
- ("/home/utilisateur/.emacs.d/straight/build/markdown-mode/markdown-mode-autoloads.el" . 1285)
- ("/home/utilisateur/.emacs.d/straight/build/spinner/spinner-autoloads.el" . 2427)
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/js/jquery-3.3.1.min.js" . 2842)
- ("/home/utilisateur/sharedDirectoryPrivate/org-linkz/js/jquery.searchable.js" . 5827))
+  (dired-filename . "/home/utilisateur/.emacs.d/etc/yasnippet")))

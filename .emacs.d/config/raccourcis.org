@@ -111,3 +111,15 @@ Pour l'instant je le mets en local. Suffit de télécharger le dossier "lisp" et
 
 
 #+end_src
+
+
+** Les contrôles au bon endroit
+
+#+begin_src emacs-lisp
+  (shell-command "setxkbmap -option caps:none")
+  (shell-command "xmodmap /home/utilisateur/sharedDirectoryPrivate/sauvegardePcEtTel/ordi/Xmodmap")
+#+end_src
+
+
+
+

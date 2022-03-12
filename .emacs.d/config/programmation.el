@@ -1,6 +1,6 @@
 ;; ============================================================
 ;; Don't edit this file, edit config.org' instead ...
-;; Auto-generated at Mon Mar 07 2022-03-07T16:14:55  on host utilisateur-GL65-Leopard-10SER
+;; Auto-generated at Fri Mar 11 2022-03-11T16:16:48  on host utilisateur-GL65-Leopard-10SER
 ;; ============================================================
 
 
@@ -67,10 +67,20 @@
 ;; #####################################################################################
 (message "config • Java :Low: …")
 
-      (use-package lsp-java
-        :config
-        (setq lsp-java-jdt-download-url  "https://download.eclipse.org/jdtls/milestones/0.57.0/jdt-language-server-0.57.0-202006172108.tar.gz")
-        )
+
+    ;; pour corriger la variable $JAVA_HOME
+    (use-package exec-path-from-shell
+      :config
+      (exec-path-from-shell-initialize)
+      )
+    ;; (when (daemonp)
+      ;; (exec-path-from-shell-initialize)
+      ;; )
+
+    (use-package lsp-java
+      :config
+      ;; (setq lsp-java-jdt-download-url  "https://download.eclipse.org/jdtls/milestones/0.57.0/jdt-language-server-0.57.0-202006172108.tar.gz")
+      )
 
 
 ;; #####################################################################################

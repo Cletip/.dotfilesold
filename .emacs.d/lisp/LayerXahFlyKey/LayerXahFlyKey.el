@@ -98,12 +98,12 @@
 
 (defun cp/go-to-config ()
   (interactive)
-  (find-file "~/.emacs.d/config.org")
+  (find-file my-user-emacs-configuration)
   )
 
 (defun cp/go-to-code ()
 (interactive)
-(find-file "~/Documents/Code"))
+(find-file "~/documents/Code"))
 
 (defun cp/go-to-cours ()
    (interactive)
@@ -115,7 +115,7 @@
 
 (defun cp/go-to-documents ()
   (interactive)
-  (find-file "~/Documents/"))
+  (find-file "~/documents/"))
 
 (defun cp/go-to-orgzly-Nell ()
   (interactive)
@@ -124,7 +124,7 @@
 
 (defun cp/go-to-braindump ()
   (interactive)
-  (find-file "~/Documents/Code/MesSitesWeb/braindump")
+  (find-file "~/documents/Code/MesSitesWeb/braindump")
   )
 
 (defun cp/go-to-windows ()
@@ -573,9 +573,14 @@ _s_: down          _S_: down
    ("g" . xah-toggle-read-novel-mode)
    ("h" . widen)
    ("i" . make-frame-command)
-   ("j" . flyspell-buffer)
-   ("s" . flyspell-check-previous-highlighted-word)
-   ("k" . menu-bar-open)
+
+   ;; ("j" . flyspell-buffer)
+   ("j" . flyspell-check-previous-highlighted-word) ;;perso
+   ;; ("s" . flyspell-check-previous-highlighted-word)
+
+   ;; ("k" . menu-bar-open)
+   ("k" . flycheck-grammalecte-correct-error-before-point)
+
    ("l" . toggle-word-wrap)
    ("m" . jump-to-register)
    ("n" . narrow-to-region)
@@ -706,12 +711,16 @@ _s_: down          _S_: down
    ("/" . treemacs)
    ("a" . cp/go-to-config)
    ;; ("=" . dw/toggle-command-window)
-   ("d" . org-capture)
-   ("h" . eaf-open-browser-with-history)
+   ("h" . org-capture)
+
+   ;; ("h" . eaf-open-browser-with-history)
+
    ("l" . org-sidebar-tree-toggle)
    ("m" . engine/search-google)
+   ("n" . flycheck-grammalecte-correct-error-before-point)
    ("o" . org-agenda)
    ("t" . flyspell-check-previous-highlighted-word)
+
    ;; ("x" . universal-argument)
 
 

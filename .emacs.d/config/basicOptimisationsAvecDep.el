@@ -1,6 +1,6 @@
 ;; ============================================================
 ;; Don't edit this file, edit config.org' instead ...
-;; Auto-generated at Fri Mar 11 2022-03-11T10:46:36  on host utilisateur-GL65-Leopard-10SER
+;; Auto-generated at Sat Mar 12 2022-03-12T12:21:03  on host utilisateur-GL65-Leopard-10SER
 ;; ============================================================
 
 
@@ -66,7 +66,15 @@
   (use-package flycheck-grammalecte)
 
   (with-eval-after-load 'flycheck
-    (flycheck-grammalecte-setup))
+    (setq
+     ;; pas de faute avec les '
+     flycheck-grammalecte-report-apos nil
+     ;; pas de faute avec les espaces insécable
+     flycheck-grammalecte-report-nbsp nil
+     ;; pas de faute avec pleins d'espaces et de tab
+     flycheck-grammalecte-report-esp nil)
+    (flycheck-grammalecte-setup);;chargement de flychek-grammalecte
+    )
 
   ;; pour télécharger grammalect si jamais il n'y est pas déjà. Si il y est, ne fait rien
   (let ((local-version (grammalecte--version))
@@ -97,16 +105,22 @@
                     "(?im)^[ \t]*#\\+(?:caption|description|keywords|(?:sub)?title):"
                     "(?im)^[ \t]*#\\+(?!caption|description|keywords|(?:sub)?title)\\w+:.*$"
                     "(?ims)^\- $"
+
+                    "-";; éviter l'erreur des tirets
+                    "\"\.(.*?)\"" ;; éviter les erreurs de ""
                     ))
         )
 
-  (setq
-   ;; pas de faute avec les '
-   flycheck-grammalecte-report-apos nil
-   ;; pas de faute avec les espaces insécable
-   flycheck-grammalecte-report-nbsp nil
-   ;; pas de faute avec pleins d'espaces et de tab
-   flycheck-grammalecte-report-esp nil)
+  (defun flycheck-grammalecte-correct-error-before-point ()
+    "Corrige la première erreur avant le curseur"
+    (interactive)
+    (save-excursion
+        (flycheck-previous-error)
+        (flycheck-grammalecte-correct-error-at-point (point)) 
+      )
+    )
+
+
 
 
 
